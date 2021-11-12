@@ -32,7 +32,7 @@ body {
   font-family: "Poppins", serif;
 }
 
-/* Hero Link Stylings */
+/* Hero Link Style & Hover */
 
 .hero a:link,
 a:visited {
@@ -44,43 +44,34 @@ a:visited {
   color: var(--link-hover-color);
 }
 
-#program:hover ~ #hero-bg {
-  background-image: url(program-bg-temp.jpg);
-  animation-name: fade-in;
-  animation-duration: 1s;
-}
-
-@keyframes fade-in { 
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-#conservation:hover ~ #hero-bg {
-  background-image: url(conservation-bg-temp.jpg);
-  animation-name: fade-in;
-  animation-duration: 1s;
-}
-
-@keyframes fade-in { 
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-#design:hover ~ #hero-bg {
-  background-image: url(design-bg-temp.png);
-  animation-name: fade-in;
-  animation-duration: 1s;
-}
-
-@keyframes fade-in { 
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
 #hero-bg {
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: -1;
   top: 0;
+}
+
+.hero a:hover ~ #hero-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+@keyframes fade-in { 
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#program:hover ~ #hero-bg {
+  background-image: url(program-bg-temp.jpg);
+}
+
+#conservation:hover ~ #hero-bg {
+  background-image: url(conservation-bg-temp.jpg);
+}
+
+#design:hover ~ #hero-bg {
+  background-image: url(design-bg-resized.png);
 }
