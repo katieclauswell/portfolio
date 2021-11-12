@@ -1,0 +1,59 @@
+/* Variables */
+:root {
+  --main-bg-color: rgb(148, 156, 134);
+  --header-color: rgb(188, 209, 155);
+  --link-color: white;
+  --link-hover-color: black;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Helvetica Neue", "Noto Sans ";
+}
+
+/* Hero */
+.hero {
+  margin: auto;
+  width: 70%;
+  padding: 200px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 60px;
+  color: var(--header-color);
+  font-family: "Yuji Syuku", serif;
+}
+
+.hero a {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 30px;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Poppins", serif;
+}
+
+/* Hero Link Stylings */
+
+.hero a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.hero a:hover {
+  color: var(--link-hover-color);
+}
+
+#program:hover ~ #hero-bg {
+  background-img: red;
+}
+
+#hero-bg {
+  background: blue;
+  height: 50%;
+  width: 50%;
+  margin: auto;
+}
