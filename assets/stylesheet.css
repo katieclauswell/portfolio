@@ -2,8 +2,8 @@
 :root {
   --main-bg-color: rgb(148, 156, 134);
   --header-color: rgb(188, 209, 155);
-  --link-color: white;
-  --link-hover-color: black;
+  --link-color: rgb(95, 93, 93);
+  --link-hover-color: white;
 }
 
 body {
@@ -46,18 +46,39 @@ a:visited {
 
 #program:hover ~ #hero-bg {
   background-image: url(program-bg-temp.jpg);
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+@keyframes fade-in { 
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 #conservation:hover ~ #hero-bg {
   background-image: url(conservation-bg-temp.jpg);
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+@keyframes fade-in { 
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 #design:hover ~ #hero-bg {
   background-image: url(design-bg-temp.png);
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+@keyframes fade-in { 
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 #hero-bg {
-  height: 80%;
+  height: 100%;
   width: 100%;
   position: absolute;
   z-index: -1;
