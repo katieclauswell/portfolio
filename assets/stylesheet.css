@@ -48,12 +48,19 @@ a:visited {
 }
 
 #program:hover ~ #hero-bg {
-  background-img: red;
+  background-image: url(program-bg-temp.jpg);
+}
+
+#conservation:hover ~ #hero-bg {
+  background-image: url(conservation-bg-temp.jpg);
+}
+
+#design:hover ~ #hero-bg {
+  background-image: url(design-bg-temp.png);
 }
 
 #hero-bg {
-  background: blue;
-  height: 50%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
   margin: auto;
 }
