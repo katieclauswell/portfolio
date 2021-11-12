@@ -1,5 +1,11 @@
+:root {
+  --main-bg-color: rgb(148, 156, 134);
+  --header-color: rgb(188, 209, 155);
+  --link-color: white;
+  --link-hover-color: black;
+}
 body {
-background-color: rgb(148, 156, 134);
+background-color: var(--main-bg-color);
   font-family: "Helvetica Neue","Noto Sans ";
 }
 
@@ -12,7 +18,7 @@ header {
 
 header h1 {
     font-size: 60px;
-    color: rgb(188, 209, 155);
+    color: var(--header-color);
     font-family: "Yuji Syuku", serif;
 }
 
@@ -30,9 +36,9 @@ header nav ul {
 /* Link Stylings */
 a:link, a:visited {
   text-decoration: none;
-  color: white;
+  color: var(--link-color);
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--link-hover-color);
 }
