@@ -5,7 +5,7 @@ background-color: rgb(148, 156, 134);
 
 header {
   margin: auto;
-  width: auto;
+  width: 50%;
   padding: 200px;
   text-align: center;
 }
@@ -23,5 +23,14 @@ header nav ul {
   list-style: none;
   padding-left: 0;
   font-size: 20px;
+}
+
+/* Link Stylings */
+a:link, a:visited {
+  text-decoration: none;
   color: white;
+}
+
+a:hover {
+  text-decoration: underline;
 }
