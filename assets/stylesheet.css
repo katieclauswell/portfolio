@@ -121,10 +121,10 @@ header a:hover ~ #hero-bg {
   padding: 20px;
 }
 
-.about-me {
+.main-content article {
   display: inline-block;
   flex-wrap: wrap;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
 }
 
 .about-me p {
