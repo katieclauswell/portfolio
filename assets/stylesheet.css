@@ -18,7 +18,7 @@ body {
   --link-hover-color: white;
 }
 
-/* Hero */
+/* Header */
 header {
   display: inline-flex;
   flex-wrap: wrap;
@@ -75,23 +75,63 @@ header a:hover ~ #hero-bg {
 }
 
 #about-me:hover ~ #hero-bg {
-  background-color:rgb(97, 153, 114);
+  background-image: url(images/cooper.jpg);
+  background-position: center center;
+}
+
+#about-me:hover ~ a {
+  color: white;
+}
+
+#about-me:hover {
+  text-shadow: 1px 1px black;
 }
 
 #program:hover ~ #hero-bg {
-  background-color: black;
+  background-image: url(images/star-trek.png);
+  position: top;
+}
+
+#program:hover {
+  color: #04fc04;
 }
 
 #conservation:hover ~ #hero-bg {
-  background-image: url(conservation-bg-resized.jpg);
-  background-position: center;
+  background-image: url(images/conservation-bg-resized.jpg);
+  background-position: right;
+}
+
+#conservation:hover {
+  color: #cf872b;
 }
 
 #design:hover ~ #hero-bg {
-  background-color: rgb(98, 77, 104);
+  background-image: url(images/design.png);
+  background-size: 50%;
+  background-position: center left;
+  background-color: #a0807b;
+}
+
+#design:hover {
+  color: #2a2120;
 }
 
 /* Main Content */
 .main-content {
   padding: 20px;
+}
+
+.about-me {
+  display: inline-block;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.about-me p {
+  float: right;
+}
+.about-me img {
+  max-width: 30%;
+  height: auto;
+  float: left;
 }
