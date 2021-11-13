@@ -1,3 +1,15 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Helvetica Neue", "Noto Sans ";
+}
+
 /* Variables */
 :root {
   --main-bg-color: rgb(148, 156, 134);
@@ -6,43 +18,38 @@
   --link-hover-color: white;
 }
 
-body {
-  background-color: var(--main-bg-color);
-  font-family: "Helvetica Neue", "Noto Sans ";
-}
-
 /* Hero */
-.hero {
-  text-align: center;
-  height:100vh;
+header {
+  display: inline-flex;
+  flex-wrap: wrap;
+  height:20vh;
   width: 100vw;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
-#title {
+header h1 {
   font-size: 60px;
   color: var(--header-color);
   font-family: "Yuji Syuku", serif;
 }
 
-.hero a {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  column-gap: 30px;
-  align-items: center;
+header nav {
+  text-align: right;
+  padding-right: 30px;
   font-size: 20px;
   font-family: "Poppins", serif;
 }
 
-/* Hero Link Style & Hover */
+/* Header Link Style & Hover */
 
-.hero a:link,
+header a:link,
 a:visited {
   text-decoration: none;
   color: var(--link-color);
 }
 
-.hero a:hover {
+header a:hover {
   color: var(--link-hover-color);
 }
 
@@ -54,7 +61,7 @@ a:visited {
   top: 0;
 }
 
-.hero a:hover ~ #hero-bg {
+header a:hover ~ #hero-bg {
   background-repeat: no-repeat;
   background-size: cover;
   animation-name: fade-in;
