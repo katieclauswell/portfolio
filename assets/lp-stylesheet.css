@@ -84,7 +84,11 @@ header a:hover ~ #hero-bg {
 }
 
 #about-me:hover ~ a {
-  color: black;
+  color: white;
+}
+
+#about-me:hover {
+  text-shadow: 1px 1px black;
 }
 
 #program:hover ~ #hero-bg {
@@ -92,19 +96,26 @@ header a:hover ~ #hero-bg {
   position: top;
 }
 
-#program:hover ~ a {
+#program:hover {
   color: #04fc04;
 }
 
 #conservation:hover ~ #hero-bg {
   background-image: url(images/conservation-bg-resized.jpg);
-  background-position: center;
+  background-position: right;
 }
 
-#conservation:hover ~ a {
+#conservation:hover {
   color: #cf872b;
 }
 
 #design:hover ~ #hero-bg {
-  background-color: rgb(98, 77, 104);
+  background-image: url(images/design.png);
+  background-size: contain;
+  background-position: left;
+  background-color: #a0807b;
+}
+
+#design:hover {
+  color: #2a2120;
 }
