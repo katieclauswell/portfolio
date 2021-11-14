@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  width: 100%;
+  width: vw;
   box-sizing: border-box;
 }
 
@@ -12,126 +12,80 @@ body {
 
 /* Variables */
 :root {
-  --main-bg-color: rgb(100, 102, 98);
-  --header-color: rgb(255, 255, 255);
-  --link-color: rgb(162, 172, 165);
-  --link-hover-color: white;
+  --main-bg-color: #f3f7f0; /* Mint Cream */
+  --header-bg: #454545; /* Onyx */
+  --header-color: #f75c03; /* Orange Pantone */
+  --main-text: #001524; /* Green Munsell */
+  --section-header: #04a777;
+  --title-font: "Yuji Syuku", serif;
+  --header-font: "Poppins", serif;
 }
 
 /* Header */
 header {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
-  height:20vh;
+  top: 0;
+  height: 15vh;
   width: 100vw;
   position: -webkit-sticky;
   position: sticky;
+  background-color: var(--header-bg);
+  z-index: 9999;
 }
 
 header h1 {
   font-size: 60px;
   color: var(--header-color);
-  font-family: "Yuji Syuku", serif;
+  font-family: var(--title-font);
 }
 
-header nav {
-  text-align: right;
-  justify-content: space-between;
-  padding-right: 40px;
-  font-size: 20px;
-  font-family: "Poppins", serif;
+/* Section Headers */
+
+.section-headers {
+  display: block;
+  float: left;
+  width: 20vw;
+  margin: 20px;
 }
 
-/* Header Link Style & Hover */
-
-header a:link,
-a:visited {
-  text-decoration: none;
-  color: var(--link-color);
-}
-
-header a:hover {
-  color: var(--link-hover-color);
-}
-
-#hero-bg {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-}
-
-header a:hover ~ #hero-bg {
-  background-repeat: no-repeat;
-  background-size: cover;
-  animation-name: fade-in;
-  animation-duration: 1s;
-}
-
-@keyframes fade-in { 
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-#about-me:hover ~ #hero-bg {
-  background-image: url(images/cooper.jpg);
-  background-position: center center;
-}
-
-#about-me:hover ~ a {
-  color: white;
-}
-
-#about-me:hover {
-  text-shadow: 1px 1px black;
-}
-
-#program:hover ~ #hero-bg {
-  background-image: url(images/star-trek.png);
-  position: top;
-}
-
-#program:hover {
-  color: #04fc04;
-}
-
-#conservation:hover ~ #hero-bg {
-  background-image: url(images/conservation-bg-resized.jpg);
-  background-position: right;
-}
-
-#conservation:hover {
-  color: #cf872b;
-}
-
-#design:hover ~ #hero-bg {
-  background-image: url(images/design.png);
-  background-size: 50%;
-  background-position: center left;
-  background-color: #a0807b;
-}
-
-#design:hover {
-  color: #2a2120;
+.section-content {
+  width: 80vw;
+  float: right;
 }
 
 /* Main Content */
 .main-content {
-  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px;
+}
+
+.main-content h2 {
+  color: var(--section-header);
+  font-family: var(--header-font);
+  font-weight: bold;
+  float: left;
+  padding: 40px;
 }
 
 .main-content article {
-  display: inline-block;
-  flex-wrap: wrap;
   padding-bottom: 80px;
+  display: inline-flex;
 }
 
-.about-me p {
-  float: right;
+img[alt="placeholder image"] {
+  max-width: 30%;
 }
+
+.float-left {
+  float: left;
+}
+
+/* About Me */
+
 .about-me img {
   max-width: 30%;
   height: auto;
-  float: left;
+  border-radius: 30px;
 }

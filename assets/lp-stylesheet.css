@@ -12,9 +12,7 @@ body {
 /* Variables */
 :root {
   --main-bg-color: rgb(100, 102, 98);
-  --header-color: rgb(255, 255, 255);
   --link-color: rgb(162, 172, 165);
-  --link-hover-color: white;
 }
 
 /* Hero */
@@ -30,7 +28,6 @@ div {
 header h1 {
   text-align: center;
   font-size: 60px;
-  color: var(--header-color);
   font-family: "Yuji Syuku", serif;
 }
 
@@ -43,14 +40,16 @@ header nav {
 
 /* Header Link Style & Hover */
 
-header a:link,
-a:visited {
-  text-decoration: none;
+nav a, a:link, a:visited {
   color: var(--link-color);
 }
 
-header a:hover {
-  color: var(--link-hover-color);
+h1 a, a:link, a:visited {
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: white;
 }
 
 #hero-bg {
@@ -88,6 +87,7 @@ header a:hover ~ #hero-bg {
 
 #about-me:hover {
   text-shadow: 1px 1px black;
+  color: white;
 }
 
 #program:hover ~ #hero-bg {
