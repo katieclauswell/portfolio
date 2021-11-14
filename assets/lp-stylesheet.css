@@ -27,7 +27,6 @@ div {
   width: 100vw;
 }
 
-
 header h1 {
   text-align: center;
   font-size: 60px;
@@ -37,11 +36,9 @@ header h1 {
 
 header nav {
   display: inline-flex;
-  flex-wrap: wrap;
   text-align: center;
   font-size: 20px;
   font-family: "Poppins", serif;
-  padding-inline-end: 20px;
 }
 
 /* Header Link Style & Hover */
@@ -120,4 +117,12 @@ header a:hover ~ #hero-bg {
 
 #design:hover {
   color: #2a2120;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 980px) {
+  header nav {
+    flex-wrap: wrap;
+  }
 }
