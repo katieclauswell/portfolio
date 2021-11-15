@@ -10,11 +10,21 @@ body {
   font-family: "Helvetica Neue", "Noto Sans ";
 }
 
+img {
+  padding: 10px;
+  border-radius: 30px;
+}
+
+ul {
+  margin: 20px;
+  list-style: none;
+}
+
 /* Variables */
 :root {
   --main-bg-color: #f3f7f0; /* Mint Cream */
   --header-bg: #454545; /* Onyx */
-  --header-color: white; 
+  --header-color: white;
   --main-text: #001524; /* Green Munsell */
   --section-header: #04a777;
   --title-font: "Yuji Syuku", serif;
@@ -23,8 +33,7 @@ body {
 
 /* Header */
 header {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   top: 0;
   height: auto;
   width: 100vw;
@@ -36,7 +45,8 @@ header {
   padding-bottom: 10px;
 }
 
-header a:link, a:visited {
+header a:link,
+a:visited {
   color: white;
   text-decoration: none;
 }
@@ -62,14 +72,6 @@ header a:hover {
 }
 /* Section Headers */
 
-.section-headers {
-  float: left;
-  width: 20vw;
-  margin: 20px;
-  flex: 1;
-  position: top;
-}
-
 .section-content {
   width: 80vw;
 }
@@ -87,28 +89,38 @@ header a:hover {
   font-weight: bold;
 }
 
-.main-content article {
-  padding-bottom: 80px;
+article {
+  padding: 20px;
+  scroll-margin-top: 20vh;
 }
 
+/* Placeholder Images */
 img[alt="placeholder image"] {
   max-width: 30%;
 }
 
-.float-left {
-  float: left;
+/* replace with img a:hover when projects are linked */
+img[alt="placeholder image"]:hover {
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 30%;
+  }
 }
 
 /* About Me */
-
 #headshot {
   max-width: 30%;
   height: auto;
-  border-radius: 30px;
 }
 
 /* Design Section */
-
 .design-content {
   float: right;
 }
@@ -118,7 +130,9 @@ img[alt="placeholder image"] {
 }
 /* Footer */
 footer {
-text-align: center;
-font-size: 12px;
-margin: 10px;
+  text-align: center;
+  font-size: 12px;
+  margin: 10px;
+  color: var(--section-header);
+  font-family: var(--header-font);
 }
