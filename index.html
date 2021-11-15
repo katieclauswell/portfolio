@@ -17,10 +17,12 @@
     <header>
         <h1>Katie Churchwell</h1>
         <nav>
-            <a href="index.html#about-me-section" id="about-me">About Me</a>
-            <a href="index.html#program-section" id="program">Programming</a>
-            <a href="index.html#conservation-section" id="conservation">Conservation Work</a>
-            <a href="index.html#design-section" id="design">Design</a>
+            <ul>
+                <li><a href="index.html#about-me-section" id="about-me">About Me</a> </li>
+                <li> <a href="index.html#program-section" id="program">Programming</a> </li>
+                <li> <a href="index.html#conservation-section" id="conservation">Conservation Work</a> </li>
+                <li> <a href="index.html#design-section" id="design">Design</a> </li>
+            </ul>
         </nav>
     </header>
     <!-- End Header -->
@@ -29,15 +31,15 @@
     <section class="main-content">
 
         <!-- About Me -->
-        <article class="about-me">
+        <article>
             <div class="section-headers">
                 <h2>About Me</h2>
             </div>
-            <div class="section-content">
+            <div class="section-content" id="about-me-section">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint voluptas recusandae exercitationem,
                     doloremque quo veniam non aliquam dignissimos praesentium itaque! Ducimus, excepturi quod vel
                     reiciendis dignissimos modi. Quod, aperiam vitae.</p>
-                <img src="assets/images/headshot.jpg" alt="A headshot of Katie Churchwell">
+                <img src="assets/images/headshot.jpg" alt="A headshot of Katie Churchwell" id="headshot">
             </div>
             </div>
         </article>
@@ -47,7 +49,7 @@
             <div class="section-headers">
                 <h2>Programming</h2>
             </div>
-            <div class="section-content">
+            <div class="section-content" id="program-section">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium consectetur iste odio quas ipsa
                     ex adipisci reprehenderit hic magni illum excepturi vitae ad nemo ab sapiente vel, eligendi modi
                     officia?</p>
@@ -57,12 +59,14 @@
         </article>
 
         <!-- Conservation -->
-        <article>
+        <article id="conservation-section">
             <div class="section-headers">
                 <h2>Conservation Work </h2>
             </div>
-            <div class="section-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorem ipsa quasi tenetur quia ea rem recusandae velit qui illo laborum, soluta culpa necessitatibus mollitia quisquam, modi magni, hic iure!</p>
+            <div class="section-content" id="conservation-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorem ipsa quasi tenetur quia ea
+                    rem recusandae velit qui illo laborum, soluta culpa necessitatibus mollitia quisquam, modi magni,
+                    hic iure!</p>
                 <img src="assets/images/placeholder.jpg" alt="placeholder image">
                 <img src="assets/images/placeholder.jpg" alt="placeholder image">
                 <img src="assets/images/placeholder.jpg" alt="placeholder image">
@@ -70,12 +74,14 @@
         </article>
 
         <!-- Design -->
-        <article>
+        <article id="design-section">
             <div class="section-headers">
                 <h2>Design</h2>
             </div>
-            <div class="section-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim officiis adipisci ducimus vero repellat cupiditate, rerum voluptate architecto quo accusantium? Qui non suscipit totam quasi aliquid provident saepe, est culpa.</p>
+            <div class="section-content" id="design-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim officiis adipisci ducimus vero repellat
+                    cupiditate, rerum voluptate architecto quo accusantium? Qui non suscipit totam quasi aliquid
+                    provident saepe, est culpa.</p>
                 <img src="assets/images/placeholder.jpg" alt="placeholder image">
                 <img src="assets/images/placeholder.jpg" alt="placeholder image">
             </div>
@@ -86,4 +92,5 @@
 <footer>
     © Katie Churchwell | 2021
 </footer>
+
 </html>
