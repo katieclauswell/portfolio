@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  width: vw;
   box-sizing: border-box;
 }
 
@@ -130,20 +129,40 @@ img[alt="placeholder image"] {
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
   flex-grow: 1;
+  padding: 5px;
 } 
+
+.card:nth-child(1) {
+  width: 600px;
+}
 .card img {
   max-width: 100%;
 }
-.card .text {
-  padding: 0 20px 20px;
+
+.card h3 {
+  padding: 10px 0 10px 0;
 }
-.card .text > button {
-  background: var(--section-header);
-  border: 0;
-  color: white;
+
+.card p {
+  padding: 0 0 10px;
+}
+
+.card .text {
+  padding: 0 5px 5px;
+}
+.text button {
+  border: 1px solid var(--header-bg);
+  background-color: var(--main-bg-color);
+  color: var(--section-header);
   padding: 10px;
   width: 100%;
+  font-family: (var(--header-font));
+  font-size: 15px;
   }
+
+.text button:hover {
+  text-decoration: underline;
+}
 
 /* About Me */
 #headshot {
@@ -164,6 +183,14 @@ img[alt="placeholder image"] {
 /* Contact Section */
 .links a{
   color:var(--section-header);
+}
+
+#contact-content {
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  padding: 5px;
 }
 
 /* Footer */
