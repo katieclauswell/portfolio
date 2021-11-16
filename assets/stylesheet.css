@@ -10,13 +10,7 @@ body {
   font-family: "Helvetica Neue", "Noto Sans ";
 }
 
-img {
-  padding: 10px;
-  border-radius: 30px;
-}
-
 ul {
-  margin: 20px;
   list-style: none;
 }
 
@@ -73,7 +67,8 @@ header a:hover {
 /* Section Headers */
 
 .section-content {
-  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Main Content */
@@ -99,25 +94,62 @@ img[alt="placeholder image"] {
   max-width: 30%;
 }
 
-/* replace with img a:hover when projects are linked */
-img[alt="placeholder image"]:hover {
+/* Image hover */
+#headshot {
+  opacity: 100%
+}
+
+.main-content img {
+  opacity: 50%;
+}
+
+.main-content img:hover {
   animation-name: fade-in;
   animation-duration: 1s;
 }
 
 @keyframes fade-in {
   from {
-    opacity: 1;
+    opacity: 50%;
   }
   to {
-    opacity: 30%;
+    opacity: 1;
   }
 }
+
+/* Flex Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.card {
+  flex: 0 0 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  flex-grow: 1;
+} 
+.card img {
+  max-width: 100%;
+}
+.card .text {
+  padding: 0 20px 20px;
+}
+.card .text > button {
+  background: var(--section-header);
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  }
 
 /* About Me */
 #headshot {
   max-width: 30%;
   height: auto;
+  border-radius: 30px;
 }
 
 /* Design Section */
@@ -128,6 +160,12 @@ img[alt="placeholder image"]:hover {
 .conservation-content {
   justify-content: flex-end;
 }
+
+/* Contact Section */
+.links a{
+  color:var(--section-header);
+}
+
 /* Footer */
 footer {
   text-align: center;
