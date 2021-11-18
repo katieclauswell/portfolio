@@ -26,7 +26,6 @@ ul {
 
 /* Header */
 header {
-  display: block;
   top: 0;
   height: auto;
   width: 100vw;
@@ -44,14 +43,12 @@ a:visited {
   text-decoration: none;
 }
 
-header ul {
-  display: flex;
-  flex-direction: row;
+nav li {
+  display: inline;
   list-style-type: none;
   font-size: 20px;
   font-family: var(--header-font);
-  justify-content: space-between;
-  width: 60vw;
+  padding: 8px;
 }
 
 header h1 {
@@ -63,6 +60,7 @@ header h1 {
 header a:hover {
   color: var(--section-header);
 }
+
 /* Section Headers */
 
 .section-content {
@@ -94,10 +92,6 @@ img[alt="placeholder image"] {
 }
 
 /* Image hover */
-#headshot {
-  opacity: 100%
-}
-
 .main-content img {
   opacity: 50%;
   transition: opacity ease-in-out 1s;
@@ -118,17 +112,17 @@ img[alt="placeholder image"] {
   margin: 10px;
   border: 1px solid #ccc;
   border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   flex-grow: 1;
   padding: 5px;
-} 
+}
 
 .card:nth-child(1) {
   flex: 2;
 }
 
 .card img {
-width: 100%;
+  width: 100%;
 }
 
 .card h3 {
@@ -150,7 +144,7 @@ width: 100%;
   width: 100%;
   font-family: (var(--header-font));
   font-size: 15px;
-  }
+}
 
 .text button:hover {
   text-decoration: underline;
@@ -161,6 +155,7 @@ width: 100%;
   max-width: 30%;
   height: auto;
   border-radius: 30px;
+  opacity: 100%;
 }
 
 /* Design Section */
@@ -173,15 +168,15 @@ width: 100%;
 }
 
 /* Contact Section */
-.links a{
-  color:var(--section-header);
+.links a {
+  color: var(--section-header);
 }
 
 #contact-content {
   margin: 10px;
   border: 1px solid #ccc;
   border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   padding: 5px;
 }
 
@@ -195,3 +190,22 @@ footer {
 }
 
 /* Media Queries */
+@media (max-width: 800px) {
+  nav li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+
+  header h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  article {
+    scroll-margin: 45vh;
+    padding: 5px;
+  }
+}
