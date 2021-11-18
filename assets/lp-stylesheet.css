@@ -40,11 +40,15 @@ header nav {
 
 /* Header Link Style & Hover */
 
-nav a, a:link, a:visited {
+nav a,
+a:link,
+a:visited {
   color: var(--link-color);
 }
 
-h1 a, a:link, a:visited {
+h1 a,
+a:link,
+a:visited {
   text-decoration: none;
 }
 
