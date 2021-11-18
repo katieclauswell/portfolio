@@ -100,20 +100,11 @@ img[alt="placeholder image"] {
 
 .main-content img {
   opacity: 50%;
+  transition: opacity ease-in-out 1s;
 }
 
 .main-content img:hover {
-  animation-name: fade-in;
-  animation-duration: 1s;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 50%;
-  }
-  to {
-    opacity: 1;
-  }
+  opacity: 100%;
 }
 
 /* Flex Cards */
@@ -123,7 +114,7 @@ img[alt="placeholder image"] {
   align-items: stretch;
 }
 .card {
-  flex: 0 0 200px;
+  flex: 1;
   margin: 10px;
   border: 1px solid #ccc;
   border-radius: 0.25rem;
@@ -133,10 +124,11 @@ img[alt="placeholder image"] {
 } 
 
 .card:nth-child(1) {
-  width: 600px;
+  flex: 2;
 }
+
 .card img {
-  max-width: 100%;
+width: 100%;
 }
 
 .card h3 {
@@ -201,3 +193,5 @@ footer {
   color: var(--section-header);
   font-family: var(--header-font);
 }
+
+/* Media Queries */
