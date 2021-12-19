@@ -15,11 +15,10 @@ ul {
 
 /* Variables */
 :root {
-  --main-bg-color: #001524;
-  --header-bg: #454545; /* Onyx */
-  --header-color: white;
-  --main-text: #f3f7f0;
-  --section-header: #04a777;
+  --main-bg-color: #1E1B18;
+  --header-bg: #454545;
+  --main-text: #979B8D;
+  --section-header: #FF8811;
   --title-font: "Quattrocento", serif;
   --header-font: "Poppins", serif;
 }
@@ -66,13 +65,13 @@ ul {
   background-color: var(--main-bg-color);
   padding: 30px;
 }
-a, p, li {
+p, li {
   color: var(--main-text);
   text-decoration: none;
 }
 
 h2 {
-  color: var(--header-color);
+  color: var(--section-header);
   margin-left: 10px;
 }
 
@@ -124,7 +123,7 @@ img[alt="placeholder image"] {
 
 .card h3 {
   padding: 10px 0 10px 0;
-  color: var(--header-color)
+  color: var(--section-header)
 }
 
 .card p {
@@ -135,8 +134,7 @@ img[alt="placeholder image"] {
   padding: 0 5px 5px;
 }
 .text button {
-  border: 1px solid var(--header-bg);
-  background-color: var(--main-bg-color);
+  background-color: var(--header-bg);
   color: var(--section-header);
   padding: 10px;
   width: 100%;
@@ -159,8 +157,13 @@ img[alt="placeholder image"] {
 }
 
 /* Contact Section */
-.links a {
+a {
   color: var(--section-header);
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
 }
 
 #contact-content {
