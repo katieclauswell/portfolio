@@ -7,35 +7,37 @@
 
   <title>Katie Churchwell</title>
 
-  <link rel="stylesheet" href="assets/stylesheet.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yuji+Syuku">
+  <link rel="stylesheet" href="assets/css/stylesheet.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 
 </head>
 
 <body>
+  <!-- hero -->
   <header>
-    <h1>Katie Churchwell</h1>
-    <nav>
-      <ul>
-        <li><a href="#about-me-section">About Me</a> </li>
-        <li> <a href="#program-section">Programming</a> </li>
-        <li> <a href="#conservation-section">Conservation Work</a> </li>
-        <li> <a href="#design-section">Design</a> </li>
-        <li> <a href="#contact-section">Contact Me</a> </li>
-      </ul>
-    </nav>
-  </header>
-  <!-- End Header -->
-
-  <!-- Main Content -->
-  <section class="main-content">
-
-    <!-- About Me -->
-    <article id="about-me-section">
-      <div class="section-headers">
-        <h2>About Me</h2>
+    <div id="hero" class="row">
+      <div class="layer-1 layer" data-depth="0.10" data-type="parallax"></div>
+      <div class="layer-2 layer" data-depth="0.20" data-type="parallax">
+        <h1>Katie Churchwell</h2>
+          <nav>
+            <ul>
+              <li><a href="#about-me-section">About</a> </li>
+              <li> <a href="#program-section">Portfolio</a> </li>
+            </ul>
+          </nav>
       </div>
+      <div class="layer-3 layer" data-depth="0.30" data-type="parallax"></div>
+      <div class="layer-4 layer" data-depth="1.00" data-type="parallax"></div>
+    </div>
+  </header>
+
+  <section id="content">
+
+
+
+    <article id="about-me-section">
+      <h2>About</h2>
       <div class="section-content" id="about-me-content">
         <p>Katie Churchwell is a web developer with over 5 years of experience in international business and
           marketing.</p></br>
@@ -45,13 +47,18 @@
         </p>
         <img src="assets/images/headshot.jpg" alt="A headshot of Katie Churchwell" id="headshot">
       </div>
+      <div class="section-content" id="contact-content">
+        <ul class="links">
+          <li>Email: <a href=mailto:churchwellcatherin@gmail.com>churchwellcatherine@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/katiechurchwell">github.com/katiechurchwell</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/katiechurchwell/">in/katiechurchwell</a></li>
+        </ul>
       </div>
     </article>
 
-    <!-- Programming Section -->
     <article id="program-section">
       <div class="section-headers">
-        <h2>Programming</h2>
+        <h2>Portfolio</h2>
       </div>
 
       <div class="section-content">
@@ -82,114 +89,11 @@
               <button>Click here</button>
             </div>
           </article>
-
-      </div>
-    </article>
-
-    <!-- Conservation -->
-    <article id="conservation-section">
-      <div class="section-headers">
-        <h2>Conservation Work </h2>
-      </div>
-      <div class="section-content" id="conservation-content">
-
-        <main class="cards">
-
-          <article class="card">
-            <img src="assets/images/placeholder.jpg" alt="placeholder image">
-            <div class="text">
-              <h3>Project 1</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam doloribus quae? Esse incidunt,
-                quos ullam molestias distinctio deleniti maxime porro veritatis eligendi sed vero eaque natus nam saepe.
-                Repudiandae!</p>
-              <button>Click here</button>
-            </div>
-          </article>
-
-          <article class="card">
-            <img src="assets/images/placeholder.jpg" alt="placeholder image">
-            <div class="text">
-              <h3>Project 2</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam doloribus quae? Esse incidunt,
-                quos ullam molestias distinctio deleniti maxime porro veritatis eligendi sed vero eaque natus nam saepe.
-                Repudiandae!</p>
-              <button>Click here</button>
-            </div>
-          </article>
-
-          <article class="card">
-            <img src="assets/images/placeholder.jpg" alt="placeholder image">
-            <div class="text">
-              <h3>Project 3</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam doloribus quae? Esse incidunt,
-                quos ullam molestias distinctio deleniti maxime porro veritatis eligendi sed vero eaque natus nam saepe.
-                Repudiandae!</p>
-              <button>Click here</button>
-            </div>
-          </article>
-
-      </div>
-    </article>
-
-    <!-- Design -->
-    <article id="design-section">
-      <div class="section-headers">
-        <h2>Design</h2>
-      </div>
-      <div class="section-content" id="design-content">
-        <main class="cards">
-
-          <article class="card">
-            <img src="assets/images/placeholder.jpg" alt="placeholder image">
-            <div class="text">
-              <h3>Project 1</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam doloribus quae? Esse incidunt,
-                quos ullam molestias distinctio deleniti maxime porro veritatis eligendi sed vero eaque natus nam saepe.
-                Repudiandae!</p>
-              <button>Click here</button>
-            </div>
-          </article>
-
-          <article class="card">
-            <img src="assets/images/placeholder.jpg" alt="placeholder image">
-            <div class="text">
-              <h3>Project 2</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam doloribus quae? Esse incidunt,
-                quos ullam molestias distinctio deleniti maxime porro veritatis eligendi sed vero eaque natus nam saepe.
-                Repudiandae!</p>
-              <button>Click here</button>
-            </div>
-          </article>
-
-          <article class="card">
-            <img src="assets/images/placeholder.jpg" alt="placeholder image">
-            <div class="text">
-              <h3>Project 3</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam doloribus quae? Esse incidunt,
-                quos ullam molestias distinctio deleniti maxime porro veritatis eligendi sed vero eaque natus nam saepe.
-                Repudiandae!</p>
-              <button>Click here</button>
-            </div>
-          </article>
-
-      </div>
-    </article>
-
-    <!-- Contact -->
-    <article id="contact-section">
-      <div class="section-headers">
-        <h2>Contact Me</h2>
-      </div>
-      <div class="section-content" id="contact-content">
-        <ul class="links">
-          <li>Email: <a href=mailto:churchwellcatherin@gmail.com>churchwellcatherine@gmail.com</a></li>
-          <li>GitHub: <a href="https://github.com/katiechurchwell">github.com/katiechurchwell</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/in/katiechurchwell/">in/katiechurchwell</a></li>
-        </ul>
       </div>
     </article>
   </section>
 
+  <script src="assets/js/script.js"></script>
 </body>
 <footer>
   © Katie Churchwell | 2021
