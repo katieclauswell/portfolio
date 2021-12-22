@@ -1,6 +1,18 @@
 /* landing page */
+#landing-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  background: var(--main-bg-color);
+}
+
+p {
+  text-align: center;
+}
+
 #webcam {
-  width: 85vw;
+  width: 95vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -10,28 +22,4 @@
   text-align: center;
   font-style: italic;
   color: var(--header-bg);
-}
-#landing-page {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100vw;
-  background: var(--main-bg-color);
-}
-
-#landing-page p {
-  text-align: center;
-}
-
-#title {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 35px;
-  font-family: "Special Elite", cursive;
-  color: var(--section-header);
-}
-
-nav {
-  text-align: center;
-  padding: 10px;
 }

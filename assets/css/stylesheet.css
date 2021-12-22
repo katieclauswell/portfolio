@@ -1,3 +1,15 @@
+/* Variables */
+:root {
+  /*content background */
+  --main-bg-color: rgb(231, 231, 231);
+  /* button background, subtext, link hover */
+  --header-bg: gray;
+  /* content text */
+  --main-text: black;
+  /* button text, footer and content headers */
+  --section-header: black;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -9,31 +21,43 @@ body {
   font-family: "Helvetica Neue", "Noto Sans ";
 }
 
+p {
+  padding: 10px;
+}
+
+/* Navigation */
 ul {
   list-style: none;
 }
 
-/* Variables */
-:root {
-  /* sky and content background */
-  --main-bg-color: rgb(231, 231, 231);
-  /* button background, subtext, link hover */
-  --header-bg: gray;
-  /* content text */
-  --main-text: black;
-  /* button text, footer and content headers */
-  --section-header: black;
+h1 {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Cormorant", serif;
+  color: var(--section-header);
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 4px 5px 12px 0px rgb(0 0 0 / 25%);
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-text);
+}
+
+a:hover {
+  color: var(--header-bg);
 }
 
 /* Content */
 #content {
-  background-color: var(--main-bg-color);
   padding: 30px;
-}
-p,
-li {
-  color: var(--main-text);
-  text-decoration: none;
 }
 
 h2 {
@@ -85,6 +109,8 @@ h2 {
 .card h3 {
   padding: 10px 0 10px 0;
   color: var(--section-header);
+  text-transform: uppercase;
+  font-style: none;
 }
 
 .card p {
@@ -94,52 +120,56 @@ h2 {
 .card .text {
   padding: 0 5px 5px;
 }
-.text button {
-  background-color: var(--header-bg);
-  color: var(--section-header);
+
+/* buttons */
+button {
+  border: none;
   padding: 10px;
   width: 100%;
   font-size: 15px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+	transition: all 0.3s;
 }
 
-.text button:hover {
-  text-decoration: underline;
-}
-
-/* About Me */
-#headshot {
-  width: 250px;
-  height: auto;
-  opacity: 100%;
-  padding: 20px;
-}
-
-#about-me-section {
-  display: flex;
-  flex-flow: row-reverse;
-}
-
-#bio {
-  padding: 20px;
+button:hover {
+  letter-spacing: 5px;
 }
 
 /* Contact Section */
-a {
-  color: var(--section-header);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--header-bg);
+#contact {
+  display: flex;
+  justify-content: center;
 }
 
 #contact-content {
   margin: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid white;
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   padding: 5px;
   width: fit-content;
+}
+
+/* About Me */
+#headshot {
+  width: 200px;
+  height: auto;
+  opacity: 100%;
+  padding-top: 20px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+
+#about {
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+#bio {
+  padding: 20px;
+  width: 40vw;
 }
 
 /* Footer */
@@ -149,25 +179,3 @@ footer {
   margin: 10px;
   color: var(--section-header);
 }
-
-/* Media Queries */
-@media (max-width: 800px) {
-  nav li {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 0;
-    align-items: center;
-  }
-
-  article {
-    scroll-margin: 45vh;
-    padding: 5px;
-  }
-}
-
-@media all and (max-width: 640px) {
-  #hero {
-    display: none;
-  }
-} ;
