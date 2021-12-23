@@ -5,9 +5,9 @@
   /* button background, subtext, link hover */
   --header-bg: gray;
   /* content text */
-  --main-text: black;
+  --main-text: #43425a
   /* button text, footer and content headers */
-  --section-header: black;
+  --section-header: #43425a
 }
 
 * {
@@ -18,7 +18,7 @@
 
 body {
   background-color: var(--main-bg-color);
-  font-family: "Helvetica Neue", "Noto Sans ";
+  font-family:'Open Sans', sans-serif;
 }
 
 p {
@@ -34,7 +34,7 @@ h1 {
   padding-top: 10px;
   text-align: center;
   font-size: 35px;
-  font-family: "Cormorant", serif;
+  font-family:'Raleway', sans-serif;
   color: var(--section-header);
 }
 
