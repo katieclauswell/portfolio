@@ -2,7 +2,7 @@
 :root {
   /*content background */
   --main-bg-color: rgb(231, 231, 231);
-  /* button background, subtext, link hover */
+  /* button background, subtext, link hover (except contact links) */
   --header-bg: gray;
   /* content text */
   --main-text: #43425a
@@ -43,7 +43,7 @@ nav {
   justify-content: space-evenly;
   padding: 5px;
   background-color: white;
-  box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 25%);
+  box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
 }
 
 a {
@@ -53,6 +53,10 @@ a {
 
 a:hover {
   color: var(--header-bg);
+}
+
+.links a:hover, li:hover {
+  color: white;
 }
 
 /* Content */
@@ -148,7 +152,7 @@ input:hover {
   margin: 10px;
   border: 1px solid white;
   border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
   padding: 5px;
   width: fit-content;
 }
@@ -157,9 +161,7 @@ input:hover {
 #headshot {
   width: 200px;
   height: auto;
-  opacity: 100%;
-  padding-top: 20px;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
 }
 
 #about {
