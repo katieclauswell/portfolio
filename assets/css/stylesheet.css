@@ -1,13 +1,13 @@
 /* Variables */
 :root {
   /*content background */
-  --main-bg-color: rgb(231, 231, 231);
-  /* button background, subtext, link hover (except contact links) */
-  --header-bg: gray;
+  --main-bg-color: #242627;
+  /* button and nav background */
+  --header-bg: #2F3132;
   /* content text */
-  --main-text: #43425a
+  --main-text: #A4A09B;
   /* button text, footer and content headers */
-  --section-header: #43425a
+  --section-header: #73A16F;
 }
 
 * {
@@ -19,6 +19,7 @@
 body {
   background-color: var(--main-bg-color);
   font-family:'Open Sans', sans-serif;
+  color: var(--main-text);
 }
 
 p {
@@ -42,7 +43,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   padding: 5px;
-  background-color: white;
+  background-color: var(--header-bg);
   box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
 }
 
@@ -51,11 +52,7 @@ a {
   color: var(--main-text);
 }
 
-a:hover {
-  color: var(--header-bg);
-}
-
-.links a:hover, li:hover {
+a:hover, li:hover {
   color: white;
 }
 
