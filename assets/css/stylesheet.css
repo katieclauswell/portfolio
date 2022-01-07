@@ -42,6 +42,7 @@ nav {
   flex-direction: column;
   background-color: black;
   text-align: center;
+  opacity: 0.75;
 }
 
 a {
@@ -55,10 +56,26 @@ li:hover {
 }
 
 /* main content */
+h2 {
+  text-align: center;
+  color: var(--section-header);
+}
+
 #content-container {
   display: flex;
   flex-direction: column;
 }
+
+#content {
+  padding: 30px;
+}
+
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
 /* landing page */
 #landing-page {
   display: flex;
@@ -75,28 +92,13 @@ li:hover {
   color: var(--main-text);
   font-size: small;
   background: black;
+  opacity: 0.75;
 }
 
 #intro {
   text-align: center;
   background: black;
-}
-
-/* Content */
-#content {
-  padding: 30px;
-}
-
-h2 {
-  color: var(--section-header);
-  margin-left: 10px;
-}
-
-/* Sections */
-.section-content {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
+  opacity: 0.75;
 }
 
 /* Image hover BROKEN */
@@ -169,6 +171,7 @@ input:hover {
 #contact {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 #contact-content {
@@ -185,17 +188,18 @@ input:hover {
   width: 200px;
   height: auto;
   box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
-  border-radius: 0.25rem;
+  border-radius: 50%;
 }
 
 #about {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 50vh;
 }
 
 #bio {
-  padding: 20px;
+  padding-left: 20px;
   width: 40vw;
 }
 
