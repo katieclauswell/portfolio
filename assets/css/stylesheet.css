@@ -35,14 +35,21 @@ h1 {
   font-size: 35px;
   font-family: "Raleway", sans-serif;
   color: var(--section-header);
+  text-align: center;
+  background: black;
 }
 
 nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
   background-color: black;
   text-align: center;
-  opacity: 0.75;
+  position: fixed;
+  top: -50px;
+  width: 100vw;
+  transition: top 0.3s;
+
 }
 
 a {
