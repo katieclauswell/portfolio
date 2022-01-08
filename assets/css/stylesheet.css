@@ -31,15 +31,7 @@ ul {
 }
 
 /* Navigation */
-h1 {
-  font-size: 35px;
-  font-family: "Raleway", sans-serif;
-  color: var(--section-header);
-  text-align: center;
-  background: black;
-}
-
-nav {
+/* nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -60,6 +52,33 @@ a {
 a:hover,
 li:hover {
   color: var(--section-header);
+} */
+
+/* landing page */
+#landing-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#landing-page-text {
+  background: rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+
+#landing-page-text h1 {
+  font-size: 35px;
+  font-family: "Raleway", sans-serif;
+  color: var(--section-header);
+}
+
+#webcam-title p {
+  font-style: italic;
+  color: var(--main-text);
+  font-size: small;
 }
 
 /* main content */
@@ -83,41 +102,6 @@ h2 {
   font-family: "Raleway", sans-serif;
   color: var(--section-header);
   text-align: center;
-}
-
-/* landing page */
-#landing-page {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#webcam-title p {
-  text-align: center;
-  font-style: italic;
-  color: var(--main-text);
-  font-size: small;
-  background: black;
-  opacity: 0.75;
-}
-
-#intro {
-  text-align: center;
-  background: black;
-  opacity: 0.75;
-}
-
-/* Image hover BROKEN */
-.main-content img {
-  opacity: 50%;
-  transition: opacity ease-in-out 1s;
-}
-
-.main-content img:hover {
-  opacity: 100%;
 }
 
 /* Flex Cards */
