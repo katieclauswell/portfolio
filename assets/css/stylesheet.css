@@ -30,6 +30,16 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: var(--main-text);
+}
+
+a:hover,
+li:hover {
+  color: var(--section-header);
+}
+
 /* Navigation */
 /* nav {
   display: flex;
@@ -43,16 +53,7 @@ ul {
   transition: top 0.3s;
 
 }
-
-a {
-  text-decoration: none;
-  color: var(--main-text);
-}
-
-a:hover,
-li:hover {
-  color: var(--section-header);
-} */
+*/
 
 /* landing page */
 #landing-page {
