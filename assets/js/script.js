@@ -42,7 +42,7 @@ changeBackground = function (webcam) {
   var imgTitle = webcam.result.webcams[i].title;
   var title = document.createElement("div");
   title.setAttribute("id", "webcam-title");
-  title.innerHTML = "<p>The background is randomly generated live image of the mountains in Oregon. <br> This one happens to be in "  + imgTitle + ".</p>"
+  title.innerHTML = "<p>The background is a randomly generated live image of the mountains in Oregon. <br> This one happens to be in "  + imgTitle + ".</p>"
   container.appendChild(title);
 };
 
