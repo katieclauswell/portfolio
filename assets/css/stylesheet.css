@@ -63,11 +63,6 @@ li:hover {
 }
 
 /* main content */
-h2 {
-  text-align: center;
-  color: var(--section-header);
-}
-
 #content-container {
   display: flex;
   flex-direction: column;
@@ -81,6 +76,13 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin: 10px;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  color: var(--section-header);
+  text-align: center;
 }
 
 /* landing page */
