@@ -3,11 +3,11 @@
   /*content background */
   --main-bg-color: #242627;
   /* button and nav background */
-  --header-bg: #2F3132;
+  --header-bg: #2f3132;
   /* content text */
-  --main-text: #A4A09B;
-  /* button text, footer and content headers */
-  --section-header: #73A16F;
+  --main-text: #a4a09b;
+  /* button text, footer and content headers, link hover */
+  --section-header: #73a16f;
 }
 
 * {
@@ -18,7 +18,7 @@
 
 body {
   background-color: var(--main-bg-color);
-  font-family:'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: var(--main-text);
 }
 
@@ -26,25 +26,30 @@ p {
   padding: 10px;
 }
 
-/* Navigation */
 ul {
   list-style: none;
 }
 
+/* Navigation */
 h1 {
-  padding-top: 10px;
-  text-align: center;
   font-size: 35px;
-  font-family:'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: var(--section-header);
+  text-align: center;
+  background: black;
 }
 
 nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  padding: 5px;
-  background-color: var(--header-bg);
-  box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
+  background-color: black;
+  text-align: center;
+  position: fixed;
+  top: -50px;
+  width: 100vw;
+  transition: top 0.3s;
+
 }
 
 a {
@@ -52,25 +57,57 @@ a {
   color: var(--main-text);
 }
 
-a:hover, li:hover {
-  color: white;
+a:hover,
+li:hover {
+  color: var(--section-header);
 }
 
-/* Content */
+/* main content */
+#content-container {
+  display: flex;
+  flex-direction: column;
+}
+
 #content {
   padding: 30px;
 }
 
-h2 {
-  color: var(--section-header);
-  margin-left: 10px;
-}
-
-/* Sections */
 .section-content {
   display: flex;
   flex-wrap: wrap;
   margin: 10px;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  color: var(--section-header);
+  text-align: center;
+}
+
+/* landing page */
+#landing-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#webcam-title p {
+  text-align: center;
+  font-style: italic;
+  color: var(--main-text);
+  font-size: small;
+  background: black;
+  opacity: 0.75;
+}
+
+#intro {
+  text-align: center;
+  background: black;
+  opacity: 0.75;
 }
 
 /* Image hover BROKEN */
@@ -132,7 +169,7 @@ input {
   font-size: 15px;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
-	transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 input:hover {
@@ -143,6 +180,7 @@ input:hover {
 #contact {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 #contact-content {
@@ -159,17 +197,18 @@ input:hover {
   width: 200px;
   height: auto;
   box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
+  border-radius: 50%;
 }
 
 #about {
   display: flex;
-  flex-flow: row-reverse;
   align-items: center;
   justify-content: center;
+  height: 50vh;
 }
 
 #bio {
-  padding: 20px;
+  padding-left: 20px;
   width: 40vw;
 }
 
