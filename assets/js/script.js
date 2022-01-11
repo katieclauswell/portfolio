@@ -34,14 +34,25 @@ changeBackground = function (webcam) {
   //set background
   var container = document.getElementById("landing-page");
   var imgSrc = webcam.result.webcams[i].image.current.preview;
-  container.style.backgroundImage = "url('" + imgSrc + "')"
+
+  // const imgSrc = 'assets/images/dither_it_1333319444.jpeg' //dither test img
+  // container.style.backgroundImage = "url('" + imgSrc + "')"; //original webcam
+  // container.style.backgroundImage = "url('" + ImgSrc + "')";
+
+  var img = new Image();
+  img.onload = function () {
+    eightBit(document.getElementById("mycanvas"), img, 70);
+  };
+  img.src = imgSrc;
 
   //titling img
   var containerText = document.getElementById("landing-page-text");
   var imgTitle = webcam.result.webcams[i].title;
   var title = document.createElement("div");
   title.setAttribute("id", "webcam-title");
-  title.innerHTML = "<p>Randomly generated live background of the mountains in Oregon. <br> This one happens to be in "  + imgTitle + ".</p>"
+  title.innerHTML =
+    "<p>Randomly generated live background of the mountains in Oregon. <br> This one happens to be in " +
+    imgTitle +
+    ".</p>";
   containerText.appendChild(title);
 };
-
