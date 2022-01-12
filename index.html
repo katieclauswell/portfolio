@@ -26,25 +26,15 @@
   </nav> -->
 
   <div id="content-container">
+
     <!-- landing page -->
     <section id="landing-page">
-      <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-      <script src="/ditherjs.dist.js"></script>
-      <script>
-          var options = {
-              "step": 3,
-              "algorithm": "ordered"
-          };
-          window.ditherjs = new DitherJS(options);
-      </script>
-      <img class="dithered-image" onload="ditherjs.dither(this)" src="/assets/images/test-image.jpg" />
-
-
       <div id="landing-page-text">
         <h1>Katie Churchwell</h1>
         <p id="intro">
           I'm a Portland-based Web Developer and I created this site to showcase some of my work.
         </p>
+
       </div>
     </section>
 
@@ -140,9 +130,9 @@
       </div>
     </article>
   </div>
-
-  <script src="assets/js/script.js"></script>
-
+    <!-- javascript -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
 </body>
 <footer>
   © Katie Churchwell | 2022
