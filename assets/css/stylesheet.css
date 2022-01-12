@@ -7,7 +7,7 @@
   /* content text */
   --main-text: #a4a09b;
   /* button text, footer and content headers, link hover */
-  --section-header: #73a16f;
+  --section-header: white;
 }
 
 * {
