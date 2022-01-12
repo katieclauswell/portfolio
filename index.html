@@ -26,10 +26,20 @@
   </nav> -->
 
   <div id="content-container">
-<canvas id="mycanvas"></canvas>
-
     <!-- landing page -->
     <section id="landing-page">
+      <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script src="/ditherjs.dist.js"></script>
+      <script>
+          var options = {
+              "step": 3,
+              "algorithm": "ordered"
+          };
+          window.ditherjs = new DitherJS(options);
+      </script>
+      <img class="dithered-image" onload="ditherjs.dither(this)" src="/assets/images/test-image.jpg" />
+
+
       <div id="landing-page-text">
         <h1>Katie Churchwell</h1>
         <p id="intro">
@@ -132,7 +142,7 @@
   </div>
 
   <script src="assets/js/script.js"></script>
-  <script type="text/javascript" src="https://cdn.rawgit.com/rogeriopvl/8bit/master/8bit.js"></script>
+
 </body>
 <footer>
   © Katie Churchwell | 2022
