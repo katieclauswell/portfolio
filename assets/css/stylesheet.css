@@ -132,17 +132,32 @@ h2 {
 }
 
 /* hover demo */
+/* Chew View */
 #chew-view img:last-child {
   display: none;
 }
 
 #chew-view:hover img:last-child {
-  display: block;
+  display: flex;
 }
 
 #chew-view:hover img:first-child{
   display: none;
 }
+
+/* Work Day Scheduler */
+#work-day-scheduler img:last-child {
+  display: none;
+}
+
+#work-day-scheduler:hover img:last-child {
+  display: flex;
+}
+
+#work-day-scheduler:hover img:first-child{
+  display: none;
+}
+
 /* buttons */
 input {
   border: none;
