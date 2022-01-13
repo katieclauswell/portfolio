@@ -1,3 +1,5 @@
+var container = document.getElementById("landing-page");
+
 //webcam API
 fetch(
   "https://api.windy.com/api/webcams/v2/list/category=mountain/region=US.OR?show=webcams:image",
@@ -13,19 +15,18 @@ fetch(
   });
 });
 
+
+
 randomImage = function (webcam) {
   var max = webcam.result.webcams.length;
   var i = Math.floor(Math.random() * max);
   var imgSrc = webcam.result.webcams[i].image.current.preview;
-  // preload(imgSrc);
-  // console.log(imgSrc);
-};
-
+  imgFormat = `"` + imgSrc + `"`;
+  
+  let kitten;
 //code from codingtrain - thank you!
-let kitten;
-
-function preload() {
-  kitten = loadImage("https://images-webcams.windy.com/74/1582164074/current/preview/1582164074.jpg");
+function preload(imgFormat) {
+  kitten = loadImage(imgFormat);
 }
 
 function setup() {
@@ -115,6 +116,9 @@ function addError(img, factor, x, y, errR, errG, errB) {
 
   setColorAtIndex(img, x, y, clr);
 }
+};
+
+
 
 
 
