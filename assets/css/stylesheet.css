@@ -229,3 +229,47 @@ footer {
   margin: 10px;
   color: var(--section-header);
 }
+
+/* Media Queries */
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+  #landing-page {
+    height: auto;
+    width: 100vw;
+    background-image: none;
+  }
+
+  #landing-page-text h1 {
+    font-size: 60px;
+  }
+  #webcam-title {
+    display: none;
+  }
+  #landing-page-text {
+    width: auto;
+    margin: 0;
+  }
+  #about {
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 30px;
+  }
+  #bio {
+    width: 100vw;
+  }
+  #headshot {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...}
+
+Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
