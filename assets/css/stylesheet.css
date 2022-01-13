@@ -262,10 +262,33 @@ footer {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up)
-@media only screen and (min-width: 600px) {...}
-
-Medium devices (landscape tablets, 768px and up) */
+/* /* Small devices (portrait tablets and large phones, 600px and up)*/
+@media only screen and (min-width: 700px) {
+  #landing-page {
+    height: 35vh;
+    justify-content: center;
+    align-items: center;
+  }
+  #landing-page-text {
+    width: 90vw;
+  }
+  #landing-page h1 {
+    font-size: 70px;
+  }
+  #intro {
+    font-size: 35px;
+  }
+  #webcam-title p {
+    font-size: 20px;
+  }
+  #about {
+    height: 40vh;
+  }
+  .section-content {
+    margin: 0px;
+}
+}
+/* Medium devices (landscape tablets, 768px and up) */
 /* @media only screen and (min-width: 768px) {...} */
 
 /* Large devices (laptops/desktops, 992px and up) */
