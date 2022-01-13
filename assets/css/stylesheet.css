@@ -40,21 +40,6 @@ li:hover {
   color: var(--section-header);
 }
 
-/* Navigation */
-/* nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  background-color: black;
-  text-align: center;
-  position: fixed;
-  top: -50px;
-  width: 100vw;
-  transition: top 0.3s;
-
-}
-*/
-
 /* landing page */
 #landing-page {
   display: flex;
@@ -146,6 +131,18 @@ h2 {
   padding: 0 5px 5px;
 }
 
+/* hover demo */
+#chew-view img:last-child {
+  display: none;
+}
+
+#chew-view:hover img:last-child {
+  display: block;
+}
+
+#chew-view:hover img:first-child{
+  display: none;
+}
 /* buttons */
 input {
   border: none;
