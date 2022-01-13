@@ -8,6 +8,9 @@
   --main-text: #a4a09b;
   /* button text, footer and content headers, link hover */
   --section-header: white;
+  /* fonts */
+  --main-font: "Open Sans", sans-serif;
+  --header-font: "Raleway", sans-serif;
 }
 
 * {
@@ -18,7 +21,7 @@
 
 body {
   background-color: var(--main-bg-color);
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--main-font);
   color: var(--main-text);
 }
 
@@ -43,7 +46,7 @@ li:hover {
 /* landing page */
 #landing-page {
   display: flex;
-  justify-content: center;
+  align-items: flex-end;
   flex-direction: column;
   height: 100vh;
   background-repeat: no-repeat;
@@ -53,18 +56,28 @@ li:hover {
 #landing-page-text {
   background: rgba(0, 0, 0, 0.75);
   text-align: center;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
+  padding: 5px;
+  width: 450px;
 }
 
 #landing-page-text h1 {
-  font-size: 35px;
-  font-family: "Raleway", sans-serif;
+  font-size: 45px;
+  font-family: var(--header-font);
   color: var(--section-header);
+}
+
+#landing-page-test p {
+  font-size: 30px;
 }
 
 #webcam-title p {
   font-style: italic;
   color: var(--main-text);
-  font-size: small;
+  font-size: 12px;
 }
 
 /* main content */
@@ -85,7 +98,7 @@ li:hover {
 
 h2 {
   font-size: 25px;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--header-font);
   color: var(--section-header);
   text-align: center;
 }
@@ -141,7 +154,7 @@ h2 {
   display: flex;
 }
 
-#chew-view:hover img:first-child{
+#chew-view:hover img:first-child {
   display: none;
 }
 
@@ -154,7 +167,7 @@ h2 {
   display: flex;
 }
 
-#work-day-scheduler:hover img:first-child{
+#work-day-scheduler:hover img:first-child {
   display: none;
 }
 
