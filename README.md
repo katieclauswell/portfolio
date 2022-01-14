@@ -6,9 +6,12 @@ To see where I'm currently at, you can check out the deployed site [here](https:
 
 ## Aspirational Features
 - Using GAN to generate headshots each time the user refreshes the page.
-- Upgrade hero to something a bit cooler. Some ideas:
+- Upgrade the landing page to something a bit cooler. Some ideas:
   - Dynamic based on current weather.
   - Parallax artwork.
   - P5.js artwork with movement.
+
+## Credits
+A big shoutout to [anderoonies](https://github.com/anderoonies) for helping me with the dithering on the webcam image. :raised_hands:	
 
 Thanks for stopping by! :v:

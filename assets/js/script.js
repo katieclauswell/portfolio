@@ -1,42 +1,51 @@
 var container = document.getElementById("landing-page");
+var containerText = document.getElementById("landing-page-text");
 
-//webcam API
-fetch(
-  "https://api.windy.com/api/webcams/v2/list/category=mountain/region=US.OR?show=webcams:image",
-  {
-    method: "GET",
-    headers: {
-      "x-windy-key": "fRBdejZXV9tukKAYkPngOtGOg0bYrvV9",
-    },
-  }
-).then(function (response) {
-  response.json().then(function (webcam) {
-    randomImage(webcam);
-  });
-});
-
-
+let img;
 
 randomImage = function (webcam) {
+  //random selection
   var max = webcam.result.webcams.length;
   var i = Math.floor(Math.random() * max);
   var imgSrc = webcam.result.webcams[i].image.current.preview;
-  imgFormat = `"` + imgSrc + `"`;
-  
-  let kitten;
-//code from codingtrain - thank you!
-function preload(imgFormat) {
-  kitten = loadImage(imgFormat);
-}
+  //subtitle
+  var imgTitle = webcam.result.webcams[i].title;
+  var title = document.createElement("div");
+  title.setAttribute("id", "webcam-title");
+  title.innerHTML =
+    "<p>Randomly generated live background of the mountains in Oregon. <br> This one happens to be in " +
+    imgTitle +
+    ".</p>";
+  containerText.appendChild(title);
+  //dithering init
+  img = loadImage(imgSrc, () => {
+    makeDithered(img, 4);
+  });
+};
 
 function setup() {
-  let canvas = createCanvas(500, 500);
+  let canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent(container);
+  //webcam API
+  fetch(
+    "https://api.windy.com/api/webcams/v2/list/category=mountain/region=US.OR?show=webcams:image",
+    {
+      method: "GET",
+      headers: {
+        "x-windy-key": "fRBdejZXV9tukKAYkPngOtGOg0bYrvV9",
+      },
+    }
+  ).then(function (response) {
+    response.json().then(function (webcam) {
+      randomImage(webcam);
+    });
+  });
+}
 
-  makeDithered(kitten, 1);
-  image(kitten, 0, 0);
-  // Apply gray filter to the whole canvas
-  filter(GRAY);
+function draw() {
+  if (img) {
+    image(img, 0, 0, width, height);
+  }
 }
 
 function imageIndex(img, x, y) {
@@ -54,6 +63,7 @@ function getColorAtindex(img, x, y) {
 }
 
 function setColorAtIndex(img, x, y, clr) {
+  // return;
   let idx = imageIndex(img, x, y);
 
   let pix = img.pixels;
@@ -72,7 +82,6 @@ function closestStep(max, steps, value) {
 
 function makeDithered(img, steps) {
   img.loadPixels();
-
   for (let y = 0; y < img.height; y++) {
     for (let x = 0; x < img.width; x++) {
       let clr = getColorAtindex(img, x, y);
@@ -116,28 +125,3 @@ function addError(img, factor, x, y, errR, errG, errB) {
 
   setColorAtIndex(img, x, y, clr);
 }
-};
-
-
-
-
-
-
-// SET BACKGROUND
-
-// var imgSrc = webcam.result.webcams[i].image.current.preview;
-// var image = document.createElement("img");
-// const imgSrc = 'assets/images/dither-test.jpeg' //dither test img
-// container.style.backgroundImage = "url('" + imgSrc + "')"; //original webcam
-// container.style.backgroundImage = "url('" + ImgSrc + "')";
-
-//titling img
-// var containerText = document.getElementById("landing-page-text");
-// var imgTitle = webcam.result.webcams[i].title;
-// var title = document.createElement("div");
-// title.setAttribute("id", "webcam-title");
-// title.innerHTML =
-//   "<p>Randomly generated live background of the mountains in Oregon. <br> This one happens to be in " +
-//   imgTitle +
-//   ".</p>";
-// containerText.appendChild(title);
