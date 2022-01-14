@@ -231,8 +231,8 @@ footer {
 }
 
 /* Media Queries */
-/* Small devices (phones, 600px and down) */
-@media only screen and (max-width: 700px) {
+/* Mobile */
+@media screen and (max-width: 575px) {
   #landing-page {
     height: auto;
     width: 100vw;
@@ -262,48 +262,14 @@ footer {
   }
 }
 
-/* /* Small devices (portrait tablets and large phones, 600px and up)*/
-@media only screen and (min-width: 700px) {
+/* Tablets */
+@media only screen and (max-width: 1280px) {
   #landing-page {
-    height: 35vh;
     justify-content: center;
     align-items: center;
   }
-  #landing-page-text {
-    width: 90vw;
-  }
-  #landing-page h1 {
-    font-size: 70px;
-  }
-  #intro {
-    font-size: 35px;
-  }
-  #webcam-title p {
-    font-size: 20px;
-  }
-  #about {
-    height: 40vh;
-  }
-  .section-content {
-    margin: 0px;
-}
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  #landing-page {
-    height: 55vh;
-  }
-  #bio {
-    padding: 30px;
-    width: auto;
-  }
-  #headshot {
-    display: none;
-  }
-  #portfolio {
-    display: none;
-  }
-  #contact-content {
-    width: 35vw;
+  .card {
+    max-width: 40vw;
+    min-width: auto;
   }
 }
