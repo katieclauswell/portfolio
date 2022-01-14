@@ -46,22 +46,16 @@ li:hover {
 /* landing page */
 #landing-page {
   display: flex;
+  flex-direction: row-reverse;
+  padding-bottom: 20px;
   align-items: flex-end;
-  flex-direction: column;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #landing-page-text {
-  background: rgba(0, 0, 0, 0.75);
-  text-align: center;
-  margin: 10px;
-  border: 1px solid white;
-  border-radius: 0.25rem;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 10px;
   box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
-  padding: 5px;
-  width: 450px;
+  height: 100vh;
 }
 
 #landing-page-text h1 {
@@ -70,8 +64,8 @@ li:hover {
   color: var(--section-header);
 }
 
-#landing-page-test p {
-  font-size: 30px;
+#intro {
+  font-size: 25px;
 }
 
 #webcam-title p {
@@ -228,48 +222,4 @@ footer {
   font-size: 12px;
   margin: 10px;
   color: var(--section-header);
-}
-
-/* Media Queries */
-/* Mobile */
-@media screen and (max-width: 575px) {
-  #landing-page {
-    height: auto;
-    width: 100vw;
-    background-image: none;
-  }
-
-  #landing-page-text h1 {
-    font-size: 60px;
-  }
-  #webcam-title {
-    display: none;
-  }
-  #landing-page-text {
-    width: auto;
-    margin: 0;
-  }
-  #about {
-    flex-direction: column-reverse;
-    height: auto;
-    padding-top: 30px;
-  }
-  #bio {
-    width: 100vw;
-  }
-  #headshot {
-    display: none;
-  }
-}
-
-/* Tablets */
-@media only screen and (max-width: 1280px) {
-  #landing-page {
-    justify-content: center;
-    align-items: center;
-  }
-  .card {
-    max-width: 40vw;
-    min-width: auto;
-  }
 }
