@@ -1,4 +1,4 @@
-/* Variables */
+/* variables */
 :root {
   /*content background */
   --main-bg-color: #242627;
@@ -25,10 +25,6 @@ body {
   color: var(--main-text);
 }
 
-p {
-  padding: 10px;
-}
-
 ul {
   list-style: none;
 }
@@ -48,7 +44,7 @@ li:hover {
   display: flex;
   flex-direction: row-reverse;
   padding-bottom: 20px;
-  align-items: flex-end;
+  position: sticky;
 }
 
 #landing-page-text {
@@ -56,11 +52,17 @@ li:hover {
   padding: 10px;
   box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
   height: 100vh;
+  position: fixed;
+  width: 20vw;
 }
 
 #landing-page-text h1 {
   font-size: 45px;
   font-family: var(--header-font);
+  position: relative;
+}
+
+#landing-page-text h1 a{
   color: var(--section-header);
 }
 
@@ -95,6 +97,11 @@ h2 {
   font-family: var(--header-font);
   color: var(--section-header);
   text-align: center;
+}
+
+/* Portfolio */
+#portfolio {
+  width: 80vw;
 }
 
 /* Flex Cards */
@@ -208,7 +215,8 @@ input:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 100vh;
+  width: 80vw;
 }
 
 #bio {
