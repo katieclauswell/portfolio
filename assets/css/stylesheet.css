@@ -38,6 +38,11 @@ a:hover {
   color: var(--section-header);
 }
 
+/* scrolling */
+/* .after-scroll {
+  width: 100vw;
+} */
+
 /* landing page */
 #landing-page {
   display: flex;
@@ -45,7 +50,7 @@ a:hover {
   padding-bottom: 20px;
   background-color: black;
   height: 100vh;
-  transition: 0.4s;
+  transition: 1s;
 }
 
 #landing-page-text {
@@ -53,7 +58,7 @@ a:hover {
   padding: 10px;
   height: 100vh;
   width: 20vw;
-  transition: 0.4s;
+  transition: 1s;
 }
 
 #landing-page-text h1 {
