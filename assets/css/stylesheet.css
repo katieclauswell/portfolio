@@ -48,18 +48,6 @@ h2 {
   text-align: center;
 }
 
-/* scrolling */
-.after-scroll {
-  /* position: sticky;
-  top: 0; */
-  width: 100vw;
-  /* height: fit-content; */
-  /* transition: 0.4s;
-  background-color: black; */
-  padding-bottom: 10px;
-  /* display: flex; */
-}
-
 /* landing page */
 #landing-page {
   display: flex;
@@ -68,35 +56,6 @@ h2 {
   background-color: black;
   /* height: fit-content; */
   transition: 0.4s;
-}
-
-#landing-page-text {
-  background: rgba(0, 0, 0, 0.85);
-  padding: 10px;
-  height: 100vh;
-  width: 20vw;
-}
-
-#landing-page-text h1 {
-  font-size: 45px;
-  font-family: var(--header-font);
-  background: -webkit-linear-gradient(var(--link), var(--section-header));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#landing-page-text h1 a{
-  color: var(--section-header);
-}
-
-#intro {
-  font-size: 25px;
-}
-
-#webcam-title p {
-  font-style: italic;
-  color: var(--main-text);
-  font-size: 12px;
 }
 
 /* main content */
@@ -109,190 +68,10 @@ h2 {
   padding: 30px;
 }
 
-.section-content {
+.portfolio-content {
   display: flex;
   flex-wrap: wrap;
   margin: 10px;
-}
-
-/* Switch */
-#language-toggle {
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  justify-content: flex-end;
-}
-/* The switch - the box around the slider */
-#switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  margin: 10px;
-}
-
-/* Hide default HTML checkbox */
-#switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.html {
-  color: var(--link);
-  transition: 0.4s;
-}
-
-.match {
-  transition: 0.4s;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: black;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #f9ff00;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #f9ff00;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-/* Flex Cards */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
-.card {
-  flex: 1;
-  margin: 10px;
-  border: 1px solid #ccc;
-  border-radius: 0.25rem;
-  box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
-  flex-grow: 1;
-  padding: 5px;
-  height: fit-content;
-  min-width: 250px;
-}
-
-.card:nth-child(1) {
-  flex: 2;
-}
-
-.card img {
-  width: 100%;
-  flex: 1;
-}
-
-.card h3 {
-  padding: 10px 0 10px 0;
-  color: var(--section-header);
-  text-transform: uppercase;
-  font-style: none;
-}
-
-.card p {
-  padding: 0 0 10px;
-}
-
-.card .text {
-  padding: 0 5px 5px;
-}
-
-/* hover demo */
-/* Chew View */
-#chew-view img:last-child {
-  display: none;
-}
-
-#chew-view:hover img:last-child {
-  display: flex;
-}
-
-#chew-view:hover img:first-child {
-  display: none;
-}
-
-/* Work Day Scheduler */
-#work-day-scheduler img:last-child {
-  display: none;
-}
-
-#work-day-scheduler:hover img:last-child {
-  display: flex;
-}
-
-#work-day-scheduler:hover img:first-child {
-  display: none;
-}
-
-/* buttons */
-input {
-  border: none;
-  padding: 10px;
-  width: 100%;
-  font-size: 15px;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  text-transform: uppercase;
-  transition: all 0.3s;
-}
-
-input:hover {
-  letter-spacing: 2px;
-}
-
-/* Contact Section */
-#contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#contact-content {
-  margin: 10px;
-  border: 1px solid white;
-  border-radius: 0.25rem;
-  box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
-  padding: 5px;
-  width: fit-content;
 }
 
 /* About Me */
@@ -307,12 +86,32 @@ input:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px;
+  padding: 40px;
 }
 
 #bio {
   padding-left: 20px;
-  width: 40vw;
+  width: 90vw;
+}
+
+#about-style {
+  background-color: black;
+}
+/* Contact Section */
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-content {
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
+  padding: 5px;
+  width: fit-content;
 }
 
 /* Footer */

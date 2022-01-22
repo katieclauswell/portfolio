@@ -10,7 +10,6 @@ randomImage = function (webcam) {
     (webcams) => webcams.id === "1614363511"
   );
   webcams.splice(redmondIndex, 1);
-  console.log(webcams);
   //random selection
   var max = webcams.length;
   var i = Math.floor(Math.random() * max);
