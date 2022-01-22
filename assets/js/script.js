@@ -1,15 +1,10 @@
 let cardBody = document.getElementsByClassName("text");
 
-// let html = body.search("HTML")
-
-// html.addAttribute("class", "html");
-
-//loop through
-// search "[i].innerText" for keyword
-//apply styling?
+const languages = /HTML|JavaScript|JQuery|CSS|API/gi
 
 for (i = 0; i < cardBody.length; i++) {
-    var cardText = cardBody[i].innerHTML;
-    var res = cardText.replace("HTML", "<span class='html'>HTML</span>");
-    cardBody[i].innerHTML = res;
+  var cardText = cardBody[i].innerHTML;
+  var res = cardText.replace(languages, function(matched) {
+      return "<span class='html'>" + matched + "</span>"});
+  cardBody[i].innerHTML = res;
 }
