@@ -3,20 +3,30 @@ let cardBody = document.getElementsByClassName("text");
 
 const languages = /HTML|JavaScript|JQuery|CSS|API/gi;
 
-languageToggle.addEventListener("click", function () {
+//find every language and add style class
+function initialSpan() {
   for (i = 0; i < cardBody.length; i++) {
     var cardText = cardBody[i].innerHTML;
-    if (cardText.includes("<span class=")) {
-      var reset = cardText.replace(' class="html"', "");
-      cardBody[i].innerHTML = reset;
-    } else if (cardText.includes("<span>")) {
-      var add = cardText.replace("<span>, '<span class='html'>");
-      cardBody[i].innerHTML = add;
-    } else {
-      var start = cardText.replace(languages, function (matched) {
-        return "<span class='html'>" + matched + "</span>";
-      });
-      cardBody[i].innerHTML = start;
+    var initial = cardText.replace(languages, function (matched) {
+      return "<span class='match'>" + matched + "</span>";
+    });
+    cardBody[i].innerHTML = initial;
+  }
+}
+
+initialSpan();
+
+languageToggle.addEventListener("click", function () {
+  var matches = document.getElementsByClassName("match");
+  var styled = document.getElementsByClassName("html");
+
+  if (matches.length > 0) {
+    while (matches.length > 0) {
+      matches[0].className = "html";
+    }
+  } else {
+    while (styled.length > 0) {
+      styled[0].className = "match";
     }
   }
 });
