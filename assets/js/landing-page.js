@@ -4,12 +4,19 @@ var containerText = document.getElementById("landing-page-text");
 let img;
 
 randomImage = function (webcam) {
+  var webcams = webcam.result.webcams;
+  //exclude Redmond (id=1614363511)
+  var redmondIndex = webcams.findIndex(
+    (webcams) => webcams.id === "1614363511"
+  );
+  webcams.splice(redmondIndex, 1);
+  console.log(webcams);
   //random selection
-  var max = webcam.result.webcams.length;
+  var max = webcams.length;
   var i = Math.floor(Math.random() * max);
-  var imgSrc = webcam.result.webcams[i].image.current.preview;
+  var imgSrc = webcams[i].image.current.preview;
   //subtitle
-  var imgTitle = webcam.result.webcams[i].title;
+  var imgTitle = webcams[i].title;
   var title = document.createElement("div");
   title.setAttribute("id", "webcam-title");
   title.innerHTML =
@@ -28,7 +35,7 @@ function setup() {
   canvas.parent(container);
   //webcam API
   fetch(
-    "https://api.windy.com/api/webcams/v2/list/category=mountain/region=US.OR?show=webcams:image",
+    "https://api.windy.com/api/webcams/v2/list/category=mountain/region=US.OR/?show=webcams:image",
     {
       method: "GET",
       headers: {
