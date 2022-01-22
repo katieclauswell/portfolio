@@ -40,6 +40,11 @@ a:hover {
   color: var(--link);
 }
 
+.html {
+  color: var(--link);
+  transition: 0.4s;
+}
+
 /* only "Let's Connect!" right now */
 h2 {
   font-size: 25px;
