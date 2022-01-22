@@ -15,6 +15,10 @@
   --header-font: "Raleway", sans-serif;
 }
 
+.html {
+  color: var(--link);
+}
+
 * {
   margin: 0px;
   padding: 0px;
