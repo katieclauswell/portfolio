@@ -40,11 +40,6 @@ a:hover {
   color: var(--link);
 }
 
-.html {
-  color: var(--link);
-  transition: 0.4s;
-}
-
 /* only "Let's Connect!" right now */
 h2 {
   font-size: 25px;
@@ -132,6 +127,15 @@ h2 {
 }
 
 /* The slider */
+.html {
+  color: var(--link);
+  transition: 0.4s;
+}
+
+.match {
+  transition: 0.4s;
+}
+
 .slider {
   position: absolute;
   cursor: pointer;
@@ -203,6 +207,7 @@ input:checked + .slider:before {
 
 .card img {
   width: 100%;
+  flex: 1;
 }
 
 .card h3 {
