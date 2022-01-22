@@ -6,8 +6,10 @@
   --header-bg: #2f3132;
   /* content text */
   --main-text: #a4a09b;
-  /* button text, footer and content headers, link hover */
-  --section-header: white;
+  /* card titles, footer and link hover */
+  --section-header: #05f3ff;
+  /* link hover */
+  --link: #f9ff00;
   /* fonts */
   --main-font: "Open Sans", sans-serif;
   --header-font: "Raleway", sans-serif;
@@ -35,7 +37,15 @@ a {
 }
 
 a:hover {
+  color: var(--link);
+}
+
+/* only "Let's Connect!" right now */
+h2 {
+  font-size: 25px;
+  font-family: var(--header-font);
   color: var(--section-header);
+  text-align: center;
 }
 
 /* landing page */
@@ -58,7 +68,9 @@ a:hover {
 #landing-page-text h1 {
   font-size: 45px;
   font-family: var(--header-font);
-  color: white;
+  background: -webkit-linear-gradient(var(--link), var(--section-header));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #landing-page-text h1 a{
@@ -89,13 +101,6 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   margin: 10px;
-}
-
-h2 {
-  font-size: 20px;
-  font-family: var(--header-font);
-  color: var(--section-header);
-  text-align: center;
 }
 
 /* Flex Cards */
