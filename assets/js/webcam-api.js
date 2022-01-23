@@ -1,5 +1,5 @@
 var container = document.getElementById("landing-page");
-var containerText = document.getElementById("landing-page-text");
+var containerText = document.getElementById("intro");
 
 let img;
 
