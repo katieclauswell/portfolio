@@ -28,29 +28,7 @@
   font-size: 12px;
 }
 
-.panel {
-  width: 80vw;
-  height: 100vh;
-  z-index: 0;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-transition: -webkit-transform 0.6s ease-in-out;
-
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
 /* scrolling */
 html {
   scroll-behavior: smooth;
 }
-
-/* a[ id= "about" ]:target ~ section.panel {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-} */
-
-/* a[ id= "portfolio" ]:target ~ section.panel {
-    -webkit-transform: translateY(-100vh);
-    transform: translateY(-100vh);
-} */

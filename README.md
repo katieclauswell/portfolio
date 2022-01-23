@@ -15,9 +15,8 @@ That image is then populated into a [p5.js](https://p5js.org) canvas where the F
 I am forever changing my mind about what this site will look like (perhaps it will always change!) but the following is a list of ideas I may or may not do:
 - Using GAN to generate headshots each time the user refreshes the page (inspired by [@monolesan](https://twitter.com/monolesan))
 - Changing landing page graphic:
-  - Dynamic based on current weather
+  - Dynamic artwork based on current weather
   - Dark mode toggle that switches visual to space/night sky
-  - Parallax artwork
-  - p5.js artwork with movement
+  - Change dithering to CSS only/faster solution
 
 Thanks for stopping by! :v:
