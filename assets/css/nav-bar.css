@@ -47,6 +47,15 @@ nav li {
   font-size: 12px;
 }
 
+#inside {
+  background-color: black;
+}
+
+#window {
+  height: 100vh;
+  position: absolute;
+}
+
 /* scrolling */
 html {
   scroll-behavior: smooth;
