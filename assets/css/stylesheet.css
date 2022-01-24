@@ -46,6 +46,10 @@ h2 {
   text-align: center;
 }
 
+h4 {
+  font-weight: 200;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -62,4 +66,27 @@ footer {
 
 #content {
   padding: 30px;
+}
+
+/* media queries */
+@media (max-width: 700px) {
+  #defaultCanvas0 {
+    display: none;
+  }
+  #webcam-title {
+    display: none;
+  }
+  #intro {
+    width: 100vw;
+    right: 0;
+    top: 50;
+  }
+  /* about section */
+  #about {
+    display: block;
+    padding-top: 200px;
+  }
+  #headshot {
+    width: 200px;
+  }
 }
