@@ -19,7 +19,7 @@ randomImage = function (webcam) {
   var title = document.createElement("div");
   title.setAttribute("id", "webcam-title");
   title.innerHTML =
-    "<p>< Randomly generated live background of the mountains in Oregon. This one happens to be in " +
+    "<p>Randomly generated live background of the mountains in Oregon.</p><p>This one happens to be in " +
     imgTitle +
     ".</p>";
   containerText.appendChild(title);

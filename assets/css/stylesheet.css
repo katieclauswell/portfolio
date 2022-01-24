@@ -1,17 +1,17 @@
 /* variables */
 :root {
   /*content background */
-  --main-bg-color: #E9E3E6;
+  --main-bg: #e9e3e6;
   /* button and nav background */
-  --header-bg: #4C5454;
+  --header-bg: #4c5454;
   /* about me bg */
-  --accent-bg: #484D6D;
+  --accent-bg: white;
   /* content text */
   --main-text: black;
-  /* card titles, footer and link hover */
-  --accent-text: #1EA896;
-  /* link hover, languages need to be changed in script.js */
-  --link: #FF715B;
+  /* card titles, footer, nav bar, "Let's Connect" */
+  --accent-text: #1ea896;
+  /* link hover, languages (need to be changed in script.js), intro */
+  --link: #ff715b;
   /* fonts */
   --main-font: "Open Sans", sans-serif;
   --header-font: "Raleway", sans-serif;
@@ -24,7 +24,7 @@
 }
 
 body {
-  background-color: var(--main-bg-color);
+  background-color: var(--main-bg);
   font-family: var(--main-font);
   color: var(--main-text);
 }
@@ -38,7 +38,7 @@ a:hover {
   color: var(--link);
 }
 
-/* only "Let's Connect!" right now */
+/* only used in about me section*/
 h2 {
   font-size: 25px;
   font-family: var(--header-font);
@@ -52,4 +52,14 @@ footer {
   font-size: 12px;
   margin: 10px;
   color: var(--accent-text);
+}
+
+/* main content */
+#content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  padding: 30px;
 }
