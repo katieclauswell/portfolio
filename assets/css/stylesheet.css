@@ -2,13 +2,11 @@
 :root {
   /*content background */
   --main-bg: #e9e3e6;
-  /* button and nav background */
-  --header-bg: #4c5454;
   /* about me bg */
   --accent-bg: white;
   /* content text */
   --main-text: black;
-  /* card titles, footer, nav bar, "Let's Connect" */
+  /* card titles, footer, "Let's Connect" */
   --accent-text: #1ea896;
   /* link hover, languages (need to be changed in script.js), intro */
   --link: #ff715b;

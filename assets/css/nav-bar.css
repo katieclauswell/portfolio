@@ -4,12 +4,13 @@
 } */
 
 nav {
-  background: var(--accent-text);
+  background: white;
   padding: 10px;
   height: fit-content;
   width: 100vw;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 
 ul {
@@ -39,6 +40,7 @@ nav li {
   right: 40;
   padding: 5px;
   top: 100;
+  z-index: 1;
 }
 
 #webcam-title p {
@@ -46,14 +48,19 @@ nav li {
   color: var(--main-text);
   font-size: 12px;
 }
-
 #inside {
+  display: inline-flex;
+  position: absolute;
+}
+
+#wall {
   background-color: black;
+  width: 100vw;
+  height: 100vh;
 }
 
 #window {
   height: 100vh;
-  position: absolute;
 }
 
 /* scrolling */

@@ -24,7 +24,8 @@ randomImage = function (webcam) {
     ".</p>";
   containerText.appendChild(title);
   //dithering init
-  img = loadImage(imgSrc, () => {
+  img = loadImage(imgSrc
+  , () => {
     makeDithered(img, 4);
   });
 };
