@@ -1,15 +1,15 @@
 /* variables */
 :root {
   /*content background */
-  --main-bg-color: #242627;
-  /* button and nav background */
-  --header-bg: #2f3132;
+  --main-bg: #e9e3e6;
+  /* about me bg */
+  --accent-bg: white;
   /* content text */
-  --main-text: #a4a09b;
-  /* card titles, footer and link hover */
-  --section-header: #05f3ff;
-  /* link hover, languages need to be changed in script.js */
-  --link: #f9ff00;
+  --main-text: black;
+  /* card titles, footer, "Let's Connect" */
+  --accent-text: #1ea896;
+  /* link hover, languages (need to be changed in script.js), intro */
+  --link: #ff715b;
   /* fonts */
   --main-font: "Open Sans", sans-serif;
   --header-font: "Raleway", sans-serif;
@@ -22,13 +22,9 @@
 }
 
 body {
-  background-color: var(--main-bg-color);
+  background-color: var(--main-bg);
   font-family: var(--main-font);
   color: var(--main-text);
-}
-
-ul {
-  list-style: none;
 }
 
 a {
@@ -40,43 +36,41 @@ a:hover {
   color: var(--link);
 }
 
-/* only "Let's Connect!" right now */
-h2 {
-  font-size: 25px;
-  font-family: var(--header-font);
-  color: var(--section-header);
-  text-align: center;
+li {
+  list-style: none;
 }
 
-/* landing page */
+/* Landing Page */
+.bg-light {
+  background-color: rgba(var(--bs-light-rgb), 0.9) !important;
+}
+
 #landing-page {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-bottom: 20px;
-  background-color: black;
-  /* height: fit-content; */
-  transition: 0.4s;
+  height: 100vh;
+  width: 100vw;
 }
 
-/* main content */
-#content-container {
-  display: flex;
-  flex-direction: column;
+#intro {
+  position: absolute;
+  right: 5vw;
+  top: 10vw;
+  padding: 10px;
+  opacity: 0.75;
 }
 
-#content {
-  padding: 30px;
+#intro h1 {
+  font-family: var(--header-font);
 }
 
-.portfolio-content {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
+#webcam-title p {
+  font-style: italic;
+  color: var(--main-text);
+  font-size: 12px;
 }
 
 /* About Me */
 #headshot {
-  width: 200px;
+  width: 250px;
   height: auto;
   box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
   border-radius: 50%;
@@ -84,44 +78,45 @@ h2 {
 
 #about {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 100px;
-  background-color: #141313;
-  width: 80vw;
-  height: fit-content;
-  flex-wrap:wrap;
+  padding: 40px;
+  background-color: var(--accent-bg);
 }
 
 #bio {
   padding-left: 20px;
-  width: 40vw;
 }
 
-#about-style {
-  background-color: black;
-}
-/* Contact Section */
-#contact {
+/* Skills & Tolls */
+#languages {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 40px;
 }
 
-#contact-content {
-  border: 1px solid white;
-  border-radius: 0.25rem;
-  box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
-  padding: 5px;
+#languages .card {
   width: fit-content;
+  background: transparent;
+  padding: 25px;
+  align-items: center;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  font-size: 12px;
-  margin: 10px;
-  color: var(--section-header);
+/* Portfolio */
+#portfolio {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
+
+/* Contact */
+#contact {
+  width: 30vw;
+}
+
+/* .angle {
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 20vh solid black;
+  border-left: 70vw solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+} */

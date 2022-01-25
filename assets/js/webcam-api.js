@@ -1,5 +1,5 @@
 var container = document.getElementById("landing-page");
-var containerText = document.getElementById("landing-page-text");
+var containerText = document.getElementById("intro");
 
 let img;
 
@@ -19,12 +19,13 @@ randomImage = function (webcam) {
   var title = document.createElement("div");
   title.setAttribute("id", "webcam-title");
   title.innerHTML =
-    "<p>< Randomly generated live background of the mountains in Oregon. This one happens to be in " +
+    "<p>Randomly generated live background of the mountains in Oregon.</p><p>This one happens to be in " +
     imgTitle +
     ".</p>";
   containerText.appendChild(title);
   //dithering init
-  img = loadImage(imgSrc, () => {
+  img = loadImage(imgSrc
+  , () => {
     makeDithered(img, 4);
   });
 };
