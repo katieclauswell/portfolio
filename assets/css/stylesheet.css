@@ -48,6 +48,10 @@ h4 {
   font-weight: 200;
 }
 
+li {
+  list-style: none;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -66,25 +70,38 @@ footer {
   padding: 30px;
 }
 
-/* media queries */
-@media (max-width: 700px) {
-  #defaultCanvas0 {
-    display: none;
-  }
-  #webcam-title {
-    display: none;
-  }
-  #intro {
-    width: 100vw;
-    right: 0;
-    top: 50;
-  }
-  /* about section */
-  #about {
-    display: block;
-    padding-top: 200px;
-  }
-  #headshot {
-    width: 200px;
-  }
+/* Landing Page */
+#intro {
+  font-size: 25px;
+  width: 300px;
+  height: fit-content;
+  position: absolute;
+  background: var(--main-bg);
+  border-radius: 0.25rem;
+  box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
+  right: 40;
+  padding: 5px;
+  top: 100;
+  z-index: 1;
+}
+
+#webcam-title p {
+  font-style: italic;
+  color: var(--main-text);
+  font-size: 12px;
+}
+
+/* About Me */
+#headshot {
+  width: 250px;
+  height: auto;
+  box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
+  border-radius: 50%;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  background-color: var(--accent-bg);
 }
