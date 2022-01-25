@@ -41,11 +41,25 @@ li {
 }
 
 /* Landing Page */
+.bg-light {
+  background-color: rgba(var(--bs-light-rgb), 0.9) !important;
+}
+
+#landing-page {
+  height: 100vh;
+  width: 100vw;
+}
+
 #intro {
   position: absolute;
   right: 5vw;
   top: 10vw;
   padding: 10px;
+  opacity: 0.75;
+}
+
+#intro h1 {
+  font-family: var(--header-font);
 }
 
 #webcam-title p {
@@ -70,6 +84,19 @@ li {
 
 #bio {
   padding-left: 20px;
+}
+
+/* Skills & Tolls */
+#languages {
+  display: flex;
+  justify-content: center;
+}
+
+#languages .card {
+  width: fit-content;
+  background: transparent;
+  padding: 25px;
+  align-items: center;
 }
 
 /* Portfolio */
