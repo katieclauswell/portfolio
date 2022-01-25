@@ -46,6 +46,7 @@ li {
   position: absolute;
   right: 5vw;
   top: 10vw;
+  padding: 10px;
 }
 
 #webcam-title p {
@@ -64,7 +65,6 @@ li {
 
 #about {
   display: flex;
-  align-items: center;
   padding: 40px;
   background-color: var(--accent-bg);
 }
