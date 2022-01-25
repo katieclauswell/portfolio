@@ -36,53 +36,16 @@ a:hover {
   color: var(--link);
 }
 
-/* only used in about me section*/
-h2 {
-  font-size: 25px;
-  font-family: var(--header-font);
-  color: var(--accent-text);
-  text-align: center;
-}
-
-h4 {
-  font-weight: 200;
-}
-
 li {
   list-style: none;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  font-size: 12px;
-  margin: 10px;
-  color: var(--accent-text);
-}
-
-/* main content */
-#content-container {
-  display: flex;
-  flex-direction: column;
-}
-
-#content {
-  padding: 30px;
-}
 
 /* Landing Page */
 #intro {
-  font-size: 25px;
-  width: 300px;
-  height: fit-content;
   position: absolute;
-  background: var(--main-bg);
-  border-radius: 0.25rem;
-  box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
-  right: 40;
-  padding: 5px;
-  top: 100;
-  z-index: 1;
+  right: 5vw;
+  top: 10vw;
 }
 
 #webcam-title p {
@@ -102,6 +65,21 @@ footer {
 #about {
   display: flex;
   align-items: center;
-  padding-top: 100px;
+  padding: 40px;
   background-color: var(--accent-bg);
+}
+
+#bio {
+  padding-left: 20px;
+}
+
+/* Portfolio */
+#portfolio {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Contact */
+#contact {
+  width: 30vw;
 }
