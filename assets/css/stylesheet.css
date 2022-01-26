@@ -40,10 +40,6 @@ li {
   list-style: none;
 }
 
-#languages i {
-  color: white;
-}
-
 /* Landing Page */
 .bg-light {
   background-color: rgba(var(--bs-light-rgb), 0.9) !important;
@@ -70,6 +66,7 @@ li {
   font-style: italic;
   color: var(--main-text);
   font-size: 12px;
+  line-height: 0;
 }
 
 /* About Me */
@@ -91,6 +88,10 @@ li {
 }
 
 /* Skills & Tolls */
+#skills {
+  padding: 40px;
+}
+
 #languages {
   display: flex;
   justify-content: center;
@@ -101,12 +102,16 @@ li {
   background: transparent;
   padding: 25px;
   align-items: center;
+  border: none;
+}
+
+#languages i {
+  color: white;
 }
 
 /* Portfolio */
 #portfolio {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 40px;
 }
 
 /* Contact */
