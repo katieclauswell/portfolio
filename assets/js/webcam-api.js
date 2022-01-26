@@ -5,13 +5,11 @@ var containerText = document.getElementById("intro");
 
 function cssTest(imgSrc) {
   const webcam = document.createElement("img");
-  const webcamContainer = document.createElement("picture");
   const containerDiv = document.createElement("div");
   webcam.src = imgSrc;
   webcam.setAttribute("id", "webcam");
   containerDiv.setAttribute("id", "dither-container");
-  webcamContainer.appendChild(webcam);
-  containerDiv.appendChild(webcamContainer);
+  containerDiv.appendChild(webcam);
   container.appendChild(containerDiv);
 }
 

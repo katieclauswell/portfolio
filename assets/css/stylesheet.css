@@ -55,7 +55,7 @@ li {
   right: 5vw;
   top: 10vw;
   padding: 10px;
-  opacity: 0.75;
+  z-index: 3;
 }
 
 #intro h1 {
@@ -126,16 +126,22 @@ li {
   width: 100vw;
 }
 
-#dither-container > picture::after {
+#dither-container::after {
   content: "";
   width: 100%;
   height: 100%;
   pointer-events: none;
-  position: fixed;
+  position: absolute;
   display: block;
   z-index: 2;
   top: 0px;
   left: 0px;
-  background-image: url('assets/images/blue-noise-tile.png');
+  background-image: url("https://demofox2.files.wordpress.com/2018/08/obluenoise256.png?w=512&zoom=2");
   background-repeat: repeat;
+  opacity: 0.4;
+}
+
+#webcam {
+  filter: saturate(2);
+  width: 100vw;
 }
