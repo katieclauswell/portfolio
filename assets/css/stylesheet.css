@@ -40,6 +40,10 @@ li {
   list-style: none;
 }
 
+#languages i {
+  color: white;
+}
+
 /* Landing Page */
 .bg-light {
   background-color: rgba(var(--bs-light-rgb), 0.9) !important;
@@ -70,8 +74,8 @@ li {
 
 /* About Me */
 #headshot {
-  width: 250px;
-  height: auto;
+  width: 20%;
+  height: 20%;
   box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
   border-radius: 50%;
 }
@@ -122,10 +126,7 @@ li {
 } */
 
 /* Webcam */
-#webcam {
-  width: 100vw;
-}
-
+/* noise filter on webcam image */
 #dither-container::after {
   content: "";
   width: 100%;
@@ -136,12 +137,13 @@ li {
   z-index: 2;
   top: 0px;
   left: 0px;
-  background-image: url("/assets/images/blue-noise.png");
+  background-image: url("https://raw.githubusercontent.com/katiechurchwell/portfolio/window-frame/assets/images/blue-noise.png");
   background-repeat: repeat;
   opacity: 0.4;
 }
 
 #webcam {
-  filter: saturate(2);
+  filter: saturate(3);
   width: 100vw;
+  height: 95vh;
 }
