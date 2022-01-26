@@ -136,7 +136,7 @@ li {
   z-index: 2;
   top: 0px;
   left: 0px;
-  background-image: url("https://demofox2.files.wordpress.com/2018/08/obluenoise256.png?w=512&zoom=2");
+  background-image: url("/assets/images/blue-noise.png");
   background-repeat: repeat;
   opacity: 0.4;
 }
