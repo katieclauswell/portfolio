@@ -3,6 +3,8 @@
   --main-bg: #e9e3e6;
   /* about me bg */
   --accent-bg: white;
+  /* vintage feel */
+  --vintage-bg: #FAEEDE;
   /* content text */
   --main-text: black;
   /* card titles, footer, "Let's Connect" */
@@ -12,6 +14,7 @@
   /* fonts */
   --main-font: "Open Sans", sans-serif;
   --header-font: "Raleway", sans-serif;
+  --vintage-font: "Source Serif 4", sans-serif;
 }
 
 * {
@@ -44,9 +47,10 @@ li {
   background-color: rgba(var(--bs-light-rgb), 0.9) !important;
 }
 
+
 #landing-page {
-  height: 100vh;
   width: 100vw;
+  height: calc(100vh - 0.5rem);
 }
 
 #intro {
@@ -55,6 +59,7 @@ li {
   top: 10vw;
   padding: 10px;
   z-index: 3;
+  background-color: var(--vintage-bg);
 }
 
 #intro h1 {
@@ -77,16 +82,14 @@ li {
   background-repeat: repeat;
   opacity: 0.4;
 }
-
 #webcam {
   filter: saturate(3);
-  width: 100vw;
-  height: 95vh;
+  width: 100%;
+  height: 100%
 }
 
 #webcam-title p {
   font-style: italic;
-  color: var(--main-text);
   font-size: 12px;
   line-height: 0;
 }
