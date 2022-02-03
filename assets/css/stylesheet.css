@@ -76,6 +76,7 @@ nav {
 /* WEBCAM */
 #webcam {
   filter: saturate(3);
+  position: absolute;
   height: 100%;
   width: 100%;
   opacity: 0.7;
@@ -85,10 +86,11 @@ nav {
 }
 
 #webcam-title p {
+  position: absolute;
+  right: 0;
+  top: 250px;
   font-style: italic;
   font-size: 12px;
-  line-height: 1;
-  width: fit-content;
   transform: rotate(-90deg);
   /* Safari */
   -webkit-transform: rotate(-90deg);
@@ -105,17 +107,22 @@ nav {
   width: 20%;
   height: 20%;
   box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
-  border-radius: 50%;
+  float: left;
+  padding: 20px;
 }
 
 #about {
-  display: flex;
   padding: 40px;
   background-color: var(--accent-bg);
 }
 
 #bio {
-  padding-left: 20px;
+  display: inline-flex;
+}
+
+#bio div {
+  flex-direction: column;
+  padding: 40px;
 }
 
 /* SKILLS AND TOOLS */
