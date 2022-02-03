@@ -5,8 +5,6 @@
   --accent-bg: white;
   /* content text */
   --main-text: black;
-  /* card titles, footer, "Let's Connect" */
-  --accent-text: #1ea896;
   /* link hover, intro */
   --link: black;
   /* fonts */
@@ -135,16 +133,29 @@ nav {
   justify-content: center;
 }
 
+#languages h4 {
+  transform: rotate(-90deg);
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  text-transform: uppercase;
+}
+
 #languages .card {
-  width: fit-content;
-  background: transparent;
+  width: 100px;
+  /* background: transparent; */
   padding: 25px;
   align-items: center;
   border: none;
 }
 
 #languages i {
-  color: white;
+  color: var(--main-bg);
 }
 
 /* PORTFOLIO */
