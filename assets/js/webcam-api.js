@@ -3,12 +3,9 @@ var containerText = document.getElementById("intro");
 
 function cssOverlay(imgSrc) {
   const webcam = document.createElement("img");
-  const containerDiv = document.createElement("div");
   webcam.src = imgSrc;
   webcam.setAttribute("id", "webcam");
-  containerDiv.setAttribute("id", "dither-container");
-  containerDiv.appendChild(webcam);
-  container.appendChild(containerDiv);
+  containerText.appendChild(webcam);
 }
 
 randomImage = function (webcam) {

@@ -1,20 +1,18 @@
 :root {
   /*content background */
-  --main-bg: #D8D4C8;
+  --main-bg: #edeae2;
   /* about me bg */
   --accent-bg: white;
-  /* vintage feel */
-  --vintage-bg: #D8D4C8;
   /* content text */
   --main-text: black;
   /* card titles, footer, "Let's Connect" */
   --accent-text: #1ea896;
   /* link hover, intro */
-  --link: #ec412e;
+  --link: black;
   /* fonts */
   --main-font: "Open Sans", sans-serif;
-  --header-font: "Raleway", sans-serif;
-  --vintage-font: "Source Serif 4", sans-serif;
+  --header-font: "Megrim", cursive;
+  --nav-font: "Montserrat", sans-serif;
 }
 
 * {
@@ -47,58 +45,59 @@ li {
   background-color: rgba(var(--bs-light-rgb), 0.9) !important;
 }
 
-
 #landing-page {
   width: 100vw;
-  height: calc(100vh - 1rem);
+  height: 90vh;
+  display: flex;
+  flex-flow: column-reverse;
 }
 
 #intro {
-  position: absolute;
-  right: 5vw;
-  top: 10vw;
-  padding: 10px;
   z-index: 3;
   background: transparent;
   border: none;
   line-height: 0;
+  height: 100vh;
 }
 
-#intro h1 {
+#landing-page h1 {
   font-family: var(--header-font);
   color: var(--link);
+  font-size: 85px;
+}
+
+nav {
+  font-family: var(--nav-font);
+  text-transform: uppercase;
+  font-size: 14px;
+  border-bottom: 3.5px solid black;
 }
 
 /* WEBCAM */
-
-/* noise filter on webcam image
-#dither-container::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  position: absolute;
-  display: block;
-  z-index: 2;
-  top: 0px;
-  left: 0px;
-  background-image: url("https://raw.githubusercontent.com/katiechurchwell/portfolio/window-frame/assets/images/blue-noise.png");
-  background-repeat: repeat;
-  opacity: 0.4;
-} */
 #webcam {
   filter: saturate(3);
-  height: 400px;
-  position: absolute;
-  left: 70px;
-  top: 30vh;
+  height: 100%;
+  width: 100%;
   opacity: 0.7;
+  clip-path: path(
+    "M 12.7 -18.3 m 975.6 230 c -4.2 -46.3 -34.5 -87.2 -72.6 -113.9 s -83.3 -41 -128.3 -52.5 c -129.3 -32.9 -263.8 -45.3 -397 -36.6 c -83.7 1 -99.8 12.4 -181.6 30 c -49.7 10.6 -101.2 25.7 -136.6 62.1 c -72.2 74.3 -40.7 207.8 39.5 273.3 s 190.4 78.7 294 80 c 125.4 1.6 251.5 -10.6 372.9 -42.3 c 51 -13.3 102.3 -30.7 143.5 -63.5 c 41.1 -32.9 70.9 -84.1 66.2 -136.6 Z"
+  );
 }
 
 #webcam-title p {
   font-style: italic;
   font-size: 12px;
-  line-height: 0;
+  line-height: 1;
+  width: fit-content;
+  transform: rotate(-90deg);
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
 }
 
 /* ABOUT */
@@ -146,7 +145,7 @@ li {
   padding: 40px;
 }
 
-#portfolio .card{
+#portfolio .card {
   justify-content: flex-end;
 }
 
@@ -154,24 +153,7 @@ li {
   flex: 0;
 }
 
-/* .btn-dark {
-  background-color: var(--link);
-  border-color: var(--link);
-} */
-
 /* CONTACT */
 #contact {
   width: 30vw;
 }
-
-/* .angle {
-  width: 0;
-  height: 0;
-  border-top: 60px solid transparent;
-  border-bottom: 20vh solid black;
-  border-left: 70vw solid transparent;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-} */
-
