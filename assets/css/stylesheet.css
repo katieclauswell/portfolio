@@ -56,18 +56,15 @@ strong {
   background-color: rgba(var(--bs-light-rgb), 0.9) !important;
 }
 
-/* #landing-page {
-  width: 100vw;
-  height: 90vh;
+#landing-page {
   display: flex;
-  flex-flow: column-reverse;
-} */
+  flex-flow: column;
+}
 
 #intro {
   background: transparent;
   border: none;
   line-height: 0;
-  height: 100%;
 }
 
 #landing-page h1 {
@@ -76,6 +73,8 @@ strong {
   font-size: 70px;
   width: 1;
   padding-left: 50px;
+  position: absolute;
+  bottom: 0;
 }
 
 nav {
@@ -86,22 +85,22 @@ nav {
 }
 
 /* WEBCAM */
+.clip-svg-inline {
+  -webkit-clip-path: url("#clip");
+  clip-path: url("#clip");
+  position: relative; /* Makes clip relative to image position instead of page */
+}
+
 #webcam {
   filter: saturate(3);
-  /* position: absolute; */
-  height: 100%;
-  width: 100%;
+  height: 600px;
   opacity: 0.7;
-  clip-path: path(
-    "M 12.7 -18.3 m 975.6 230 c -4.2 -46.3 -34.5 -87.2 -72.6 -113.9 s -83.3 -41 -128.3 -52.5 c -129.3 -32.9 -263.8 -45.3 -397 -36.6 c -83.7 1 -99.8 12.4 -181.6 30 c -49.7 10.6 -101.2 25.7 -136.6 62.1 c -72.2 74.3 -40.7 207.8 39.5 273.3 s 190.4 78.7 294 80 c 125.4 1.6 251.5 -10.6 372.9 -42.3 c 51 -13.3 102.3 -30.7 143.5 -63.5 c 41.1 -32.9 70.9 -84.1 66.2 -136.6 Z"
-  );
 }
 
 #webcam-title {
-  /* position: absolute;
-  right: 100px;
-  top: 250px; */
-  float: right;
+  position: absolute;
+  right: 70px;
+  top: 350px;
   font-style: italic;
   font-size: 12px;
   transform: rotate(-90deg);
