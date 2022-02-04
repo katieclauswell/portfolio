@@ -38,30 +38,44 @@ li {
   list-style: none;
 }
 
+p > strong {
+  background-image: linear-gradient(var(--main-bg), var(--main-bg));
+  background-size: 100% 40%;
+  background-position: center bottom 2%;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+strong {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 /* LANDING PAGE */
 .bg-light {
   background-color: rgba(var(--bs-light-rgb), 0.9) !important;
 }
 
-#landing-page {
+/* #landing-page {
   width: 100vw;
   height: 90vh;
   display: flex;
   flex-flow: column-reverse;
-}
+} */
 
 #intro {
-  z-index: 3;
   background: transparent;
   border: none;
   line-height: 0;
-  height: 100vh;
+  height: 100%;
 }
 
 #landing-page h1 {
   font-family: var(--header-font);
   color: var(--link);
-  font-size: 85px;
+  font-size: 70px;
+  width: 1;
+  padding-left: 50px;
 }
 
 nav {
@@ -74,7 +88,7 @@ nav {
 /* WEBCAM */
 #webcam {
   filter: saturate(3);
-  position: absolute;
+  /* position: absolute; */
   height: 100%;
   width: 100%;
   opacity: 0.7;
@@ -83,10 +97,11 @@ nav {
   );
 }
 
-#webcam-title p {
-  position: absolute;
-  right: 0;
-  top: 250px;
+#webcam-title {
+  /* position: absolute;
+  right: 100px;
+  top: 250px; */
+  float: right;
   font-style: italic;
   font-size: 12px;
   transform: rotate(-90deg);
