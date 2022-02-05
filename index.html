@@ -69,18 +69,19 @@
     </div>
     <article id="about-article">
       <svg width="200" height="200">
-        <filter id="duotone" x="0" y="0" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <filter id="duotone" x="0" y="0" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
           <feColorMatrix type="matrix" values="1 0 0 0 0
                     1 0 0 0 0
                     1 0 0 0 0
-                    0 0 0 1 0" in="SourceGraphic" result="colormatrix"/>
+                    0 0 0 1 0" in="SourceGraphic" result="colormatrix" />
           <feComponentTransfer in="colormatrix" result="componentTransfer">
-                <feFuncR type="table" tableValues="1 1"/>
-            <feFuncG type="table" tableValues="0.87 1"/>
-            <feFuncB type="table" tableValues="0 1"/>
-            <feFuncA type="table" tableValues="0 0.5"/>
-            </feComponentTransfer>
-          <feBlend mode="hard-light" in="componentTransfer" in2="SourceGraphic" result="blend"/>
+            <feFuncR type="table" tableValues="1 1" />
+            <feFuncG type="table" tableValues="0.87 1" />
+            <feFuncB type="table" tableValues="0 1" />
+            <feFuncA type="table" tableValues="0 0.5" />
+          </feComponentTransfer>
+          <feBlend mode="hard-light" in="componentTransfer" in2="SourceGraphic" result="blend" />
         </filter>
         <image xlink:href="assets/images/headshot.jpg" width="95%" x="0" y="0" height="100%" filter="url(#duotone)">
         </image>
@@ -95,7 +96,8 @@
           <strong>Marketing</strong> from the University of South
           Florida and am currently enrolled in a <strong>Full Stack Web Development</strong> bootcamp at the University
           of Oregon. I will
-          complete my training at the end of April of this year.</p>
+          complete my training at the end of April of this year.
+        </p>
 
         <p>For fun, I like to learn more about plotter art and other types of generative art.</p>
       </div>
@@ -108,61 +110,73 @@
       <!-- BACKEND -->
       <div class="backend col">
         <h4>Backend</h4>
-        <div class="card"><i class="devicon-jest-plain"></i>
-          <p class="card-title">Jest</p>
-        </div>
-        <div class="card"><i class="devicon-mysql-plain"></i>
-          <p class="card-title">MySql</p>
-        </div>
-        <div class="card"><i class="devicon-handlebars-plain"></i>
-          <p class="card-title">handlebars.js</p>
-        </div>
-        <div class="card"><i class="devicon-nodejs-plain"></i>
-          <p class="card-title">Node.js</p>
-        </div>
-        <div class="card"><i class="devicon-git-plain"></i>
-          <p class="card-title">Git</p>
-        </div>
-        <div class="card"><i class="devicon-express-original"></i>
-          <p class="card-title">Express</p>
-        </div>
-        <div class="card"><i class="devicon-heroku-original"></i>
-          <p class="card-title">Heroku</p>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="card"><i class="devicon-jest-plain"></i>
+            <p class="card-title">Jest</p>
+          </div>
+          <div class="card"><i class="devicon-mysql-plain"></i>
+            <p class="card-title">MySql</p>
+          </div>
+          <div class="card"><i class="devicon-handlebars-plain"></i>
+            <p class="card-title">handlebars.js</p>
+          </div>
+          <div class="card"><i class="devicon-nodejs-plain"></i>
+            <p class="card-title">Node.js</p>
+          </div>
+          <div class="card"><i class="devicon-git-plain"></i>
+            <p class="card-title">Git</p>
+          </div>
+          <div class="card"><i class="devicon-express-original"></i>
+            <p class="card-title">Express</p>
+          </div>
+          <div class="card"><i class="devicon-heroku-original"></i>
+            <p class="card-title">Heroku</p>
+          </div>
         </div>
       </div>
       <!-- FRONTEND -->
-      <div class="frontend col">
+      <div class="col">
         <h4>Frontend</h4>
-        <div class="card"><i class="devicon-html5-plain"></i>
-          <p class="card-title">HTML5</p>
-        </div>
-        <div class="card"><i class="devicon-css3-plain"></i>
-          <p class="card-title">CSS3</p>
-        </div>
-        <div class="card"><i class="devicon-javascript-plain"></i>
-          <p class="card-title">JavaScript</p>
-        </div>
-        <div class="card"><i class="devicon-jquery-plain"></i>
-          <p class="card-title">jQuery</p>
-        </div>
-        <div class="card"><i class="devicon-bootstrap-plain"></i>
-          <p class="card-title">BootStrap</p>
-        </div>
-        <div class="card"><i class="fas fa-code"></i>
-          <p class="card-title">APIs</p>
-        </div>
-        <div class="card"><i class="devicon-react-original"></i>
-          <p class="card-title">React</p>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="card"><i class="devicon-html5-plain"></i>
+            <p class="card-title">HTML5</p>
+          </div>
+          <div class="card"><i class="devicon-css3-plain"></i>
+            <p class="card-title">CSS3</p>
+          </div>
+          <div class="card"><i class="devicon-javascript-plain"></i>
+            <p class="card-title">JavaScript</p>
+          </div>
+          <div class="card"><i class="devicon-jquery-plain"></i>
+            <p class="card-title">jQuery</p>
+          </div>
+          <div class="card"><i class="devicon-bootstrap-plain"></i>
+            <p class="card-title">BootStrap</p>
+          </div>
+          <div class="card"><i class="fas fa-code"></i>
+            <p class="card-title">APIs</p>
+          </div>
+          <div class="card"><i class="devicon-react-original"></i>
+            <p class="card-title">React</p>
+          </div>
         </div>
       </div>
       <!-- DESIGN -->
-      <div class="design col">
+      <div class="col">
         <h4>Design</h4>
-        <div class="card"><i class="devicon-photoshop-plain"></i>
-          <p class="card-title">Photoshop</p>
-        </div>
-        <div class="card"><i class="devicon-illustrator-plain"></i>
-          <p class="card-title">Illustrator</p>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="card"><i class="devicon-photoshop-plain"></i>
+            <p class="card-title">Photoshop</p>
+          </div>
+          <div class="card"><i class="devicon-illustrator-plain"></i>
+            <p class="card-title">Illustrator</p>
+          </div>
         </div>
       </div>
     </div>

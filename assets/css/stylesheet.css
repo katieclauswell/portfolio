@@ -162,8 +162,9 @@ svg {
 }
 
 #languages {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
+  width: 100vw;
 }
 
 #languages h4 {
@@ -189,6 +190,7 @@ svg {
 
 #languages i {
   color: var(--main-bg);
+  font-size: 50px;
 }
 
 /* PORTFOLIO */
