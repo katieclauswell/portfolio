@@ -108,7 +108,7 @@ nav {
   filter: saturate(3);
   height: 600px;
   opacity: 0.7;
-  position:absolute;
+  position: absolute;
   top: 150;
   left: 100;
 }
@@ -176,6 +176,7 @@ svg {
   /* IE */
   -ms-transform: rotate(-90deg);
   text-transform: uppercase;
+  font-size: 50;
 }
 
 /* LANGUAGE CARDS */
@@ -198,6 +199,12 @@ svg {
   font-size: 50px;
 }
 
+.language-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  flex: 1;
+}
 
 /* PORTFOLIO */
 #portfolio {
