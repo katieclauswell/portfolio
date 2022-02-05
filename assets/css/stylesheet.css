@@ -133,10 +133,11 @@ nav {
 /* ABOUT */
 /* headshot */
 svg {
-  background: var(--main-bg);
+  box-shadow: -20px 25px var(--main-bg);
 }
+
 #about {
-  padding: 40px;
+  padding: 80px;
   background-color: var(--accent-bg);
 }
 
@@ -144,11 +145,12 @@ svg {
   display: inline-flex;
   align-items: center;
   width: 100vw;
+  padding-left: 90;
 }
 
 #about-article div {
   flex-direction: column;
-  padding: 40px;
+  padding-left: 40px;
 }
 
 #bio {
