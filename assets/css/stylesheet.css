@@ -155,17 +155,9 @@ svg {
 #bio {
   width: 700;
 }
+
 /* SKILLS AND TOOLS */
-#skills {
-  padding: 80px;
-}
-
-#languages {
-  margin: 30px;
-  display: flex;
-}
-
-#languages h4 {
+#skills h4 {
   transform: rotate(-90deg);
   /* Safari */
   -webkit-transform: rotate(-90deg);
@@ -180,31 +172,30 @@ svg {
 }
 
 /* LANGUAGE CARDS */
-#languages .card {
+#skills .card {
   width: 100px;
-  /* background: transparent; */
-  padding: 25px;
+  padding-top: 10px;
   align-items: center;
   border: none;
   margin: 10px;
 }
 
-#languages .card-title {
+#skills .card-title {
   padding-top: 20px;
   text-align: center;
 }
 
-#languages i {
+#skills i {
   color: var(--main-bg);
   font-size: 50px;
 }
 
-.language-card-container {
+/* .language-card-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   flex: 1;
-}
+} */
 
 /* PORTFOLIO */
 #portfolio {
