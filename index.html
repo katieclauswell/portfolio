@@ -51,12 +51,14 @@
   <section id="landing-page">
     <div id="intro">
       <svg class="clip-svg">
-      <defs>
-        <clipPath id="clip">
-          <path d="M 12.7 -18.3 m 975.6 230 c -4.2 -46.3 -34.5 -87.2 -72.6 -113.9 s -83.3 -41 -128.3 -52.5 c -129.3 -32.9 -263.8 -45.3 -397 -36.6 c -83.7 1 -99.8 12.4 -181.6 30 c -49.7 10.6 -101.2 25.7 -136.6 62.1 c -72.2 74.3 -40.7 207.8 39.5 273.3 s 190.4 78.7 294 80 c 125.4 1.6 251.5 -10.6 372.9 -42.3 c 51 -13.3 102.3 -30.7 143.5 -63.5 c 41.1 -32.9 70.9 -84.1 66.2 -136.6 Z"></path>
-        </clipPath>
-      </defs>
-    </svg>
+        <defs>
+          <clipPath id="clip">
+            <path
+              d="M 12.7 -18.3 m 975.6 230 c -4.2 -46.3 -34.5 -87.2 -72.6 -113.9 s -83.3 -41 -128.3 -52.5 c -129.3 -32.9 -263.8 -45.3 -397 -36.6 c -83.7 1 -99.8 12.4 -181.6 30 c -49.7 10.6 -101.2 25.7 -136.6 62.1 c -72.2 74.3 -40.7 207.8 39.5 273.3 s 190.4 78.7 294 80 c 125.4 1.6 251.5 -10.6 372.9 -42.3 c 51 -13.3 102.3 -30.7 143.5 -63.5 c 41.1 -32.9 70.9 -84.1 66.2 -136.6 Z">
+            </path>
+          </clipPath>
+        </defs>
+      </svg>
     </div>
     <h1>Katie Churchwell</h1>
   </section>
@@ -65,14 +67,34 @@
     <div>
       <h3>A bit about myself</h3>
     </div>
-    <article id="bio">
-      <img src="assets/images/headshot.jpg" alt="A headshot of Katie Churchwell" id="headshot">
-      <div>
-        <p>Soon-to-be <strong>bootcamp grad</strong> looking for a home base to grow and learn. I tackle problems head on, taking the
+    <article id="about-article">
+      <svg width="300" height="250">
+        <filter id="duotone" x="10%" y="10%" width="300" height="250" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feColorMatrix type="matrix" values="1 0 0 0 0
+                    1 0 0 0 0
+                    1 0 0 0 0
+                    0 0 0 1 0" in="SourceGraphic" result="colormatrix"/>
+          <feComponentTransfer in="colormatrix" result="componentTransfer">
+                <feFuncR type="table" tableValues="1 1"/>
+            <feFuncG type="table" tableValues="0.87 1"/>
+            <feFuncB type="table" tableValues="0 1"/>
+            <feFuncA type="table" tableValues="0 0.5"/>
+            </feComponentTransfer>
+          <feBlend mode="hard-light" in="componentTransfer" in2="SourceGraphic" result="blend"/>
+        </filter>
+        <image xlink:href="assets/images/headshot.jpg" width="100%" x="0" y="0" height="100%" filter="url(#duotone)">
+        </image>
+      </svg>
+
+      <div id="bio">
+        <p>Soon-to-be <strong>bootcamp grad</strong> looking for a home base to grow and learn. I tackle problems head
+          on, taking the
           initiative to do my own research but also love any opportunity to collaborate and learn from others.</p>
 
-        <p>I earned a Bachelors in <strong>International Business</strong> with a concentration in <strong>Marketing</strong> from the University of South
-          Florida and am currently enrolled in a <strong>Full Stack Web Development</strong> bootcamp at the University of Oregon. I will
+        <p>I earned a Bachelors in <strong>International Business</strong> with a concentration in
+          <strong>Marketing</strong> from the University of South
+          Florida and am currently enrolled in a <strong>Full Stack Web Development</strong> bootcamp at the University
+          of Oregon. I will
           complete my training at the end of April of this year.</p>
 
         <p>For fun, I like to learn more about plotter art and other types of generative art.</p>

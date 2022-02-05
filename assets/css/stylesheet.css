@@ -59,12 +59,14 @@ strong {
 #landing-page {
   display: flex;
   flex-flow: column;
+  height: 100vh;
 }
 
 #intro {
   background: transparent;
   border: none;
   line-height: 0;
+  padding-left: 100;
 }
 
 #landing-page h1 {
@@ -82,6 +84,7 @@ nav {
   text-transform: uppercase;
   font-size: 14px;
   border-bottom: 3.5px solid black;
+  color: black;
 }
 
 /* WEBCAM */
@@ -99,7 +102,7 @@ nav {
 
 #webcam-title {
   position: absolute;
-  right: 70px;
+  right: 0;
   top: 350px;
   font-style: italic;
   font-size: 12px;
@@ -115,28 +118,29 @@ nav {
 }
 
 /* ABOUT */
-#headshot {
-  width: 20%;
-  height: 20%;
-  box-shadow: 0px 6px 40px -14px rgb(0 0 0 / 25%);
-  float: left;
-  padding: 20px;
+/* headshot */
+svg {
+  background: var(--main-bg);
 }
-
 #about {
   padding: 40px;
   background-color: var(--accent-bg);
 }
 
-#bio {
+#about-article {
   display: inline-flex;
+  align-items: center;
+  width: 100vw;
 }
 
-#bio div {
+#about-article div {
   flex-direction: column;
   padding: 40px;
 }
 
+#bio {
+  width: 700;
+}
 /* SKILLS AND TOOLS */
 #skills {
   padding: 40px;
