@@ -9,7 +9,7 @@ function cssOverlay(imgSrc) {
   containerText.appendChild(webcam);
 }
 
-randomImage = function (webcam) {
+function randomImage(webcam) {
   var webcams = webcam.result.webcams;
   //exclude Redmond (id=1614363511)
   var redmondIndex = webcams.findIndex(
@@ -30,20 +30,18 @@ randomImage = function (webcam) {
     ".</p>";
   containerText.appendChild(title);
   cssOverlay(imgSrc);
-};
-
-function setup() {
-  fetch(
-    "https://api.windy.com/api/webcams/v2/list/category=mountain/region=US.OR/?show=webcams:image",
-    {
-      method: "GET",
-      headers: {
-        "x-windy-key": "fRBdejZXV9tukKAYkPngOtGOg0bYrvV9",
-      },
-    }
-  ).then(function (response) {
-    response.json().then(function (webcam) {
-      randomImage(webcam);
-    });
-  });
 }
+
+fetch(
+  "https://api.windy.com/api/webcams/v2/list/category=mountain/region=US.OR/?show=webcams:image",
+  {
+    method: "GET",
+    headers: {
+      "x-windy-key": "fRBdejZXV9tukKAYkPngOtGOg0bYrvV9",
+    },
+  }
+).then(function (response) {
+  response.json().then(function (webcam) {
+    randomImage(webcam);
+  });
+});
