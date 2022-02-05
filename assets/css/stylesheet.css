@@ -157,19 +157,6 @@ svg {
 }
 
 /* SKILLS AND TOOLS */
-#skills h4 {
-  transform: rotate(-90deg);
-  /* Safari */
-  -webkit-transform: rotate(-90deg);
-  /* Firefox */
-  -moz-transform: rotate(-90deg);
-  /* Opera */
-  -o-transform: rotate(-90deg);
-  /* IE */
-  -ms-transform: rotate(-90deg);
-  text-transform: uppercase;
-  font-size: 50;
-}
 
 /* LANGUAGE CARDS */
 #skills .card {
@@ -178,6 +165,7 @@ svg {
   align-items: center;
   border: none;
   margin: 10px;
+  float: left;
 }
 
 #skills .card-title {
