@@ -2,7 +2,7 @@ var container = document.getElementById("landing-page");
 var containerText = document.getElementById("intro");
 
 function cssOverlay(imgSrc) {
-  container.style.backgroundImage = 'url("' + imgSrc + '")';
+  containerText.style.backgroundImage = 'url("' + imgSrc + '")';
 }
 
 function randomImage(webcam) {
@@ -24,7 +24,7 @@ function randomImage(webcam) {
     "<p>Randomly generated live image of the mountains of Oregon --</p><p>This one happens to be in " +
     imgTitle +
     ".</p>";
-  containerText.appendChild(title);
+  container.appendChild(title);
   cssOverlay(imgSrc);
 }
 

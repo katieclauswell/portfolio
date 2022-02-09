@@ -4,15 +4,15 @@
   /* about me bg */
   --accent-bg: white;
   /* content text */
-  --main-text: #4A4CCC;
+  --main-text: #4a4ccc;
   /* link hover, intro, headers */
   --link: #057157;
   /* buttons (need to do), box-shadow, icons, strong */
-  --button: #FFE0E1;
+  --button: #ffe0e1;
 
   /* fonts */
   --main-font: "Open Sans", sans-serif;
-  --header-font: 'Outfit', sans-serif;
+  --header-font: "Outfit", sans-serif;
   --nav-font: "Montserrat", sans-serif;
 }
 
@@ -70,6 +70,15 @@ nav {
   border-bottom: 3.5px solid black;
   position: sticky;
   top: 0;
+  transition: all 275ms ease;
+}
+
+nav a:hover {
+  background-image: linear-gradient(var(--button), var(--button));
+  background-size: 100% 40%;
+  background-position: center bottom 2%;
+  background-repeat: no-repeat;
+  display: inline-block;
 }
 
 /*Bootstrap Tweaks*/
@@ -88,17 +97,6 @@ nav {
   display: flex;
   flex-flow: column;
   height: 100vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#intro {
-  background: transparent;
-  border: none;
-  line-height: 0;
-  font-weight: bolder;
 }
 
 #landing-page h1 {
@@ -109,6 +107,7 @@ nav {
   padding-left: 50px;
   position: absolute;
   bottom: 0;
+  z-index: 2;
 }
 
 /* WEBCAM */
@@ -201,6 +200,7 @@ nav {
 /* PORTFOLIO */
 #portfolio {
   padding: 80px;
+  height: 90vh;
 }
 
 #portfolio .card {
@@ -219,4 +219,6 @@ nav {
 /* CONTACT */
 #contact {
   width: 30vw;
+  padding: 80px;
+  display: block;
 }
