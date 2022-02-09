@@ -2,11 +2,7 @@ var container = document.getElementById("landing-page");
 var containerText = document.getElementById("intro");
 
 function cssOverlay(imgSrc) {
-  const webcam = document.createElement("img");
-  webcam.src = imgSrc;
-  webcam.setAttribute("id", "webcam");
-  webcam.setAttribute("class", "clip-svg-inline");
-  containerText.appendChild(webcam);
+  container.style.backgroundImage = 'url("' + imgSrc + '")';
 }
 
 function randomImage(webcam) {
