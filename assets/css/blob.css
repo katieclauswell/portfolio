@@ -22,7 +22,7 @@
   z-index: 2;
   top: 0px;
   left: 0px;
-  background-image: url("https://github.com/katiechurchwell/portfolio/blob/develop/assets/images/blue-noise.png");
+  background-image: url("https://raw.githubusercontent.com/katiechurchwell/portfolio/develop/assets/images/blue-noise.png");
   background-repeat: repeat;
   opacity: 0.35;
 }
