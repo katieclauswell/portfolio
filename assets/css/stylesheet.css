@@ -1,6 +1,6 @@
 :root {
-  /*content background */
-  --main-bg: #edeae2;
+  /*content background, skills icons, headshot box shadow */
+  --main-bg: #beeffd;
   /* about me bg */
   --accent-bg: white;
   /* content text */
@@ -9,7 +9,6 @@
   --link: #057157;
   /* buttons (need to do), box-shadow, icons, strong */
   --button: #ffe0e1;
-
   /* fonts */
   --main-font: "Open Sans", sans-serif;
   --header-font: "Outfit", sans-serif;
@@ -95,11 +94,12 @@ nav a:hover {
 /* LANDING PAGE */
 #landing-page {
   height: 100vh;
+  background: linear-gradient(to bottom right, #d4ff00 0%, #00c6ff 100%);
 }
 
 #landing-page h1 {
   font-family: var(--header-font);
-  color: var(--link);
+  color: black;
   font-size: 70px;
   width: 1;
   padding-left: 50px;
