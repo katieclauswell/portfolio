@@ -94,8 +94,6 @@ nav a:hover {
 
 /* LANDING PAGE */
 #landing-page {
-  display: flex;
-  flex-flow: column;
   height: 100vh;
 }
 
@@ -113,10 +111,11 @@ nav a:hover {
 /* WEBCAM */
 #webcam-title {
   position: absolute;
-  right: -10;
-  top: 350px;
+  right: 0;
+  bottom: 200;
   font-style: italic;
   font-size: 12px;
+  line-height: 0;
   transform: rotate(-90deg);
   /* Safari */
   -webkit-transform: rotate(-90deg);
@@ -200,7 +199,8 @@ nav a:hover {
 /* PORTFOLIO */
 #portfolio {
   padding: 80px;
-  height: 90vh;
+  height: fit-content;
+  background: var(--accent-bg);
 }
 
 #portfolio .card {
@@ -216,9 +216,32 @@ nav a:hover {
   display: flex;
 }
 
+#portfolio .btn-dark
+{
+  background-color: var(--main-text);
+  border: none;
+}
+
+#portfolio .btn-dark:hover
+{
+  background-color: var(--button);
+}
+
 /* CONTACT */
+
 #contact {
-  width: 30vw;
-  padding: 80px;
-  display: block;
+  width: 100vw;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact .card {
+  width: 400px;
+  margin: 20px;
+}
+
+#contact .card-header {
+  text-align: center;
 }
