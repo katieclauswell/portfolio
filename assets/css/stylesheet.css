@@ -103,21 +103,6 @@ nav {
 }
 
 /* WEBCAM */
-.clip-svg-inline {
-  -webkit-clip-path: url("#clip");
-  clip-path: url("#clip");
-  position: relative; /* Makes clip relative to image position instead of page */
-}
-
-#webcam {
-  filter: saturate(3);
-  height: 600px;
-  opacity: 0.7;
-  position: absolute;
-  top: 150;
-  left: 100;
-}
-
 #webcam-title {
   position: absolute;
   right: -10;

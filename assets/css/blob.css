@@ -1,0 +1,37 @@
+.clip-svg-inline {
+	-webkit-clip-path: url("#clip");
+	clip-path: url("#clip");
+	position: relative; /* Makes clip relative to image position instead of page */
+  }
+
+  #webcam {
+	filter: saturate(3);
+	height: 600px;
+	opacity: 0.7;
+	position: absolute;
+	top: 150;
+	left: 100;
+  }
+
+#shape {
+  animation: morph 8s ease-in-out infinite;
+  /* border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; */
+  height: 200px;
+  width: 600px;
+  transition: all 1s ease-in-out;
+  z-index: 1;
+}
+
+@keyframes morph {
+  0% {
+    transform: matrix(5 1 -1 3 70 50 100 2 6 7);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: matrix(5 1 -1 3 70 50 100 2 6 7);
+  }
+}
