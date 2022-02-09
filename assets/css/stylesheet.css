@@ -1,6 +1,6 @@
 :root {
   /*content background, skills icons, headshot box shadow */
-  --main-bg: #beeffd;
+  --main-bg: #F3EEDF;
   /* about me bg */
   --accent-bg: white;
   /* content text */
@@ -94,12 +94,11 @@ nav a:hover {
 /* LANDING PAGE */
 #landing-page {
   height: 100vh;
-  background: linear-gradient(to bottom right, #d4ff00 0%, #00c6ff 100%);
 }
 
 #landing-page h1 {
   font-family: var(--header-font);
-  color: black;
+  color: var(--link);
   font-size: 70px;
   width: 1;
   padding-left: 50px;
@@ -134,7 +133,7 @@ nav a:hover {
 }
 
 #about {
-  padding: 80px;
+  padding: 40px;
   background-color: var(--accent-bg);
 }
 
