@@ -4,12 +4,15 @@
   /* about me bg */
   --accent-bg: white;
   /* content text */
-  --main-text: black;
-  /* link hover, intro */
-  --link: black;
+  --main-text: #4A4CCC;
+  /* link hover, intro, headers */
+  --link: #057157;
+  /* buttons (need to do), box-shadow, icons, strong */
+  --button: #FFE0E1;
+
   /* fonts */
   --main-font: "Open Sans", sans-serif;
-  --header-font: "Megrim", cursive;
+  --header-font: 'Outfit', sans-serif;
   --nav-font: "Montserrat", sans-serif;
 }
 
@@ -40,7 +43,7 @@ li {
 }
 
 p > strong {
-  background-image: linear-gradient(var(--main-bg), var(--main-bg));
+  background-image: linear-gradient(var(--button), var(--button));
   background-size: 100% 40%;
   background-position: center bottom 2%;
   background-repeat: no-repeat;
@@ -55,6 +58,8 @@ strong {
 h3 {
   font-weight: bold;
   padding-bottom: 20px;
+  color: var(--link);
+  font-family: var(--header-font);
 }
 
 /* NAVIGATION */
@@ -122,8 +127,8 @@ nav {
 
 /* ABOUT */
 /* headshot */
-svg {
-  box-shadow: -20px 25px var(--main-bg);
+#about-article svg {
+  box-shadow: -20px 25px var(--button);
 }
 
 #about {
@@ -185,7 +190,7 @@ svg {
 }
 
 #skills i {
-  color: var(--main-bg);
+  color: var(--button);
   font-size: 50px;
 }
 

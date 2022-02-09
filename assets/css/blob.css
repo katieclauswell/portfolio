@@ -1,6 +1,7 @@
 .clip-svg-inline {
 	-webkit-clip-path: url("#clip");
 	clip-path: url("#clip");
+  width: 100vw;
 	position: relative; /* Makes clip relative to image position instead of page */
   }
 
@@ -14,7 +15,7 @@
   }
 
 #shape {
-  animation: morph 8s ease-in-out infinite;
+  /* animation: morph 8s ease-in-out infinite; */
   /* border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; */
   height: 200px;
   width: 600px;
