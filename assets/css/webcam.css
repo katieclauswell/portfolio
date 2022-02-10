@@ -1,12 +1,21 @@
+/* WEBCAM */
+#webcam-title {
+  position: absolute;
+  right: 10;
+  bottom: 0;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 0;
+}
+
 #intro {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 80vh;
-  width: 85vw;
+  height: 70vh;
+  width: 90vw;
   filter: saturate(3);
-  animation: morph 8s ease-in-out infinite;
   border-radius: 60% 40% 30% 40% / 60% 35% 70% 40%;
   transition: all 1s ease-in-out;
 }
@@ -25,18 +34,4 @@
   background-image: url("https://raw.githubusercontent.com/katiechurchwell/portfolio/develop/assets/images/blue-noise.png");
   background-repeat: repeat;
   opacity: 0.35;
-}
-
-@keyframes morph {
-  0% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 90% 40%;
-  }
-
-  50% {
-    border-radius: 30% 20% 60% 80% / 60% 30% 70% 40%;
-  }
-
-  100% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 90% 40%;
-  }
 }
