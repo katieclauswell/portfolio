@@ -1,6 +1,6 @@
 :root {
   /*content background, skills icons, headshot box shadow */
-  --main-bg: #F3EEDF;
+  --main-bg: #f3eedf;
   /* about me bg */
   --accent-bg: white;
   /* content text */
@@ -124,6 +124,14 @@ nav a:hover {
   padding-left: 90;
 }
 
+#about-article ul {
+  padding-left: 0;
+}
+
+#about-article .card {
+  min-width: fit-content;
+}
+
 #bio {
   width: 50%;
   margin: 20px;
@@ -186,6 +194,7 @@ nav a:hover {
 
 #portfolio .card {
   justify-content: flex-end;
+  height: 100%
 }
 
 #portfolio .card-body {
@@ -197,14 +206,12 @@ nav a:hover {
   display: flex;
 }
 
-#portfolio .btn-dark
-{
+#portfolio .btn-dark {
   background-color: var(--main-text);
   border: none;
 }
 
-#portfolio .btn-dark:hover
-{
+#portfolio .btn-dark:hover {
   background-color: var(--button);
 }
 
