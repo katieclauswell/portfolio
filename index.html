@@ -58,21 +58,7 @@
     </div>
     <article id="about-article">
       <svg width="200" height="200">
-        <filter id="duotone" x="0" y="0" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB">
-          <feColorMatrix type="matrix" values="0 0 1 0 0
-            0 0 1 0 0
-            0 0 1 0 0
-            0 0 0 1 0" in="SourceGraphic" result="colormatrix" />
-          <feComponentTransfer in="colormatrix" result="componentTransfer">
-            <feFuncR type="table" tableValues="0.33 1" />
-            <feFuncG type="table" tableValues="0 1" />
-            <feFuncB type="table" tableValues="1 1" />
-            <feFuncA type="table" tableValues="0 0.1" />
-          </feComponentTransfer>
-          <feBlend mode="hard-light" in="componentTransfer" in2="SourceGraphic" result="blend" />
-        </filter>
-        <image xlink:href="assets/images/headshot.jpg" width="95%" x="0" y="0" height="100%" filter="url(#duotone)">
+        <image xlink:href="assets/images/headshot.jpg" width="95%" x="0" y="0" height="100%">
         </image>
       </svg>
 
@@ -228,41 +214,41 @@
         </div>
       </div>
 
-        <!-- Work Day Scheduler -->
-        <div class="col">
-          <div class="card" id="work-day-scheduler">
-            <div class="card-body">
-              <h5 class="card-title">Work Day Scheduler</h5>
-              <p class="card-text">Simple calendar application that allows the user to save events for each hour of the
-                day. Features dynamically updated HTML and CSS powered by jQuery.</p>
-              <div class="card-footer">
-                <a href="https://katiechurchwell.github.io/work-day-scheduler/Develop/index.html"
-                  class="btn btn-dark">View It Here</a>
-                <a href="https://github.com/katiechurchwell/work-day-scheduler" class="btn btn-dark">View GitHub
-                  Repo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Chew and View -->
-        <div class="col">
-          <div class="card" id="chew-view">
-            <div class="card-body">
-              <h5 class="card-title">Chew View</h5>
-              <p class="card-text"> A date-planning application that allows the user to search for local restaurants and
-                movies
-                to watch. Built using the Travel Advisor and OMDB Movie Database API's, Materialize CSS
-                library and vanilla JavaScript.</p>
-              <div class="card-footer">
-                <a href="https://github.com/katiechurchwell/team-1-dinner-movie" class="btn btn-dark">View It Here</a>
-                <a href="https://github.com/katiechurchwell/team-1-dinner-movie" class="btn btn-dark">View GitHub
-                  Repo</a>
-              </div>
+      <!-- Work Day Scheduler -->
+      <div class="col">
+        <div class="card" id="work-day-scheduler">
+          <div class="card-body">
+            <h5 class="card-title">Work Day Scheduler</h5>
+            <p class="card-text">Simple calendar application that allows the user to save events for each hour of the
+              day. Features dynamically updated HTML and CSS powered by jQuery.</p>
+            <div class="card-footer">
+              <a href="https://katiechurchwell.github.io/work-day-scheduler/Develop/index.html"
+                class="btn btn-dark">View It Here</a>
+              <a href="https://github.com/katiechurchwell/work-day-scheduler" class="btn btn-dark">View GitHub
+                Repo</a>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Chew and View -->
+      <div class="col">
+        <div class="card" id="chew-view">
+          <div class="card-body">
+            <h5 class="card-title">Chew View</h5>
+            <p class="card-text"> A date-planning application that allows the user to search for local restaurants and
+              movies
+              to watch. Built using the Travel Advisor and OMDB Movie Database API's, Materialize CSS
+              library and vanilla JavaScript.</p>
+            <div class="card-footer">
+              <a href="https://katiechurchwell.github.io/Chew-View/" class="btn btn-dark">View It Here</a>
+              <a href="https://github.com/katiechurchwell/Chew-View" class="btn btn-dark">View GitHub
+                Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
