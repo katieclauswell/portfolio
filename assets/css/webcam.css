@@ -16,8 +16,8 @@
   height: 70vh;
   width: 90vw;
   filter: saturate(3);
-  border-radius: 60% 40% 30% 40% / 60% 35% 70% 40%;
-  transition: all 1s ease-in-out;
+  border-radius: 70% 100% 0% 120%;
+  /* transition: all 1s ease-in-out; */
 }
 
 #intro::after {

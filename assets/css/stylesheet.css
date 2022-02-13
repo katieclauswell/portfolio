@@ -3,19 +3,18 @@
   --main-bg: #f3eedf;
   /* about me bg */
   --accent-bg: white;
-  /* content text */
-  --main-text: #4a4ccc;
-  /* link hover, intro, headers */
-  --link: #057157;
-  /* buttons (need to do), box-shadow, icons, strong */
-  --button: #ffe0e1;
+  /* content text, buttons */
+  --first: #4a4ccc;
+  /* link hover, intro, headers, icons */
+  --second: #057157;
+  /* button hover, box-shadow */
+  --third: #8dd7ff;
   /* fonts */
   --main-font: "Open Sans", sans-serif;
   --header-font: "Outfit", sans-serif;
   --nav-font: "Montserrat", sans-serif;
 }
 
-/*Universal*/
 * {
   margin: 0px;
   padding: 0px;
@@ -25,40 +24,38 @@
 body {
   background-color: var(--main-bg);
   font-family: var(--main-font);
-  color: var(--main-text);
+  color: var(--first);
 }
 
 a {
   text-decoration: none;
-  color: var(--main-text);
+  color: var(--first);
 }
 
 a:hover {
-  color: var(--link);
+  color: var(--second);
 }
 
 li {
   list-style: none;
 }
 
-p > strong {
-  background-image: linear-gradient(var(--button), var(--button));
-  background-size: 100% 40%;
-  background-position: center bottom 2%;
-  background-repeat: no-repeat;
-  display: inline-block;
-}
-
-strong {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
 h3 {
   font-weight: bold;
   padding-bottom: 20px;
-  color: var(--link);
+  color: var(--second);
   font-family: var(--header-font);
+}
+
+/*Bootstrap Tweaks*/
+.bg-light {
+  --bs-bg-opacity: 0;
+  background-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-weight: bolder;
 }
 
 /* NAVIGATION */
@@ -73,44 +70,32 @@ nav {
 }
 
 nav a:hover {
-  background-image: linear-gradient(var(--button), var(--button));
+  background-image: linear-gradient(var(--third), var(--third));
   background-size: 100% 40%;
   background-position: center bottom 2%;
   background-repeat: no-repeat;
   display: inline-block;
 }
 
-/*Bootstrap Tweaks*/
-.bg-light {
-  --bs-bg-opacity: 0;
-  background-color: transparent;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: black;
-  font-weight: bolder;
-}
-
 /* LANDING PAGE */
 #landing-page {
   height: 100vh;
+  padding: 50px;
 }
 
 #landing-page h1 {
   font-family: var(--header-font);
-  color: var(--link);
+  color: var(--second);
   font-size: 70px;
   width: 1;
-  padding-left: 50px;
   position: absolute;
   bottom: 0;
-  z-index: 2;
 }
 
 /* ABOUT and CONTACT*/
 /* headshot */
 #about-article svg {
-  box-shadow: -20px 25px var(--button);
+  box-shadow: -20px 25px var(--third);
 }
 
 #about {
@@ -121,7 +106,7 @@ nav a:hover {
 #about-article {
   display: inline-flex;
   align-items: center;
-  padding-left: 90;
+  justify-content: center;
 }
 
 #about-article ul {
@@ -181,7 +166,7 @@ nav a:hover {
 
 /* ICONS */
 #skills i {
-  color: var(--link);
+  color: var(--third);
   font-size: 50px;
 }
 
@@ -207,12 +192,12 @@ nav a:hover {
 }
 
 #portfolio .btn-dark {
-  background-color: var(--main-text);
+  background-color: var(--first);
   border: none;
 }
 
 #portfolio .btn-dark:hover {
-  background-color: var(--button);
+  background-color: var(--third);
 }
 
 /* CONTACT */
@@ -223,51 +208,4 @@ nav a:hover {
 
 #contact .card-header {
   text-align: center;
-}
-
-/* MEDIA QUERIES */
-@media only screen and (max-width: 1200px) {
-  /*Tablets [601px -> 1200px]*/
-  .navbar {
-    display: none;
-  }
-  #intro {
-    display: none;
-  }
-  #webcam-title {
-    display: none;
-  }
-  #landing-page {
-    height: fit-content;
-  }
-  #landing-page h1 {
-    position: inherit;
-    font-size: 60px;
-  }
-  #about-article {
-    display: block;
-    padding-left: 0;
-  }
-  #about {
-    padding: 35px;
-  }
-  #about-article svg {
-    display: none;
-  }
-  #bio {
-    width: 100%;
-    margin: 0px;
-  }
-  #skills {
-    display: none;
-  }
-  #portfolio {
-    padding: 35px;
-  }
-  #portfolio .col {
-    width: 100%;
-  }
-  #portfolio .card-footer {
-    padding: 1px;
-  }
 }
