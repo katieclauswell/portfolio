@@ -1,13 +1,13 @@
 :root {
-  /*content background, skills icons, headshot box shadow */
+  /*content background */
   --main-bg: #f3eedf;
   /* about me bg */
   --accent-bg: white;
   /* content text, buttons */
   --first: #4a4ccc;
-  /* link hover, intro, headers, icons */
-  --second: #057157;
-  /* button hover, box-shadow */
+  /* intro, headers, icons */
+  --second: black;
+  /* hovers, box-shadow, contact header, icons */
   --third: #8dd7ff;
   /* fonts */
   --main-font: "Open Sans", sans-serif;
@@ -33,7 +33,7 @@ a {
 }
 
 a:hover {
-  color: var(--second);
+  color: var(--third);
 }
 
 li {
@@ -42,12 +42,12 @@ li {
 
 h3 {
   font-weight: bold;
-  padding-bottom: 20px;
   color: var(--second);
   font-family: var(--header-font);
+  padding-bottom: 20px;
 }
 
-/*Bootstrap Tweaks*/
+/*BOOTSTRAP EDITS*/
 .bg-light {
   --bs-bg-opacity: 0;
   background-color: transparent;
@@ -131,25 +131,12 @@ nav a:hover {
   padding: 80px;
 }
 
-#skills .row {
-  display: flex;
-  align-items: flex-end;
-}
-/* LANGUAGE TYPES */
+/* SKILLS HEADERS */
 #skills h4 {
-  transform: rotate(-90deg);
-  /* Safari */
-  -webkit-transform: rotate(-90deg);
-  /* Firefox */
-  -moz-transform: rotate(-90deg);
-  /* Opera */
-  -o-transform: rotate(-90deg);
-  /* IE */
-  -ms-transform: rotate(-90deg);
   text-transform: uppercase;
-  font-size: 75;
+  font-size: 40;
 }
-/* LANGUAGE CARDS */
+/* SKILLS CARDS */
 #skills .card {
   width: 100px;
   padding-top: 10px;
@@ -208,4 +195,5 @@ nav a:hover {
 
 #contact .card-header {
   text-align: center;
+  background-color: var(--third);
 }
