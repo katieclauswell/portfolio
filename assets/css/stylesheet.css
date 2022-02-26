@@ -1,6 +1,6 @@
 :root {
   /*content background */
-  --main-bg: #f3eedf;
+  --main-bg: #f1eeec;
   /* about me bg */
   --accent-bg: white;
   /* content text, buttons */
@@ -95,7 +95,7 @@ nav a:hover {
 /* ABOUT and CONTACT*/
 /* headshot */
 #about-article svg {
-  box-shadow: -20px 25px var(--third);
+  box-shadow: -15px 10px var(--third);
 }
 
 #about {
@@ -181,8 +181,10 @@ nav a:hover {
 }
 
 #portfolio .btn-dark {
-  background-color: var(--first);
-  border: none;
+  background-color: transparent;
+  border-radius: 0;
+  color: black;
+  border: 1px solid black;
 }
 
 #portfolio .btn-dark:hover {
@@ -190,12 +192,12 @@ nav a:hover {
 }
 
 /* CONTACT */
-#contact .card {
-  width: 400px;
-  margin: 20px;
+#contact {
+  padding: 10px;
+  border-radius: 0%;
+  border: 1px dashed black;
 }
 
-#contact .card-header {
+#contact h3 {
   text-align: center;
-  background-color: var(--third);
 }
