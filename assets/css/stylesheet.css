@@ -134,15 +134,8 @@ nav a:hover {
 /* SKILLS HEADERS */
 #skills h4 {
   text-transform: uppercase;
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
   font-size: 30px;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  top: 100;
-  text-align: right;
-  width: 200%;
-  right: 20px;
 }
 
 /* SKILLS CARDS */
