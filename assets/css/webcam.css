@@ -3,9 +3,9 @@
   position: absolute;
   right: 10;
   bottom: 20;
-  font-style: italic;
   font-size: 12px;
   line-height: 0;
+  color: var(--second);
 }
 
 #intro {
