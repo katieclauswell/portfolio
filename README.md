@@ -1,12 +1,12 @@
 # Personal Site
 
 ## Summary
-This space will eventually be polished up and used professionally but for now it's a frankensteined mess of things I'm trying out when I have the time/want to procrastinate on my schoolwork.
+Hey, welcome to my portfolio! This space will eventually be remade with React but for now I just incorporate whatever styling elements I want.
 
-To see where I'm currently at, you can check out the deployed site [here](https://katiechurchwell.github.io/portfolio/).
+## A little bit more about that...
+Currently the landing page graphic is generated through the [Windy Webcams API](https://api.windy.com/webcams). A fetch is made for the webcam image that is narrowed down by mountain category and the OR, US region. One of the results is randomly chosen and a blue noise filter is overlayed on top to try and counteract some of the jpeggyness.
 
-## API Info
-Currently the landing page graphic is generated through the [Windy Webcams API](https://api.windy.com/webcams). A fetch is made for the webcam image that is narrowed down by mountain category and the OR, US region. One of the results is randomly chosen.
+Aside from BootStrap, I use two other JavaScript tools called [Color Thief](https://lokeshdhakar.com/projects/color-thief/) and [Name That Color](https://chir.ag/projects/name-that-color/#6195ED). Color Thief takes the average color from the webcam image and Name That Color defines the name. I made the decision to use Color Thief because the webcam images are hosted on another domain and using a canvas-related function wasn't possible. Maybe there's another way? Email me, if so!
 
 ## Aspirational Features
 I am forever changing my mind about what this site will look like (perhaps it will always change!) but the following is a list of ideas I may or may not do:
