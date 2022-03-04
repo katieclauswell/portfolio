@@ -26,6 +26,7 @@ function randomImage(webcam) {
     ".</p>";
   container.appendChild(title);
   cssOverlay(imgSrc);
+  averageColor(imgSrc);
 }
 
 fetch(
