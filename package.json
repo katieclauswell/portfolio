@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/katiechurchwell/portfolio/issues"
   },
-  "homepage": "https://github.com/katiechurchwell/portfolio#readme",
+  "homepage": "katiechurchwell.com",
   "dependencies": {
     "dotenv": "^16.0.0",
     "express": "^4.17.3"
