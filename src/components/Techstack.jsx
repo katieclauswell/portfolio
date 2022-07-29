@@ -1,12 +1,4 @@
-import {
-  Container,
-  Row,
-  Col,
-  Image,
-  ListGroup,
-  Card,
-  Button,
-} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { info } from "../info/Info";
 
 function Techstack() {
@@ -22,7 +14,7 @@ function Techstack() {
   );
 
   return (
-    <Container>
+    <Container id="tech-stack">
       <Row>
         <h2>Tech Stack</h2>
       </Row>
