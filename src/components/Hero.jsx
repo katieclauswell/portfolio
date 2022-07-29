@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
+import randomWebcam from "../utils/randomWebcam";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import randomWebcam from "../utils/randomWebcam"
+import LoadingSpinner from "./LoadingSpinner";
+import axios from "axios";
 
 function Hero() {
-  const [loading, setLoading] = useState(false);
-  const [webcam, setWebcam] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [webcam, setWebcam] = useState({});
 
   // fetch webcam data from api
   useEffect(() => {
     const fetchWebcam = async () => {
-      setLoading(true);
+      setIsLoading(true);
       fetch(
         "https://api.windy.com/api/webcams/v2/list/category=mountain/region=US.OR/?show=webcams:image",
         {
@@ -20,12 +22,11 @@ function Hero() {
             "x-windy-key": "fRBdejZXV9tukKAYkPngOtGOg0bYrvV9",
           },
         }
-      ).then(function (response) {
-        response.json().then(function (webcam) {
-          setWebcam(randomWebcam(webcam.result.webcams))
-        });
+      ).then( async response => {
+        const data = await response.json();
+        setWebcam(randomWebcam(data.result.webcams));
+        setIsLoading(false);
       });
-      setLoading(false);
     };
 
     fetchWebcam();
@@ -33,10 +34,13 @@ function Hero() {
 
   return (
     <Container>
-      <Row><img src={webcam}/></Row>
       <Row>
-        <Col>Katie Churchwell</Col>
-        <Col>Api message</Col>
+        <img src={webcam} />
+      </Row>
+      <Row>
+        <Col>
+          <title>Katie Churchwell</title>
+        </Col>
       </Row>
     </Container>
   );
