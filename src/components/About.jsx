@@ -20,7 +20,7 @@ function About() {
         </Col>
         <Col>
           <Row>
-          <h1>Hey, I'm Katie!</h1>
+          <h1>Hey, I'm Katie</h1>
             <h3>I'm a Full Stack Developer.</h3>
             <p>
               PNW based with a background in both

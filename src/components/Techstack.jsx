@@ -24,9 +24,9 @@ function Techstack() {
         </Col>
         {languages.map((item, index) => (
           <Col>
-            <div id={index} className="m-1">
-              <i class={item.icon}></i>
-              <div class="card-title">{item.name}</div>
+            <div key={index} className="m-1">
+              <i className={item.icon}></i>
+              <div className="card-title">{item.name}</div>
             </div>
           </Col>
         ))}
@@ -37,9 +37,9 @@ function Techstack() {
         </Col>
         {frameworks.map((item, index) => (
           <Col>
-            <div id={index} className="m-1">
-              <i class={item.icon}></i>
-              <div class="card-title">{item.name}</div>
+            <div key={index} className="m-1">
+              <i className={item.icon}></i>
+              <div className="card-title">{item.name}</div>
             </div>
           </Col>
         ))}
@@ -50,9 +50,9 @@ function Techstack() {
         </Col>
         {databases.map((item, index) => (
           <Col>
-            <div id={index} className="m-1">
-              <i class={item.icon}></i>
-              <div class="card-title">{item.name}</div>
+            <div key={index} className="m-1">
+              <i className={item.icon}></i>
+              <div className="card-title">{item.name}</div>
             </div>
           </Col>
         ))}

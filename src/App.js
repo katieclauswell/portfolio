@@ -11,7 +11,7 @@ function App() {
       <Hero />
       <About />
       <Techstack />
-      <Work />
+      {/* <Work /> */}
     </>
   );
 }
