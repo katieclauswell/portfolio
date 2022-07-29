@@ -31,6 +31,8 @@ function Hero() {
     fetchWebcam();
   }, []);
 
+  console.log(webcam)
+
   return (
     <Container>
       <Row>
