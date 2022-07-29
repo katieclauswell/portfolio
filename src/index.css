@@ -132,7 +132,7 @@ nav a:hover {
 }
 
 /* ICONS */
-#skills i {
+i {
   color: var(--third);
   font-size: 50px;
 }

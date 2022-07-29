@@ -18,23 +18,20 @@ function About() {
         <Col>
           <h2>Hey, I'm Katie!</h2>
           <h3>I'm a Full Stack Developer.</h3>
-          <p>I have a background in both
-          International Business and Education. Passionate about delivering
-          performant, accessible applications.</p>
-          <p>I earned a Bachelors in
-          International Business with a concentration in Marketing from the
-          University of South Florida and am a recent grad of a Full Stack Web
-          Development bootcamp at the University of Oregon.</p>
+          <p>🌲 Based in the PNW</p>
+          <p>📚 My background is in conservation work and education.</p>
+          <p>🌴 Earned a Bachelors in International Business with a concentration in Marketing from the
+          University of South Florida.</p>
+          <p>⛰️Recent grad of a Full Stack Web Development bootcamp at the University of Oregon.</p>
        
-       <h3>Let's Connect!</h3>
           <a href="mailto:churchwellcatherine@gmail.com">
-            <i class="bi bi-envelope"></i>
+            <i className="bi bi-envelope"></i>
           </a>
         <a href="https://github.com/katiechurchwell">
-            <i class="bi bi-github"></i>
+            <i className="bi bi-github"></i>
           </a>
      <a href="https://www.linkedin.com/in/katiechurchwell/">
-            <i class="bi bi-linkedin"></i>
+            <i className="bi bi-linkedin"></i>
           </a>
         </Col>
       </Row>

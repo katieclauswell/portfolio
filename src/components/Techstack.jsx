@@ -1,37 +1,71 @@
-import { Container, Row, Col, Image, ListGroup } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Image,
+  ListGroup,
+  Card,
+  Button,
+} from "react-bootstrap";
+import { info } from "../info/Info";
 
 function Techstack() {
-  return (
-    <ListGroup>
-      <ListGroup.Item>
-        <Row>
-          <Col>
-            <h4>Languages</h4>
-          </Col>
-          <Col>
-            <i class="devicon-html5-plain"></i>
-            <p>HTML5</p>
-          </Col>
-          <Col>
-            <i class="devicon-css3-plain"></i>
-            <p>CSS3</p>
-          </Col>
-          <Col>
-            <i class="devicon-javascript-plain"></i>
-            <p>JavaScript</p>
-          </Col>
-          <Col>
-            <i class="devicon-nodejs-plain"></i>
-            <p>Nodejs</p>
-          </Col>
-        </Row>
-      </ListGroup.Item>
+  // Filter by category
+  const languages = info.technologies.filter(
+    (technology) => technology.category === "language"
+  );
+  const frameworks = info.technologies.filter(
+    (technology) => technology.category === "framework"
+  );
+  const databases = info.technologies.filter(
+    (technology) => technology.category === "database"
+  );
 
-      <ListGroup.Item>Frameworks</ListGroup.Item>
-      <ListGroup.Item>Databases</ListGroup.Item>
-      <ListGroup.Item>Design</ListGroup.Item>
-      <ListGroup.Item>Other</ListGroup.Item>
-    </ListGroup>
+  return (
+    <Container>
+      <Row>
+        <h2>Tech Stack</h2>
+      </Row>
+      <Row xs={2} md={4} lg={6}>
+        <Col>
+          <h3>Languages</h3>
+        </Col>
+        {languages.map((item, index) => (
+          <Col>
+            <div id={index} className="m-1">
+              <i class={item.icon}></i>
+              <div class="card-title">{item.name}</div>
+            </div>
+          </Col>
+        ))}
+      </Row>
+      <Row xs={2} md={4} lg={6}>
+        <Col>
+          <h3>Frameworks</h3>
+        </Col>
+        {frameworks.map((item, index) => (
+          <Col>
+            <div id={index} className="m-1">
+              <i class={item.icon}></i>
+              <div class="card-title">{item.name}</div>
+            </div>
+          </Col>
+        ))}
+      </Row>
+      <Row xs={2} md={4} lg={6}>
+        <Col>
+          <h3>Databases</h3>
+        </Col>
+        {databases.map((item, index) => (
+          <Col>
+            <div id={index} className="m-1">
+              <i class={item.icon}></i>
+              <div class="card-title">{item.name}</div>
+            </div>
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 }
 

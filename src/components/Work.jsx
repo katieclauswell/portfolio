@@ -1,12 +1,15 @@
-import { Container, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { info } from "../info/Info";
 
 function Work() {
   return (
     <Container>
+<Row>
       <h2>Work</h2>
+      </Row>
+      <Row>
       {info.portfolio.map((project, index) => (
-        <Card style={{ width: "18rem" }}>
+        <Card style={{ width: "18rem" }} className="m-3">
           <Card.Img variant="top" src={project.image} />
           <Card.Body>
             <Card.Title>{project.title}</Card.Title>
@@ -20,6 +23,7 @@ function Work() {
           </Card.Body>
         </Card>
       ))}
+       </Row>
     </Container>
   );
 }
