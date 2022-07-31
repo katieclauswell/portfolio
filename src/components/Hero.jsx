@@ -43,8 +43,6 @@ function Hero() {
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            height: "70vh",
-            width: "90vw",
           }}
         />
       </Row>

@@ -2,17 +2,17 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-function BasicExample() {
+function Header(props) {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#tech-stack">Tech Stack</Nav.Link>
-            <Nav.Link href="#work">Work</Nav.Link>
+            <Nav.Link onClick={() => props.handleView("default")}>Home</Nav.Link>
+            <Nav.Link onClick={() => props.handleView("about")}>About</Nav.Link>
+            <Nav.Link onClick={() => props.handleView("tech-stack")}>Tech Stack</Nav.Link>
+            <Nav.Link onClick={() => props.handleView("work")}>Work</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -20,4 +20,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Header;

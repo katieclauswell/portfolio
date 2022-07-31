@@ -8,7 +8,7 @@
   /* intro, headers, icons */
   --second: black;
   /* hovers, box-shadow, contact header, icons, webcam title */
-  --third: #8dd7ff;
+  --third: #000000;
   /* fonts */
   --main-font: "Open Sans", sans-serif;
   --header-font: "Outfit", sans-serif;
@@ -53,6 +53,8 @@ nav a:hover {
   border-radius: 70% 100% 0% 120%;
   position: relative;
   padding: 0;
+  height: 70vh;
+  width: 90vw;
 }
 
 #webcam::after {
@@ -69,6 +71,11 @@ nav a:hover {
   background-image: url(https://raw.githubusercontent.com/katiechurchwell/portfolio/develop/assets/images/blue-noise.png);
   background-repeat: repeat;
   opacity: 0.35;
+}
+
+#window {
+  height: 70vh;
+  width: 90vw;
 }
 
 /* ICONS */
