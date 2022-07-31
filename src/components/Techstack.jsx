@@ -15,40 +15,17 @@ function Techstack() {
 
   return (
     <Container id="tech-stack">
-      <Row>
+      <Row className="m-3">
         <h2>Tech Stack</h2>
+        <p>
+          <i>
+            Please hover over an icon to see examples of my work utilizing that
+            technology.
+          </i>
+        </p>
       </Row>
       <Row xs={2} md={4} lg={6}>
-        <Col>
-          <h3>Languages</h3>
-        </Col>
-        {languages.map((item, index) => (
-          <Col>
-            <div key={index} className="m-1">
-              <i className={item.icon}></i>
-              <div className="card-title">{item.name}</div>
-            </div>
-          </Col>
-        ))}
-      </Row>
-      <Row xs={2} md={4} lg={6}>
-        <Col>
-          <h3>Frameworks</h3>
-        </Col>
-        {frameworks.map((item, index) => (
-          <Col>
-            <div key={index} className="m-1">
-              <i className={item.icon}></i>
-              <div className="card-title">{item.name}</div>
-            </div>
-          </Col>
-        ))}
-      </Row>
-      <Row xs={2} md={4} lg={6}>
-        <Col>
-          <h3>Databases</h3>
-        </Col>
-        {databases.map((item, index) => (
+        {info.technologies.map((item, index) => (
           <Col>
             <div key={index} className="m-1">
               <i className={item.icon}></i>
