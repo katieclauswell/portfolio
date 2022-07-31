@@ -21,12 +21,12 @@ function About() {
         <Col>
           <Row>
           <h1>Hey, I'm Katie</h1>
-            <p>I'm a Full Stack Developer with a background in conservation and education. Passionate about delivering performant, accessible applications.
+            <p>I'm a Full Stack Developer with a background in conservation and education.
             </p>
             <p>
               I earned a Bachelors in International Business with a
               concentration in Marketing from the University of South Florida
-              and a graduate of the Full Stack Web Development bootcamp at
+              and am a graduate of the Full Stack Web Development bootcamp at
               the University of Oregon.
             </p>
             <p>Currently living on the ancestral homelands of the šnp̍əšqʷáw̉šəxʷ (p'squosa or Wenatchi) people in Leavenworth, WA. </p>

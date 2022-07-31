@@ -8,6 +8,5 @@ export default function randomWebcamImage(webcams) {
   // Random selection
   var max = webcams.length;
   var i = Math.floor(Math.random() * max);
-  var webcamChoice = webcams[i].image.current.preview
-  return webcamChoice;
+  return webcams[i].image.current.preview;
 };

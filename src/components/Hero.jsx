@@ -2,13 +2,11 @@ import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import randomWebcam from "../utils/randomWebcam";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import LoadingSpinner from "./LoadingSpinner";
 import WindowFrame from "./WindowFrame";
 
 function Hero() {
   const [isLoading, setIsLoading] = useState(false);
-  const [webcam, setWebcam] = useState({});
+  const [webcam, setWebcam] = useState();
 
   // fetch webcam data from api
   useEffect(() => {
@@ -24,30 +22,25 @@ function Hero() {
         }
       ).then(async (response) => {
         const data = await response.json();
-        setWebcam(randomWebcam(data.result.webcams));
         setIsLoading(false);
+        setWebcam(randomWebcam(data.result.webcams));
       });
     };
-
     fetchWebcam();
   }, []);
 
-  console.log(webcam);
-
   return (
     <Container>
-      <Row>
-        <div
-          id="webcam"
-          style={{
-            backgroundImage: `url(${webcam})`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-        />
-        <WindowFrame/>
-      </Row>
+      <div
+        id="webcam"
+        style={{
+          backgroundImage: `url(${webcam})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <WindowFrame />
     </Container>
   );
 }
