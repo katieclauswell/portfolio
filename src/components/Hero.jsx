@@ -4,6 +4,7 @@ import randomWebcam from "../utils/randomWebcam";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import LoadingSpinner from "./LoadingSpinner";
+import WindowFrame from "./WindowFrame";
 
 function Hero() {
   const [isLoading, setIsLoading] = useState(false);
@@ -31,7 +32,7 @@ function Hero() {
     fetchWebcam();
   }, []);
 
-  console.log(webcam)
+  console.log(webcam);
 
   return (
     <Container>
@@ -45,6 +46,7 @@ function Hero() {
             backgroundRepeat: "no-repeat",
           }}
         />
+        <WindowFrame/>
       </Row>
     </Container>
   );

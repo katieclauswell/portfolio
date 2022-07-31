@@ -75,10 +75,11 @@ nav a:hover {
 
 #window {
   position: absolute;
-  top: 150px;
-  left: 0px;
-  height: 70vh;
-  width: 90vw;
+  top: 65px;
+  right: 200px;
+  height: 85vh;
+  stroke:#fff;
+  stroke-miterlimit:10;
 }
 
 /* ICONS */
