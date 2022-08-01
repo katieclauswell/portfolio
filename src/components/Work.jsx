@@ -4,10 +4,10 @@ import { info } from "../info/Info";
 function Work() {
   return (
     <Container id="work">
-      <Row>
+      <Row className="m-3">
         <h2>Work</h2>
       </Row>
-      <Row>
+      <Row className="d-flex justify-content-center">
         {info.portfolio.map((project, index) => (
           <Card style={{ width: "18rem" }} className="m-3">
             <Card.Img variant="top" src={project.image} />

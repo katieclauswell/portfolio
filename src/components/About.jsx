@@ -20,8 +20,9 @@ function About() {
         </Col>
         <Col>
           <Row>
-          <h1>Hey, I'm Katie</h1>
-            <p>I'm a Full Stack Developer with a background in conservation and education.
+            <p>
+              My name is Katie Churchwell and I'm a Full Stack Developer with a
+              background in conservation and education.
             </p>
             <p>
               I earned a Bachelors in International Business with a
@@ -29,9 +30,12 @@ function About() {
               and am a graduate of the Full Stack Web Development bootcamp at
               the University of Oregon.
             </p>
-            <p>Currently living on the ancestral homelands of the šnp̍əšqʷáw̉šəxʷ (p'squosa or Wenatchi) people in Leavenworth, WA. </p>
+            <p>
+              Currently living on the ancestral homelands of the šnp̍əšqʷáw̉šəxʷ
+              (p'squosa or Wenatchi) people in Leavenworth, WA.
+            </p>
           </Row>
-          <Row xs={2} md={4} lg={6}>
+          <Row className="justify-content-center" xs={2} md={4} lg={6}>
             <a href="mailto:churchwellcatherine@gmail.com">
               <i className="bi bi-envelope"></i>
             </a>

@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Resume from '../assets/Resume-Churchwell.pdf'
 
 function Header(props) {
 
@@ -18,9 +19,9 @@ function Header(props) {
               Tech Stack
             </Nav.Link>
             <Nav.Link onClick={() => props.handleView("work")}>Work</Nav.Link>
+            <Nav.Link href = {Resume} target = "_blank">Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <i className="bi bi-sun" onClick={() => props.setDarkMode(!props.darkMode)}/>
       </Container>
     </Navbar>
   );

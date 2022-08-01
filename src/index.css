@@ -40,7 +40,7 @@ nav {
 }
 
 nav a:hover {
-  background-image: linear-gradient(var(--third), var(--third));
+  background-image: linear-gradient(var(--first), var(--first));
   background-size: 100% 40%;
   background-position: center bottom 2%;
   background-repeat: no-repeat;
@@ -78,12 +78,21 @@ nav a:hover {
   top: 65px;
   right: 200px;
   height: 85vh;
-  stroke:#fff;
-  stroke-miterlimit:10;
+  stroke: #fff;
+  stroke-miterlimit: 10;
 }
 
 /* ICONS */
 i {
   color: var(--third);
   font-size: 50px;
+  align-items: center;
+}
+
+i:hover {
+  color: var(--first);
+}
+
+#tech-stack p {
+  font-style: italic;
 }
