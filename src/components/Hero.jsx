@@ -30,7 +30,7 @@ function Hero() {
   }, []);
 
   return (
-    <Container>
+    <Container className="m-3">
       <div
         id="webcam"
         style={{

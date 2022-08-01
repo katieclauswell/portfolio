@@ -5,6 +5,10 @@ import me from "../assets/images/headshot-transparent.png";
 function About() {
   return (
     <Container id="about">
+      <Row className="m-3">
+        <h2>About</h2>
+        <p>A little bit about myself.</p>
+      </Row>
       <Row className="m-5">
         <Col>
           <Image

@@ -92,7 +92,3 @@ i {
 i:hover {
   color: var(--first);
 }
-
-#tech-stack p {
-  font-style: italic;
-}

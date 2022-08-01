@@ -6,6 +6,7 @@ function Work() {
     <Container id="work">
       <Row className="m-3">
         <h2>Work</h2>
+        <p>A few showcased projects.</p>
       </Row>
       <Row className="d-flex justify-content-center">
         {info.portfolio.map((project, index) => (
