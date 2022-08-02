@@ -1,5 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Container, Row, Col, Popover, Overlay } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Popover,
+  Overlay,
+  OverlayTrigger,
+} from "react-bootstrap";
 import { info } from "../info/Info";
 
 function Techstack() {
@@ -62,22 +69,33 @@ function Techstack() {
       </Row>
       <Row xs={2} md={4} lg={6} className="m-1">
         {info.technologies.map((item, index) => (
-            <>
-          <Col className="d-flex justify-content-center">
-            <div key={index} ref={target} className="m-1" onClick={() => setShow(!show)}>
-              <i className={item.icon}></i>
-              <div>{item.name}</div>
-            </div>
-          </Col>
-      
-          <Overlay target={target.current} show={show} placement="right">
-          {(props) => (
-            <Popover id="popover-basic" {...props}>
-              test
-            </Popover>
-          )}
-        </Overlay>
-        </>
+          <>
+            <Col className="d-flex justify-content-center">
+              <OverlayTrigger
+                trigger="click"
+                key={index}
+                placement="right"
+                overlay={
+                  <Popover id={`popover-positioned-right`}>
+                    <Popover.Header as="h3">{`${item.name}`}</Popover.Header>
+                    <Popover.Body>
+                      <strong>Holy guacamole!</strong> Check this info.
+                    </Popover.Body>
+                  </Popover>
+                }
+              >
+                <div
+                  key={index}
+                  ref={target}
+                  className="m-1"
+                  onClick={() => setShow(!show)}
+                >
+                  <i className={item.icon}></i>
+                  <div>{item.name}</div>
+                </div>
+              </OverlayTrigger>
+            </Col>
+          </>
         ))}
       </Row>
     </Container>
