@@ -48,22 +48,13 @@ function Techstack() {
   // Popover
   const [show, setShow] = useState(false);
   const target = useRef(null);
-  // const popover = (props) => (
-  //   <Popover id="popover-basic" {...props}>
-  //     <Popover.Header as="h3">Header</Popover.Header>
-  //     <Popover.Body>
-  //       And here's some <strong>amazing</strong> content. It's very engaging.
-  //       right?
-  //     </Popover.Body>
-  //   </Popover>
-  // );
 
   return (
     <Container>
       <Row className="m-3">
         <h2>Tech Stack</h2>
         <p>
-          Please hover over an icon to see examples of my work utilizing that
+          Please click an icon to see examples of my work utilizing that
           technology.
         </p>
       </Row>
@@ -79,7 +70,7 @@ function Techstack() {
                   <Popover id={`popover-positioned-right`}>
                     <Popover.Header as="h3">{`${item.name}`}</Popover.Header>
                     <Popover.Body>
-                      <strong>Holy guacamole!</strong> Check this info.
+                     
                     </Popover.Body>
                   </Popover>
                 }
