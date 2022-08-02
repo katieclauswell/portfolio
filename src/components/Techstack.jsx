@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useState, useEffect, useRef } from "react";
+import { Container, Row, Col, Popover, Overlay } from "react-bootstrap";
 import { info } from "../info/Info";
 
 function Techstack() {
@@ -14,10 +14,12 @@ function Techstack() {
   //   (technology) => technology.category === "database"
   // );
 
-  // github repositories
-  const [repos, setRepos] = useState();
+  // Github Repositories
 
-  // fetch repo data from api
+  const [repos, setRepos] = useState();
+  const [jsRepos, setJsRepos] = useState();
+
+  // Fetch repo data from api
   useEffect(() => {
     const fetchRepos = async () => {
       fetch("https://api.github.com/legacy/repos/search/user:katiechurchwell", {
@@ -27,13 +29,27 @@ function Techstack() {
       })
         .then(async (response) => {
           const data = await response.json();
-          setRepos(data.repositories);
-          console.log("repos", repos);
+          setJsRepos(
+            data.repositories.filter((repo) => repo.language === "JavaScript")
+          );
         })
         .catch((error) => console.error(error));
     };
     fetchRepos();
   }, []);
+
+  // Popover
+  const [show, setShow] = useState(false);
+  const target = useRef(null);
+  // const popover = (props) => (
+  //   <Popover id="popover-basic" {...props}>
+  //     <Popover.Header as="h3">Header</Popover.Header>
+  //     <Popover.Body>
+  //       And here's some <strong>amazing</strong> content. It's very engaging.
+  //       right?
+  //     </Popover.Body>
+  //   </Popover>
+  // );
 
   return (
     <Container>
@@ -46,12 +62,22 @@ function Techstack() {
       </Row>
       <Row xs={2} md={4} lg={6} className="m-1">
         {info.technologies.map((item, index) => (
+            <>
           <Col className="d-flex justify-content-center">
-            <div key={index} className="m-1">
+            <div key={index} ref={target} className="m-1" onClick={() => setShow(!show)}>
               <i className={item.icon}></i>
               <div>{item.name}</div>
             </div>
           </Col>
+      
+          <Overlay target={target.current} show={show} placement="right">
+          {(props) => (
+            <Popover id="popover-basic" {...props}>
+              test
+            </Popover>
+          )}
+        </Overlay>
+        </>
         ))}
       </Row>
     </Container>
