@@ -69,6 +69,46 @@ export const info = {
       name: "graphql",
       category: "database",
     },
+    {
+      icon: "devicon-figma-plain",
+      name: "figma",
+      category: "design",
+    },
+    {
+      icon: "devicon-photoshop-plain",
+      name: "photoshop",
+      category: "design",
+    },
+    {
+      icon: "devicon-illustrator-plain",
+      name: "illustrator",
+      category: "design",
+    },
+    {
+      icon: "devicon-git-plain",
+      name: "git",
+      category: "other",
+    },
+    {
+      icon: "devicon-heroku-original",
+      name: "heroku",
+      category: "other",
+    },
+    {
+      icon: "devicon-git-plain",
+      name: "git",
+      category: "other",
+    },
+    {
+      icon: "bi bi-code",
+      name: "restful APIs",
+      category: "other",
+    },
+    {
+      icon: "devicon-jest-plain",
+      name: "jest",
+      category: "other",
+    },
   ],
   socials: [
     {
@@ -93,21 +133,24 @@ export const info = {
       live: "https://whispering-reef-71968.herokuapp.com/",
       source: "https://github.com/katiechurchwell/Pantry",
       image: pantry,
-      description: "Utilizes a back end with servers, databases, advanced APIs and user authentication. Allows the user to search for recipes by ingredient."
+      description:
+        "Utilizes a back end with servers, databases, advanced APIs and user authentication. Allows the user to search for recipes by ingredient.",
     },
     {
       title: "Chew View",
       live: "https://katiechurchwell.github.io/Chew-View/",
       source: "https://github.com/katiechurchwell/Chew-View",
       image: chewview,
-      description: "Allows the user to search for local restaurants and movies to watch. Built using the Travel Advisor and TMDB Movie Database APIs, Bootstrap and JavaScript."
+      description:
+        "Allows the user to search for local restaurants and movies to watch. Built using the Travel Advisor and TMDB Movie Database APIs, Bootstrap and JavaScript.",
     },
     {
       title: "NASATEROIDS",
       live: "https://nasteroids.herokuapp.com/",
       source: "https://github.com/ChrisKurz098/NASAteroids/",
       image: nasteroids,
-      description: "A recreation of the 1979 Atari game built in React. This application utilizes MUI components and an NES-style CSS frame work for UI, MongoDB and GraphQL for database models and API queries."
+      description:
+        "A recreation of the 1979 Atari game built in React. This application utilizes MUI components and an NES-style CSS frame work for UI, MongoDB and GraphQL for database models and API queries.",
     },
   ],
 };

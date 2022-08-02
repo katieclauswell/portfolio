@@ -70,7 +70,7 @@ function Techstack() {
       <Row xs={2} md={4} lg={6} className="m-1">
         {info.technologies.map((item, index) => (
           <>
-            <Col className="d-flex justify-content-center">
+            <Col className="d-flex justify-content-center" key={index}>
               <OverlayTrigger
                 trigger="click"
                 key={index}
@@ -85,7 +85,6 @@ function Techstack() {
                 }
               >
                 <div
-                  key={index}
                   ref={target}
                   className="m-1"
                   onClick={() => setShow(!show)}
