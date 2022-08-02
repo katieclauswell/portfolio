@@ -40,7 +40,7 @@ function Hero() {
           backgroundRepeat: "no-repeat",
         }}
       />
-      <WindowFrame/>
+      {/* <WindowFrame/> */}
     </Container>
   );
 }

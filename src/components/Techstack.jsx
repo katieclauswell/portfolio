@@ -1,3 +1,4 @@
+import { setSelectionRange } from "@testing-library/user-event/dist/utils";
 import React, { useState, useEffect, useRef } from "react";
 import {
   Container,
@@ -8,6 +9,7 @@ import {
   OverlayTrigger,
 } from "react-bootstrap";
 import { info } from "../info/Info";
+import PopTest from "../components/PopTest"
 
 function Techstack() {
   // // Filter technologies by category
@@ -22,9 +24,8 @@ function Techstack() {
   // );
 
   // Github Repositories
-
   const [repos, setRepos] = useState();
-  const [jsRepos, setJsRepos] = useState();
+  // const [jsRepos, setJsRepos] = useState();
 
   // Fetch repo data from api
   useEffect(() => {
@@ -36,9 +37,10 @@ function Techstack() {
       })
         .then(async (response) => {
           const data = await response.json();
-          setJsRepos(
-            data.repositories.filter((repo) => repo.language === "JavaScript")
-          );
+          // setJsRepos(
+          //   data.repositories.filter((repo) => repo.language === "JavaScript")
+          // );
+          setRepos(data.repositories);
         })
         .catch((error) => console.error(error));
     };
@@ -70,7 +72,7 @@ function Techstack() {
                   <Popover id={`popover-positioned-right`}>
                     <Popover.Header as="h3">{`${item.name}`}</Popover.Header>
                     <Popover.Body>
-                     
+                    <PopTest language={item.name} repos={repos}/>
                     </Popover.Body>
                   </Popover>
                 }
