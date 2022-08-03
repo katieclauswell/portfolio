@@ -8,9 +8,9 @@ function Work() {
         <h2>Work</h2>
         <p>A few showcased projects.</p>
       </Row>
-      <Row className="d-flex justify-content-center">
+      <Row>
         {info.portfolio.map((project, index) => (
-          <Card style={{ width: "18rem" }} className="m-3">
+          <Card style={{ width: "25rem" }} className="m-3">
             <Card.Img variant="top" src={project.image} />
             <Card.Body>
               <Card.Title>{project.title}</Card.Title>

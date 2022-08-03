@@ -6,77 +6,77 @@ export const info = {
   technologies: [
     {
       icon: "devicon-html5-plain",
-      name: "HTML",
+      name: "html5",
       category: "language",
     },
     {
       icon: "devicon-css3-plain",
-      name: "CSS",
+      name: "css3",
       category: "language",
     },
     {
       icon: "devicon-javascript-plain",
-      name: "JavaScript",
+      name: "javascript",
       category: "language",
     },
     {
       icon: "devicon-nodejs-plain",
-      name: "NodeJs",
+      name: "nodejs",
       category: "language",
     },
     {
       icon: "devicon-react-original",
-      name: "React",
+      name: "react",
       category: "framework",
     },
     {
       icon: "devicon-jquery-plain",
-      name: "jQuery",
+      name: "jquery",
       category: "framework",
     },
     {
       icon: "devicon-express-original",
-      name: "Express",
+      name: "express",
       category: "framework",
     },
     {
       icon: "devicon-bootstrap-plain",
-      name: "Bootstrap",
+      name: "bootstrap",
       category: "framework",
     },
     {
       icon: "devicon-handlebars-plain",
-      name: "Handlebars",
+      name: "handlebars",
       category: "framework",
     },
     {
       icon: "devicon-mongodb-plain",
-      name: "Mongodb",
+      name: "mongodb",
       category: "database",
     },
     {
       icon: "devicon-firebase-plain",
-      name: "Firebase",
+      name: "firebase",
       category: "database",
     },
     {
       icon: "devicon-mysql-plain",
-      name: "MySql",
+      name: "mysql",
       category: "database",
     },
     {
       icon: "devicon-graphql-plain",
-      name: "Graphql",
+      name: "graphql",
       category: "database",
     },
     {
       icon: "devicon-figma-plain",
-      name: "Figma",
+      name: "figma",
       category: "design",
     },
     {
       icon: "devicon-photoshop-plain",
-      name: "Photoshop",
+      name: "photoshop",
       category: "design",
     },
     {
@@ -91,17 +91,17 @@ export const info = {
     },
     {
       icon: "devicon-git-plain",
-      name: "Git",
+      name: "git",
       category: "other",
     },
     {
       icon: "bi bi-code",
-      name: "Restful APIs",
+      name: "restful API",
       category: "other",
     },
     {
       icon: "devicon-jest-plain",
-      name: "Jest",
+      name: "jest",
       category: "other",
     },
   ],

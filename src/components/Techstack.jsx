@@ -1,4 +1,3 @@
-import { setSelectionRange } from "@testing-library/user-event/dist/utils";
 import React, { useState, useEffect, useRef } from "react";
 import {
   Container,
@@ -9,47 +8,62 @@ import {
   OverlayTrigger,
 } from "react-bootstrap";
 import { info } from "../info/Info";
-import PopTest from "../components/PopTest"
+import PopoverDesc from "./PopoverDesc";
 
 function Techstack() {
-  // // Filter technologies by category
-  // const languages = info.technologies.filter(
-  //   (technology) => technology.category === "language"
-  // );
-  // const frameworks = info.technologies.filter(
-  //   (technology) => technology.category === "framework"
-  // );
-  // const databases = info.technologies.filter(
-  //   (technology) => technology.category === "database"
-  // );
-
   // Github Repositories
   const [repos, setRepos] = useState();
-  // const [jsRepos, setJsRepos] = useState();
-
-  // Fetch repo data from api
-  useEffect(() => {
-    const fetchRepos = async () => {
-      fetch("https://api.github.com/legacy/repos/search/user:katiechurchwell", {
-        headers: {
-          Accept: "application/vnd.github.v3+json",
-        },
-      })
-        .then(async (response) => {
-          const data = await response.json();
-          // setJsRepos(
-          //   data.repositories.filter((repo) => repo.language === "JavaScript")
-          // );
-          setRepos(data.repositories);
-        })
-        .catch((error) => console.error(error));
-    };
-    fetchRepos();
-  }, []);
-
   // Popover
   const [show, setShow] = useState(false);
   const target = useRef(null);
+
+  // Fetch repo data from api
+  const query_topics = {
+    query: `
+  query {
+    user(login: "katiechurchwell") {
+      repositories(
+        first: 100
+        affiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER]
+      ) {
+        nodes {
+          name
+          repositoryTopics(first: 100) {
+            nodes {
+              topic {
+                name
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  `,
+  };
+
+  const headers = {
+    "Content-Type": "application/json",
+    Authorization: "bearer " + "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",
+  };
+
+  useEffect(() => {
+    const fetchTopics = async () => {
+      fetch("https://api.github.com/graphql", {
+        method: "POST",
+        headers: headers,
+        body: JSON.stringify(query_topics),
+      }).then(async (response) => {
+        const data = await response.json();
+
+        // a mess of destructuring, yikes 😰
+        const reformattedData = data.data.user.repositories.nodes.map(({name, repositoryTopics}) => ({name:name, topics: repositoryTopics.nodes.map((value) => value.topic.name)}));
+        setRepos(reformattedData)
+      });
+    };
+    fetchTopics();
+  }, []);
+// End fetch repo data from api
 
   return (
     <Container>
@@ -72,7 +86,7 @@ function Techstack() {
                   <Popover id={`popover-positioned-right`}>
                     <Popover.Header as="h3">{`${item.name}`}</Popover.Header>
                     <Popover.Body>
-                    <PopTest language={item.name} repos={repos}/>
+                      <PopoverDesc language={item.name} repos={repos} />
                     </Popover.Body>
                   </Popover>
                 }
