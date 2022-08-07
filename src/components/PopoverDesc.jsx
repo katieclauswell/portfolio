@@ -1,20 +1,17 @@
 function PopoverDesc(props) {
   const repos = props.repos;
-  console.log("repos", repos)
-  console.log("language", props.language)
-  const filter = repos.filter(repo => repo.topics.includes(props.language));
-  console.log("filter", filter);
+  const filter = repos.filter((repo) => repo.topics.includes(props.language));
 
   return (
-    <>
+    <ul>
       {filter.map((item, index) => (
-        <ul>
-          <li key={index}>
+        <li key={index}>
+          <a href={`https://www.github.com/katiechurchwell/${item.name}`}>
             {item.name}
-          </li>
-        </ul>
+          </a>
+        </li>
       ))}
-    </>
+    </ul>
   );
 }
 

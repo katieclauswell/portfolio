@@ -7,7 +7,7 @@ import Work from "./components/Work";
 
 function App() {
   const [view, setView] = useState("default");
-  
+
   const handleView = (page) => {
     setView(page);
   };

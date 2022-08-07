@@ -5,10 +5,10 @@
   --accent-bg: white;
   /* content text, buttons */
   --first: #4a4ccc;
-  /* intro, headers, icons */
-  --second: black;
-  /* hovers, box-shadow, contact header, icons, webcam title */
-  --third: #000000;
+  /* nav hover */
+  --second: #FDE5CD;
+  /* icons */
+  --third: black;
   /* fonts */
   --main-font: "Open Sans", sans-serif;
   --header-font: "Outfit", sans-serif;
@@ -40,7 +40,7 @@ nav {
 }
 
 nav a:hover {
-  background-image: linear-gradient(var(--first), var(--first));
+  background-image: linear-gradient(var(--second), var(--second));
   background-size: 100% 40%;
   background-position: center bottom 2%;
   background-repeat: no-repeat;

@@ -7,8 +7,11 @@ import {
   Overlay,
   OverlayTrigger,
 } from "react-bootstrap";
-import { info } from "../info/Info";
+import { info } from "../info/info";
 import PopoverDesc from "./PopoverDesc";
+import axios from "axios";
+
+
 
 function Techstack() {
   // Github Repositories
@@ -17,62 +20,32 @@ function Techstack() {
   const [show, setShow] = useState(false);
   const target = useRef(null);
 
-  // Fetch repo data from api
-  const query_topics = {
-    query: `
-  query {
-    user(login: "katiechurchwell") {
-      repositories(
-        first: 100
-        affiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER]
-      ) {
-        nodes {
-          name
-          repositoryTopics(first: 100) {
-            nodes {
-              topic {
-                name
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  `,
-  };
-
-  const headers = {
-    "Content-Type": "application/json",
-    Authorization: "bearer " + "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",
-  };
-
+  // get repo data
   useEffect(() => {
     const fetchTopics = async () => {
-      fetch("https://api.github.com/graphql", {
-        method: "POST",
-        headers: headers,
-        body: JSON.stringify(query_topics),
-      }).then(async (response) => {
-        const data = await response.json();
-
-        // a mess of destructuring, yikes 😰
-        const reformattedData = data.data.user.repositories.nodes.map(({name, repositoryTopics}) => ({name:name, topics: repositoryTopics.nodes.map((value) => value.topic.name)}));
-        setRepos(reformattedData)
-      });
+      const options = {
+        method: "GET",
+        url: "http://localhost:8000/github",
+      };
+  
+      axios
+        .request(options)
+        .then(async (response) => {
+          const data = await response;
+          setRepos(data.data);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
     };
     fetchTopics();
   }, []);
-// End fetch repo data from api
 
   return (
     <Container>
       <Row className="m-3">
         <h2>Tech Stack</h2>
-        <p>
-          Please click an icon to see examples of my work utilizing that
-          technology.
-        </p>
+        <p>Click an icon to filter my GitHub repositories by that topic.</p>
       </Row>
       <Row xs={2} md={4} lg={6} className="m-1">
         {info.technologies.map((item, index) => (

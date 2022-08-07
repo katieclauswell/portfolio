@@ -1,6 +1,6 @@
-import pantry from "../assets/images/pantry.png";
-import chewview from "../assets/images/chew-view.png";
-import nasteroids from "../assets/images/nasteroids.png";
+import pantry from "../assets/images/project-mockups/pantry.png";
+import chewview from "../assets/images/project-mockups/chewview.png";
+import nasteroids from "../assets/images/project-mockups/nasteroids.png";
 
 export const info = {
   technologies: [
@@ -81,12 +81,12 @@ export const info = {
     },
     {
       icon: "devicon-illustrator-plain",
-      name: "Illustrator",
+      name: "illustrator",
       category: "design",
     },
     {
       icon: "devicon-heroku-original",
-      name: "Heroku",
+      name: "heroku",
       category: "other",
     },
     {
@@ -96,7 +96,7 @@ export const info = {
     },
     {
       icon: "bi bi-code",
-      name: "restful API",
+      name: "rest-api",
       category: "other",
     },
     {
