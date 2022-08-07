@@ -1,4 +1,4 @@
-import { Container, Row, Card, Button } from "react-bootstrap";
+import { Container, Row, Card, Button, Col } from "react-bootstrap";
 import { info } from "../info/info";
 
 function Work() {
@@ -8,21 +8,23 @@ function Work() {
         <h2>Work</h2>
         <p>A few showcased projects.</p>
       </Row>
-      <Row>
-        {info.portfolio.map((project, index) => (
-          <Card style={{ width: "25rem" }} className="m-3">
-            <Card.Img variant="top" src={project.image} />
-            <Card.Body>
-              <Card.Title>{project.title}</Card.Title>
-              <Card.Text>{project.description}</Card.Text>
-              <a href={project.live}>
-                <Button variant="primary m-2">Live</Button>
-              </a>
-              <a href={project.source}>
-                <Button variant="primary m-2">Repo</Button>
-              </a>
-            </Card.Body>
-          </Card>
+      <Row xs={1} md={2} className="g-4">
+        {info.portfolio.slice(0).reverse().map((project, index) => (
+          <Col>
+            <Card>
+              <Card.Img variant="top" src={project.image} />
+              <Card.Body>
+                <Card.Title>{project.title}</Card.Title>
+                <Card.Text>{project.description}</Card.Text>
+                <a href={project.live}>
+                  <Button variant="light m-2">Live</Button>
+                </a>
+                <a href={project.source}>
+                  <Button variant="light m-2">Repo</Button>
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
         ))}
       </Row>
     </Container>

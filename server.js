@@ -3,7 +3,7 @@ const express = require("express");
 const expressGraphQL = require("express-graphql").graphqlHTTP;
 const cors = require("cors");
 const axios = require("axios");
-require('dotenv').config()
+require("dotenv").config();
 
 const app = express();
 app.use(cors());
@@ -15,7 +15,6 @@ app.use(
   })
 );
 
-//need to sub .env
 const headers = {
   "Content-Type": "application/json",
   Authorization: "bearer " + process.env.REACT_APP_API_KEY,

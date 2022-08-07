@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import randomWebcam from "../utils/randomWebcam";
-import Row from "react-bootstrap/Row";
 import WindowFrame from "./WindowFrame";
 
 function Hero() {
@@ -40,7 +39,7 @@ function Hero() {
           backgroundRepeat: "no-repeat",
         }}
       />
-      {/* <WindowFrame/> */}
+      <WindowFrame/>
     </Container>
   );
 }

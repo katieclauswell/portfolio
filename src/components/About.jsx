@@ -7,7 +7,6 @@ function About() {
     <Container id="about">
       <Row className="m-3">
         <h2>About</h2>
-        <p>A little bit about myself.</p>
       </Row>
       <Row className="m-5">
         <Col>
@@ -25,7 +24,7 @@ function About() {
         <Col>
           <Row>
             <p>
-              My name is Katie Churchwell and I'm a Full Stack Developer with a
+              Hey, my name is Katie Churchwell and I'm a Full Stack Developer with a
               background in conservation and education.
             </p>
             <p>
@@ -38,6 +37,7 @@ function About() {
               Currently living on the ancestral homelands of the šnp̍əšqʷáw̉šəxʷ
               (p'squosa or Wenatchi) people in Leavenworth, WA.
             </p>
+            <p>Please feel free to connect with me!</p>
           </Row>
           <Row className="justify-content-center" xs={2} md={4} lg={6}>
             <a href="mailto:churchwellcatherine@gmail.com">

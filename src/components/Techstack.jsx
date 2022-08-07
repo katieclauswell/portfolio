@@ -4,7 +4,6 @@ import {
   Row,
   Col,
   Popover,
-  Overlay,
   OverlayTrigger,
 } from "react-bootstrap";
 import { info } from "../info/info";
@@ -19,13 +18,15 @@ function Techstack() {
   // Popover
   const [show, setShow] = useState(false);
   const target = useRef(null);
-
+  
   // get repo data
   useEffect(() => {
     const fetchTopics = async () => {
       const options = {
         method: "GET",
-        url: "http://localhost:8000/github",
+        url: process.env.NODE_ENV === 'production' 
+        ? '/github' 
+        : 'http://localhost:8000/github'
       };
   
       axios
