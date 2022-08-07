@@ -3,12 +3,10 @@
   --main-bg: #f1eeec;
   /* about me bg */
   --accent-bg: white;
-  /* content text, buttons */
+  /* content text, buttons, nav hover */
   --first: #4a4ccc;
-  /* nav hover */
-  --second: #FDE5CD;
   /* icons */
-  --third: black;
+  --second: black;
   /* fonts */
   --main-font: "Open Sans", sans-serif;
   --header-font: "Outfit", sans-serif;
@@ -40,11 +38,12 @@ nav {
 }
 
 nav a:hover {
-  background-image: linear-gradient(var(--second), var(--second));
+  background-image: linear-gradient(var(--first), var(--first));
   background-size: 100% 40%;
   background-position: center bottom 2%;
   background-repeat: no-repeat;
   display: inline-block;
+  filter: brightness(200%);
 }
 
 /* WEBCAM */
@@ -84,7 +83,7 @@ nav a:hover {
 
 /* ICONS */
 i {
-  color: var(--third);
+  /* color: var(--second); */
   font-size: 50px;
   align-items: center;
 }

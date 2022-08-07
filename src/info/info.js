@@ -55,11 +55,6 @@ export const info = {
       category: "database",
     },
     {
-      icon: "devicon-firebase-plain",
-      name: "firebase",
-      category: "database",
-    },
-    {
       icon: "devicon-mysql-plain",
       name: "mysql",
       category: "database",

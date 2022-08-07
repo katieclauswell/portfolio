@@ -1,0 +1,22 @@
+/* default */
+:root {
+  --font-color: #333;
+  --background-color: #eee;
+  --i-color: black;
+}
+
+/* dark mode */
+[data-theme="dark"] {
+  --font-color: #eee;
+  --background-color: #333;
+  --i-color: #eee;
+}
+
+body, .card, .navbar, .bg-light, .nav-link {
+  background-color: var(--background-color)!important;
+  color: var(--font-color)!important;
+}
+
+i {
+  color: (--i-color);
+}

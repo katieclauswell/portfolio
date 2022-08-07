@@ -10,8 +10,6 @@ import { info } from "../info/info";
 import PopoverDesc from "./PopoverDesc";
 import axios from "axios";
 
-
-
 function Techstack() {
   // Github Repositories
   const [repos, setRepos] = useState();
@@ -67,11 +65,11 @@ function Techstack() {
               >
                 <div
                   ref={target}
-                  className="m-1"
+                  className="m-1 justify-content-md-center"
                   onClick={() => setShow(!show)}
                 >
                   <i className={item.icon}></i>
-                  <div>{item.name}</div>
+                  <div className="text-center">{item.name}</div>
                 </div>
               </OverlayTrigger>
             </Col>
