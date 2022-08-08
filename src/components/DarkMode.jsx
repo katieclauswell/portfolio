@@ -14,14 +14,6 @@ const DarkMode = () => {
     document.documentElement.setAttribute("data-theme", "light");
   };
 
-  // default dark?
-  //   const prefersDark =
-  //     window.matchMedia &&
-  //     window.matchMedia("(prefers-color-scheme: dark)").matches;
-  //     if (prefersDark) {
-  //         setTheme("dark");
-  //       }
-
   const toggleTheme = (e) => {
     if (theme === "light") {
       setDark();
@@ -35,6 +27,7 @@ const DarkMode = () => {
       <i
         id="theme-toggle" className={theme === "dark" ? "bi bi-cloud-moon" : "bi bi-sun"}
         onClick={toggleTheme}
+        aria-label="Dark mode toggle"
       />
     </>
   );

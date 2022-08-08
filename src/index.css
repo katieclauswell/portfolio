@@ -19,16 +19,6 @@ body {
   color: var(--first);
 }
 
-/*BOOTSTRAP EDITS*/
-.bg-light {
-  --bs-bg-opacity: 0.9;
-  background-color: var(--main-bg);
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: black;
-}
-
 /* NAVIGATION */
 nav {
   font-family: var(--nav-font);

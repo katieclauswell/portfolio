@@ -12,11 +12,16 @@
   --i-color: #eee;
 }
 
-body, .card, .navbar, .bg-light, .nav-link {
-  background-color: var(--background-color)!important;
-  color: var(--font-color)!important;
+body,
+.card {
+  background-color: var(--background-color) !important;
+  color: var(--font-color) !important;
 }
 
-i {
-  color: (--i-color);
+i, a, .nav-link, a:active, a:hover {
+  color: var(--i-color) !important;
+}
+
+.card {
+  border-color: var(--i-color);
 }

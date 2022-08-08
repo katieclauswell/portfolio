@@ -6,7 +6,7 @@ import DarkMode from "../components/DarkMode";
 
 function Header(props) {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
