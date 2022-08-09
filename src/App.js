@@ -19,7 +19,7 @@ function App() {
         {(() => {
           switch (view) {
             default:
-              return "hi!";
+              return <Hero />;
             case "about":
               return <About />;
             case "tech-stack":

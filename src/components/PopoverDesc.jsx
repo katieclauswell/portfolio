@@ -3,7 +3,6 @@ function PopoverDesc(props) {
     return self.indexOf(value) === index;
   }
   const repos = props.repos;
-  console.log(repos);
   const filter = repos.filter((repo) => repo.topics.includes(props.language));
 
   return (

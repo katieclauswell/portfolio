@@ -16,7 +16,7 @@ function Techstack() {
 
   // get repo data
   useEffect(() => {
-    setIsLoading(true)
+    setIsLoading(true);
     const fetchTopics = async () => {
       const options = {
         method: "GET",
@@ -30,7 +30,6 @@ function Techstack() {
         .request(options)
         .then(async (response) => {
           const data = await response;
-          console.log("github data", data);
           setRepos(data.data);
           setIsLoading(false);
         })
@@ -59,14 +58,11 @@ function Techstack() {
                   <Popover id={`popover-positioned-right`}>
                     <Popover.Header as="h3">{`${item.name}`}</Popover.Header>
                     <Popover.Body>
-                      {
-                        //Check if loading
-                        isLoading === true ? (
-                          <LoadingSpinner/>
-                        ) : (
-                          <PopoverDesc language={item.name} repos={repos} />
-                        )
-                      }
+                      {isLoading === true ? (
+                        <LoadingSpinner />
+                      ) : (
+                        <PopoverDesc language={item.name} repos={repos} />
+                      )}
                     </Popover.Body>
                   </Popover>
                 }

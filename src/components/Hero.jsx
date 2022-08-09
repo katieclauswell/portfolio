@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import randomWebcam from "../utils/randomWebcam";
 import WindowFrame from "./WindowFrame";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 function Hero() {
   const [isLoading, setIsLoading] = useState(false);
@@ -30,16 +31,22 @@ function Hero() {
 
   return (
     <Container className="m-3">
-      <div
-        id="webcam"
-        style={{
-          backgroundImage: `url(${webcam})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      />
-      <WindowFrame/>
+      {isLoading === true ? (
+        <LoadingSpinner />
+      ) : (
+        <>
+        <div
+          id="webcam"
+          style={{
+            backgroundImage: `url(${webcam.image.current.preview})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+        <p className="m-2">Randomly generated live image of the mountains of Oregon -- this one happens to be in {webcam.title}.</p>
+        </>
+      )}
     </Container>
   );
 }

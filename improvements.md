@@ -8,3 +8,6 @@ Refactoring/tweaks:
 - put webcam api call on the backend
 - GitHub Filtering:
 -- update github token to have less permissions.
+- colorthief style
+
+- update readme
