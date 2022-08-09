@@ -3,11 +3,21 @@ const express = require("express");
 const expressGraphQL = require("express-graphql").graphqlHTTP;
 const cors = require("cors");
 const axios = require("axios");
+const path = require('path');
+
 require("dotenv").config();
 
 const app = express();
 app.use(cors());
 
+//serve static assets
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+//github graphql
 app.use(
   "https://api.github.com/graphql",
   expressGraphQL({
