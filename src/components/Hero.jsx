@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Container from "react-bootstrap/Container";
+import { Container, Row, Col } from "react-bootstrap";
 import randomWebcam from "../utils/randomWebcam";
 import WindowFrame from "./WindowFrame";
 import LoadingSpinner from "../components/LoadingSpinner";
@@ -22,8 +22,8 @@ function Hero() {
         }
       ).then(async (response) => {
         const data = await response.json();
-        setIsLoading(false);
         setWebcam(randomWebcam(data.result.webcams));
+        setIsLoading(false);
       });
     };
     fetchWebcam();
@@ -35,16 +35,32 @@ function Hero() {
         <LoadingSpinner />
       ) : (
         <>
-        <div
-          id="webcam"
-          style={{
-            backgroundImage: `url(${webcam.image.current.preview})`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-        />
-        <p className="m-2">Randomly generated live image of the mountains of Oregon -- this one happens to be in {webcam.title}.</p>
+          <Row>
+            <div
+              id="webcam"
+              style={{
+                backgroundImage: webcam
+                  ? `url(${webcam.image.current.preview})`
+                  : "none",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+              }}
+            />
+            <Col>
+              <h1>Katie Churchwell</h1>
+            </Col>
+            <Col>
+              {webcam ? (
+                <p className="m-2">
+                  Randomly generated live image of the mountains of Oregon --
+                  this one happens to be in {webcam.title}.
+                </p>
+              ) : (
+                <p>Hello!</p>
+              )}
+            </Col>
+          </Row>
         </>
       )}
     </Container>
