@@ -58,7 +58,7 @@ nav a:hover {
   z-index: 2;
   top: 0px;
   left: 0px;
-  background-image: url('%PUBLIC_URL%/BlueNoise470.png');
+  background-image: url('./assets/images/BlueNoise470.png');
   background-repeat: repeat;
   opacity: 0.35;
 }
