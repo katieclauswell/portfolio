@@ -1,12 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Popover,
-  OverlayTrigger,
-} from "react-bootstrap";
+import { Container, Row, Col, Popover, OverlayTrigger } from "react-bootstrap";
 import { info } from "../info/info";
+import LoadingSpinner from "../components/LoadingSpinner";
 import PopoverDesc from "./PopoverDesc";
 import axios from "axios";
 
@@ -16,22 +11,28 @@ function Techstack() {
   // Popover
   const [show, setShow] = useState(false);
   const target = useRef(null);
-  
+  // Loadig
+  const [isLoading, setIsLoading] = useState();
+
   // get repo data
   useEffect(() => {
+    setIsLoading(true)
     const fetchTopics = async () => {
       const options = {
         method: "GET",
-        url: process.env.NODE_ENV === 'production' 
-        ? '/github' 
-        : 'http://localhost:8000/github'
+        url:
+          process.env.NODE_ENV === "production"
+            ? "/github"
+            : "http://localhost:8000/github",
       };
-  
+
       axios
         .request(options)
         .then(async (response) => {
           const data = await response;
+          console.log("github data", data);
           setRepos(data.data);
+          setIsLoading(false);
         })
         .catch((error) => {
           console.error(error);
@@ -58,7 +59,14 @@ function Techstack() {
                   <Popover id={`popover-positioned-right`}>
                     <Popover.Header as="h3">{`${item.name}`}</Popover.Header>
                     <Popover.Body>
-                      <PopoverDesc language={item.name} repos={repos} />
+                      {
+                        //Check if loading
+                        isLoading === true ? (
+                          <LoadingSpinner/>
+                        ) : (
+                          <PopoverDesc language={item.name} repos={repos} />
+                        )
+                      }
                     </Popover.Body>
                   </Popover>
                 }

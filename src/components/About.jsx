@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Image, ListGroup } from "react-bootstrap";
+import { Container, Row, Col, Image, ListGroup, Card } from "react-bootstrap";
 import me from "../assets/images/headshot-transparent.png";
 
 function About() {
@@ -24,8 +24,8 @@ function About() {
         <Col>
           <Row>
             <p>
-              Hey, my name is Katie Churchwell and I'm a Full Stack Developer with a
-              background in conservation and education.
+              Hey, my name is Katie Churchwell and I'm a Full Stack Developer
+              with a background in conservation and education.
             </p>
             <p>
               I earned a Bachelors in International Business with a
