@@ -4,6 +4,25 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Techstack from "./components/Techstack";
 import Work from "./components/Work";
+//
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from "@apollo/client";
+//
+
+const graphqlUrl =
+  process.env.NODE_ENV === "production"
+    ? "/github"
+    : "http://localhost:8000/github";
+const httpLink = createHttpLink({ uri: graphqlUrl });
+
+const client = new ApolloClient({
+  cache: new InMemoryCache(),
+  link: httpLink,
+});
 
 function App() {
   const [view, setView] = useState("default");
@@ -13,7 +32,7 @@ function App() {
   };
 
   return (
-    <>
+    <ApolloProvider client={client}>
       <Header handleView={handleView} />
       <main>
         {(() => {
@@ -29,7 +48,7 @@ function App() {
           }
         })()}
       </main>
-    </>
+    </ApolloProvider>
   );
 }
 

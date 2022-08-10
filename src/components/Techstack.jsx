@@ -4,45 +4,26 @@ import { info } from "../info/info";
 import LoadingSpinner from "../components/LoadingSpinner";
 import PopoverDesc from "./PopoverDesc";
 import axios from "axios";
+//
+import { useQuery, useMutation } from "@apollo/client";
+import { GET_TOPICS } from "../graphql/queries";
+//
 
 function Techstack() {
+  const { loading, data, error } = useQuery(GET_TOPICS);
+  console.log("data - query", data)
+  console.log("loading - query", loading)
+  console.log("error - query", error)
+
   // Github Repositories
   const [repos, setRepos] = useState();
   // Popover
   const [show, setShow] = useState(false);
   const target = useRef(null);
-  // Loadig
-  const [isLoading, setIsLoading] = useState();
-
-  // get repo data
-  useEffect(() => {
-    setIsLoading(true);
-    const fetchTopics = async () => {
-      const options = {
-        method: "GET",
-        url:
-          process.env.NODE_ENV === "production"
-            ? "/github"
-            : "http://localhost:8000/github",
-      };
-
-      axios
-        .request(options)
-        .then(async (response) => {
-          const data = await response;
-          setRepos(data.data);
-          setIsLoading(false);
-        })
-        .catch((error) => {
-          console.error(error);
-        });
-    };
-    fetchTopics();
-  }, []);
 
   return (
     <Container>
-      <Row className="m-3">
+      {/* <Row className="m-3">
         <h2>Tech Stack</h2>
         <p>Click an icon to filter my GitHub repositories by that topic.</p>
       </Row>
@@ -58,7 +39,7 @@ function Techstack() {
                   <Popover id={`popover-positioned-right`}>
                     <Popover.Header as="h3">{`${item.name}`}</Popover.Header>
                     <Popover.Body>
-                      {isLoading === true ? (
+                      {loading === true ? (
                         <LoadingSpinner />
                       ) : (
                         <PopoverDesc language={item.name} repos={repos} />
@@ -79,7 +60,7 @@ function Techstack() {
             </Col>
           </>
         ))}
-      </Row>
+      </Row> */}
     </Container>
   );
 }

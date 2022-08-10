@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Image, ListGroup, Card } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import me from "../assets/images/headshot-transparent.png";
 
 function About() {

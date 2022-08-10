@@ -1,7 +1,4 @@
 function PopoverDesc(props) {
-  function onlyUnique(value, index, self) {
-    return self.indexOf(value) === index;
-  }
   const repos = props.repos;
   const filter = repos.filter((repo) => repo.topics.includes(props.language));
 
