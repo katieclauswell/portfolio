@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import randomWebcam from "../utils/randomWebcam";
 import WindowFrame from "./WindowFrame";
-import LoadingSpinner from "../components/LoadingSpinner";
+import LoadingSpinner from "./LoadingSpinner";
 
 function Hero() {
   const [isLoading, setIsLoading] = useState(false);

@@ -6,6 +6,7 @@ Features:
 
 Refactoring/tweaks:
 - put webcam api call on the backend
+- store webcam api call results in local storage and pull from that to prevent multiple api calls.
 - GitHub Filtering:
 -- update github token to have less permissions.
 - colorthief style

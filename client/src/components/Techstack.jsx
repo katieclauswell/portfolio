@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col, Popover, OverlayTrigger } from "react-bootstrap";
 import { info } from "../info/info";
-import LoadingSpinner from "../components/LoadingSpinner";
+import LoadingSpinner from "./LoadingSpinner";
 import PopoverDesc from "./PopoverDesc";
 import axios from "axios";
 
@@ -22,8 +22,8 @@ function Techstack() {
         method: "GET",
         url:
           process.env.NODE_ENV === "production"
-            ? "/github"
-            : "http://localhost:8000/github",
+            ? "http://localhost:3000/github"
+            : "/github"
       };
 
       axios

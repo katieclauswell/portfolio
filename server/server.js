@@ -81,4 +81,13 @@ app.get("/github", (req, res) => {
     });
 });
 
-app.listen(8000, () => console.log(`Server is running on port ${PORT}`));
+// Serve up static assets
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
+
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));

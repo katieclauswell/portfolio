@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Resume from "../assets/Resume-Churchwell.pdf";
-import DarkMode from "../components/DarkMode";
+import DarkMode from "./DarkMode";
 
 function Header(props) {
   return (
