@@ -4,29 +4,27 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Techstack from "./components/Techstack";
 import Work from "./components/Work";
-//
 import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
   createHttpLink,
 } from "@apollo/client";
-//
 
-const graphqlUrl =
-  process.env.NODE_ENV === "production"
-    ? "/github"
-    : "http://localhost:8000/github";
-const httpLink = createHttpLink({ uri: graphqlUrl });
+// Connection to GitHub GraphQL API
 
 const client = new ApolloClient({
+  uri: 'https://api.github.com/graphql',
   cache: new InMemoryCache(),
-  link: httpLink,
+  headers: {
+    authorization: `Bearer ${process.env.REACT_GITHUB_API_KEY}`
+  }
 });
 
-function App() {
-  const [view, setView] = useState("default");
 
+function App() {
+// Site navigation
+  const [view, setView] = useState("default");
   const handleView = (page) => {
     setView(page);
   };
