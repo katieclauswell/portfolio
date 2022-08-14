@@ -22,8 +22,8 @@ function Techstack() {
         method: "GET",
         url:
           process.env.NODE_ENV === "production"
-            ? "http://localhost:3000/github"
-            : "/github"
+            ? "/github"
+            : "http://localhost:8000/github"
       };
 
       axios
