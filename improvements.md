@@ -1,5 +1,4 @@
 Features:
-- dark mode
 - page transitions
 - webcam hero (waiting on windowframe)
 - change C-NAME to .dev domain
@@ -10,5 +9,5 @@ Refactoring/tweaks:
 - GitHub Filtering:
 -- update github token to have less permissions.
 - colorthief style
-
-- update readme
+- timeout loading spinner
+- react router

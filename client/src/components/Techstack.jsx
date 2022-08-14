@@ -11,8 +11,10 @@ function Techstack() {
   // Popover
   const [show, setShow] = useState(false);
   const target = useRef(null);
-  // Loadig
+  // Loading
   const [isLoading, setIsLoading] = useState();
+
+  console.log("/github");
 
   // get repo data
   useEffect(() => {
@@ -20,10 +22,10 @@ function Techstack() {
     const fetchTopics = async () => {
       const options = {
         method: "GET",
-        url:
-          process.env.NODE_ENV === "production"
-            ? "/github"
-            : "http://localhost:8000/github"
+        url: "/github"
+          // process.env.NODE_ENV === "production"
+          //   ? "http://localhost:8000/github"
+          //   : "http://localhost:8000/github"
       };
 
       axios
