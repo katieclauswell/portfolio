@@ -27,7 +27,7 @@ app.use(
 
 const headers = {
   "Content-Type": "application/json",
-  Authorization: "bearer " + process.env.REACT_APP_API_KEY,
+  Authorization: "bearer " + process.env.REACT_GITHUB_API_KEY,
 };
 
 const query_topics = {
