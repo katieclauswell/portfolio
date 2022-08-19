@@ -9,23 +9,26 @@ function Work() {
         <p>A few showcased projects.</p>
       </Row>
       <Row xs={1} md={2} className="g-4">
-        {info.portfolio.slice(0).reverse().map((project, index) => (
-          <Col>
-            <Card>
-              <Card.Img variant="top" src={project.image} />
-              <Card.Body>
-                <Card.Title>{project.title}</Card.Title>
-                <Card.Text>{project.description}</Card.Text>
-                <a href={project.live}>
-                  <Button variant="light m-2">Live</Button>
-                </a>
-                <a href={project.source}>
-                  <Button variant="light m-2">Repo</Button>
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
+        {info.portfolio
+          .slice(0)
+          .reverse()
+          .map((project, index) => (
+            <Col>
+              <Card>
+                <Card.Img variant="top" src={project.image} />
+                <Card.Body>
+                  <Card.Title>{project.title}</Card.Title>
+                  <Card.Text>{project.description}</Card.Text>
+                  <a href={project.live}>
+                    <Button variant="light m-2">Live</Button>
+                  </a>
+                  <a href={project.source}>
+                    <Button variant="light m-2">Repo</Button>
+                  </a>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
       </Row>
     </Container>
   );

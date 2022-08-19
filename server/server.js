@@ -3,7 +3,7 @@ const express = require("express");
 const expressGraphQL = require("express-graphql").graphqlHTTP;
 const cors = require("cors");
 const axios = require("axios");
-const path = require('path');
+const path = require("path");
 
 require("dotenv").config();
 
@@ -47,10 +47,6 @@ query {
 `,
 };
 
-app.get("/test"), (req, res) => {
-res.send("hello!")
-}
-
 app.get("/github", (req, res) => {
   const options = {
     url: "https://api.github.com/graphql",
@@ -78,9 +74,13 @@ app.get("/github", (req, res) => {
     });
 });
 
-// Express only serves static assets in production
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static("client/build"));
-// }
+//Serve up static assets
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../client/build")));
+}
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));

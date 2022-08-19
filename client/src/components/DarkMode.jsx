@@ -25,7 +25,8 @@ const DarkMode = () => {
   return (
     <>
       <i
-        id="theme-toggle" className={theme === "dark" ? "bi bi-cloud-moon" : "bi bi-sun"}
+        id="theme-toggle"
+        className={theme === "dark" ? "bi bi-cloud-moon" : "bi bi-sun"}
         onClick={toggleTheme}
         aria-label="Dark mode toggle"
       />

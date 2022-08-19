@@ -18,7 +18,11 @@ body,
   color: var(--font-color) !important;
 }
 
-i, a, .nav-link, a:active, a:hover {
+i,
+a,
+.nav-link,
+a:active,
+a:hover {
   color: var(--i-color) !important;
 }
 

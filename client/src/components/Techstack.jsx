@@ -22,14 +22,14 @@ function Techstack() {
     const fetchTopics = async () => {
       const options = {
         method: "GET",
-        url: "/github"
+        url: "/github",
       };
 
       axios
         .request(options)
         .then(async (response) => {
           const data = await response;
-          console.log("data", data)
+          console.log("data", data);
           setRepos(data.data);
           setIsLoading(false);
         })
