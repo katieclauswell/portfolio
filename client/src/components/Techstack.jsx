@@ -23,15 +23,13 @@ function Techstack() {
       const options = {
         method: "GET",
         url: "/github"
-          // process.env.NODE_ENV === "production"
-          //   ? "http://localhost:8000/github"
-          //   : "http://localhost:8000/github"
       };
 
       axios
         .request(options)
         .then(async (response) => {
           const data = await response;
+          console.log("data", data)
           setRepos(data.data);
           setIsLoading(false);
         })
