@@ -14,8 +14,6 @@ function Techstack() {
   // Loading
   const [isLoading, setIsLoading] = useState();
 
-  console.log("/github");
-
   // get repo data
   useEffect(() => {
     setIsLoading(true);
