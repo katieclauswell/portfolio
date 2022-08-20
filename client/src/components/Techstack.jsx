@@ -8,9 +8,11 @@ import axios from "axios";
 function Techstack() {
   // Github Repositories
   const [repos, setRepos] = useState();
+
   // Popover
   const [show, setShow] = useState(false);
   const target = useRef(null);
+
   // Loading
   const [isLoading, setIsLoading] = useState();
 
@@ -20,14 +22,16 @@ function Techstack() {
     const fetchTopics = async () => {
       const options = {
         method: "GET",
-        url: "/github",
+        url:
+          process.env.NODE_ENV === "production"
+            ? "/github"
+            : "http://localhost:8000/github",
       };
 
       axios
         .request(options)
         .then(async (response) => {
           const data = await response;
-          console.log("data", data);
           setRepos(data.data);
           setIsLoading(false);
         })
@@ -42,7 +46,6 @@ function Techstack() {
     <Container>
       <Row className="m-3">
         <h2>Tech Stack</h2>
-        <p>Click an icon to filter my GitHub repositories by that topic.</p>
       </Row>
       <Row xs={2} md={4} lg={6} className="m-1">
         {info.technologies.map((item, index) => (

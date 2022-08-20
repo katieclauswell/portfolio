@@ -5,7 +5,7 @@ const cors = require("cors");
 const axios = require("axios");
 const path = require("path");
 
-require("dotenv").config();
+require('dotenv').config();
 
 const app = express();
 app.use(cors());
@@ -20,7 +20,7 @@ app.use(
 
 const headers = {
   "Content-Type": "application/json",
-  Authorization: "bearer " + process.env.REACT_GITHUB_API_KEY,
+  Authorization: process.env.GITHUB_API_KEY,
 };
 
 const query_topics = {
@@ -74,13 +74,11 @@ app.get("/github", (req, res) => {
     });
 });
 
-//Serve up static assets
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../client/build")));
-}
+// Serve up static assets
+app.use(express.static(path.join(__dirname, "../client/build")));
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
-app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+app.listen(process.env.PORT || PORT, () => console.log(`Server is running on port ${PORT}`));
