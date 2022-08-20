@@ -74,10 +74,6 @@ app.get("/github", (req, res) => {
     });
 });
 
-// app.get('/', (req, res) => {
-//   res.json({ greeting: 'Hello' })
-//   })
-
 // Serve up static assets
 app.use(express.static(path.join(__dirname, "../client/build")));
 
