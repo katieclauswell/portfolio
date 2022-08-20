@@ -22,10 +22,7 @@ function Techstack() {
     const fetchTopics = async () => {
       const options = {
         method: "GET",
-        url:
-          process.env.NODE_ENV === "production"
-            ? "/github"
-            : "http://localhost:8000/github",
+        url: "https://katie-churchwell.herokuapp.com/github",
       };
 
       axios
