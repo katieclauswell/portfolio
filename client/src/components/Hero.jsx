@@ -14,7 +14,7 @@ function Hero() {
     const fetchWebcam = async () => {
       const options = {
         method: "GET",
-        url: "/webcam",
+        url: "https://katie-churchwell.herokuapp.com/webcam",
       };
       axios
         .request(options)
