@@ -6,20 +6,20 @@ import PopoverDesc from "./PopoverDesc";
 import axios from "axios";
 
 function Techstack() {
-  // Github Repositories
+  // github repos
   const [repos, setRepos] = useState();
 
-  // Popover
+  // popover
   const [show, setShow] = useState(false);
   const target = useRef(null);
 
-  // Loading
+  // loading
   const [isLoading, setIsLoading] = useState();
 
-  // get repo data
+  // fetch github repos
   useEffect(() => {
     setIsLoading(true);
-    const fetchTopics = async () => {
+    const fetchRepos = async () => {
       const options = {
         method: "GET",
         url: "https://katie-churchwell.herokuapp.com/github",
@@ -36,7 +36,7 @@ function Techstack() {
           console.error(error);
         });
     };
-    fetchTopics();
+    fetchRepos();
   }, []);
 
   return (

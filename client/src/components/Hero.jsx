@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import randomWebcam from "../utils/randomWebcam";
 import LoadingSpinner from "./LoadingSpinner";
+import axios from "axios";
 
 function Hero() {
   const [isLoading, setIsLoading] = useState(false);
@@ -9,21 +10,21 @@ function Hero() {
 
   // fetch webcam data from api
   useEffect(() => {
+    setIsLoading(true);
     const fetchWebcam = async () => {
-      setIsLoading(true);
-      fetch(
-        "https://api.windy.com/api/webcams/v2/list/category=mountain/region=US.OR/?show=webcams:image",
-        {
-          method: "GET",
-          headers: {
-            "x-windy-key": "fRBdejZXV9tukKAYkPngOtGOg0bYrvV9",
-          },
-        }
-      ).then(async (response) => {
-        const data = await response.json();
-        setWebcam(randomWebcam(data.result.webcams));
-        setIsLoading(false);
-      });
+      const options = {
+        method: "GET",
+        url: "/webcam",
+      };
+      axios
+        .request(options)
+        .then(async (response) => {
+          setWebcam(randomWebcam(response.data));
+          setIsLoading(false);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
     };
     fetchWebcam();
   }, []);
