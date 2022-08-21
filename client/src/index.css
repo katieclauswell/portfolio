@@ -77,6 +77,13 @@ i {
   align-items: center;
 }
 
+.tech-icon {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
 i:hover {
   color: var(--first) !important;
 }

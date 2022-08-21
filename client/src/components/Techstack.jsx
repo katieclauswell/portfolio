@@ -43,6 +43,7 @@ function Techstack() {
     <Container>
       <Row className="m-3">
         <h2>Tech Stack</h2>
+        <p>Click an icon to view my GitHub repositories built with that tool.</p>
       </Row>
       <Row xs={2} md={4} lg={6} className="m-1">
         {info.technologies.map((item, index) => (
@@ -67,11 +68,11 @@ function Techstack() {
               >
                 <div
                   ref={target}
-                  className="m-1 justify-content-md-center"
+                  className="tech-icon"
                   onClick={() => setShow(!show)}
                 >
                   <i className={item.icon}></i>
-                  <div className="text-center">{item.name}</div>
+                  <div>{item.name}</div>
                 </div>
               </OverlayTrigger>
             </Col>
