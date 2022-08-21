@@ -4,10 +4,11 @@ Features:
 - change C-NAME to .dev domain
 
 Refactoring/tweaks:
-- put webcam api call on the backend
-- store webcam api call results in local storage and pull from that to prevent multiple api calls.
-- GitHub Filtering:
--- update github token to have less permissions.
+- API calls:
+-- update github token to have less permissions
+-- if no github repo result, message
+-- only one api call for both
 - colorthief style
 - timeout loading spinner
 - react router
+- easter egg: y2k style
