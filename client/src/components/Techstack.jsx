@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col, Popover, OverlayTrigger } from "react-bootstrap";
-import { info } from "../info/info";
+import { info } from "../data/info";
 import LoadingSpinner from "./LoadingSpinner";
 import PopoverDesc from "./PopoverDesc";
 import axios from "axios";

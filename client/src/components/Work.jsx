@@ -1,5 +1,5 @@
 import { Container, Row, Card, Button, Col } from "react-bootstrap";
-import { info } from "../info/info";
+import { info } from "../data/info";
 
 function Work() {
   return (

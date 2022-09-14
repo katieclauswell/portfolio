@@ -1,35 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
+
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Techstack from "./components/Techstack";
 import Work from "./components/Work";
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 function App() {
-  const [view, setView] = useState("default");
-
-  const handleView = (page) => {
-    setView(page);
-  };
-
   return (
-    <>
-      <Header handleView={handleView} />
-      <main>
-        {(() => {
-          switch (view) {
-            default:
-              return <Hero />;
-            case "about":
-              return <About />;
-            case "tech-stack":
-              return <Techstack />;
-            case "work":
-              return <Work />;
-          }
-        })()}
-      </main>
-    </>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/tech-stack" element={<Techstack />} />
+        <Route path="/work" element={<Work />} />
+      </Routes>
+    </Router>
   );
 }
 
