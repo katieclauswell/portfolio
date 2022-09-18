@@ -8,7 +8,7 @@ function About() {
       <Row className="m-3">
         <h2>About</h2>
       </Row>
-      <Row className="m-5">
+      <Row>
         <Col>
           <Image
             roundedCircle
@@ -21,7 +21,7 @@ function About() {
             }}
           />
         </Col>
-        <Col>
+        <Col xs={7}>
           <Row>
             <p>
               Hey, my name is Katie Churchwell and I'm a Full Stack Developer
@@ -36,6 +36,9 @@ function About() {
             <p>
               Currently living on the ancestral homelands of the šnp̍əšqʷáw̉šəxʷ
               (p'squosa or Wenatchi) people in Leavenworth, WA.
+            </p>
+            <p>
+              The window frame on the front page was kindly illustrated by <a href="https://twitter.com/PixelArtJourney">Scilex</a>.
             </p>
             <p>Please feel free to connect with me!</p>
           </Row>
