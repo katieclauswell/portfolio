@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import randomWebcam from "../utils/randomWebcam";
 import LoadingSpinner from "./LoadingSpinner";
 import axios from "axios";
-import windowUrl from "../assets/images/window-2.png";
+import windowUrl from "../assets/images/Window.gif";
 
 function Hero() {
   const [webcam, setWebcam] = useState();
@@ -33,8 +33,8 @@ function Hero() {
           <h1>Katie Churchwell</h1>
         </Col>
       </Row>
+      <Row className="d-flex justify-content-center">
       <img onLoad={handleImageLoad} src={windowUrl} id="window" />
-      <Row>
         <div
           id="webcam"
           style={{

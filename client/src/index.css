@@ -40,11 +40,13 @@ nav a:hover {
 #window {
   position: absolute;
   z-index: 2;
+  width: 40%;
 }
 
 #webcam {
   padding: 0;
   filter: saturate(2);
+  width: 40%;
 }
 
 /* blue noise filter */
