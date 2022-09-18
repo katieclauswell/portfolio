@@ -11,19 +11,22 @@
 
 Welcome! This is a page to showcase some of my web development projects.
 
+## How to Use
+In the terminal, run the following:
+- To install dependencies: `npm run install`
+- To run in development: `npm run develop`
+- To build production: `npm run build`
+
 ## Design
+*Currently looking for recommendantions for a server hosting solution (due to Heroku eliminating free plans)!*
+
+
 The landing page graphic is generated through the [Windy Webcams API](https://api.windy.com/webcams). A fetch is made for the webcam image that is narrowed down by mountain category and the OR, US region. One of the results is randomly chosen and a blue noise filter is overlayed on top to try and counteract some of the jpeggyness.
 
 The tech stack page utilizes the [GitHub Graphql API](https://docs.github.com/en/graphql) to filter my GitHub repositories by topic. 
 
 ## Aspirational Features
 Before refactoring in React, I had used two other JavaScript tools called [Color Thief](https://lokeshdhakar.com/projects/color-thief/) and [Name That Color](https://chir.ag/projects/name-that-color/#6195ED) to take the average color from the webcam image and define the name. When I am less lazy I'll add that feature back in because it was pretty cool.
-
-I am forever changing my mind about what this site will look like (perhaps it will always change!) but the following is a list of ideas I may or may not do:
-- Using GAN to generate headshots each time the user refreshes the page.
-- Changing landing page graphic:
-  - Dynamic artwork based on current weather
-  - Dark mode toggle switches webcam over to space/night sky.
 
 Thanks for stopping by! :v:
 
