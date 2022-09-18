@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.d13a51a2.css",
-    "main.js": "/static/js/main.24aed045.js",
+    "main.css": "/static/css/main.a7f855f7.css",
+    "main.js": "/static/js/main.9de3c80b.js",
     "static/media/pantry.png": "/static/media/pantry.c959d2cf0443a12437d9.png",
     "static/media/nasteroids.png": "/static/media/nasteroids.76bf7020904d3fe30389.png",
+    "static/media/coding.gif": "/static/media/coding.2ad179683e226023dfd8.gif",
     "static/media/chewview.png": "/static/media/chewview.cdde4cb91174cc7e543c.png",
-    "static/media/BlueNoise470.png": "/static/media/BlueNoise470.72a4121ee15627f712f1.png",
+    "static/media/blue-noise.png": "/static/media/blue-noise.0045a7f06bb8bd8e7f54.png",
+    "static/media/Window.gif": "/static/media/Window.19e8034ea8587c292f32.gif",
     "static/media/headshot-transparent.png": "/static/media/headshot-transparent.d8f9ff24a551a15b93ea.png",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
     "static/media/Resume-Churchwell.pdf": "/static/media/Resume-Churchwell.6852a27dba496a11af71.pdf",
     "index.html": "/index.html",
-    "main.d13a51a2.css.map": "/static/css/main.d13a51a2.css.map",
-    "main.24aed045.js.map": "/static/js/main.24aed045.js.map"
+    "main.a7f855f7.css.map": "/static/css/main.a7f855f7.css.map",
+    "main.9de3c80b.js.map": "/static/js/main.9de3c80b.js.map"
   },
   "entrypoints": [
-    "static/css/main.d13a51a2.css",
-    "static/js/main.24aed045.js"
+    "static/css/main.a7f855f7.css",
+    "static/js/main.9de3c80b.js"
   ]
 }
