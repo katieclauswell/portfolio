@@ -37,10 +37,21 @@ nav a:hover {
 }
 
 /* WEBCAM */
+#laptop,
+#webcam,
+#window {
+  height: 400px;
+  width: 500px;
+}
+
 #webcam {
   padding: 0;
   filter: saturate(2);
-  clip-path: polygon(19% 0%, 79% 10%, 85% 45%, 85% 4%, 65% 60%, 15% 60%);
+  clip-path: polygon(16% 0%, 79% 0%, 85% 55%, 85% 52%, 73% 75%, 15% 90%);
+}
+
+#laptop {
+  transform: skew(-14deg, 10deg);
 }
 
 /* ICONS */
