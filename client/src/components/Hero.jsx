@@ -38,22 +38,34 @@ function Hero() {
       <Row className="d-flex justify-content-center">
         <div
           role="img"
-          alt="Pixel art of a window sill with a hot cup of coffee and an open laptop overlooking mountains in Oregon"
           id="webcam"
           style={{
             backgroundImage: webcam
-              ? `url(${window}), url(${windowTransparency}), url(${blueNoise}), url(${webcam.image})`
+              ? `url(${blueNoise}), url(${webcam.image})`
               : "none",
             backgroundPosition:
-              "center center, center center, center 6px, center 6px",
-            backgroundSize: "100%, 100%, 100% 296px, 100% 296px",
+              "center 6px, center 6px",
+            backgroundSize: "100% 296px, 100% 296px",
             backgroundRepeat: "no-repeat",
-            height: `400px`,
-            width: `500px`,
+            height: '500px',
+            width: '500px'
           }}
-        >
-          {/* <img onLoad={handleImageLoad} src={windowUrl} id="window" /> */}
-        </div>
+        />
+        <div
+        role="img"
+        style={{
+          position: "absolute",
+          backgroundImage: webcam
+            ? `url(${window}), url(${windowTransparency})`
+            : "none",
+          backgroundPosition:
+            "center center, center center",
+          backgroundSize: "100%, 100%",
+          backgroundRepeat: "no-repeat",
+          height: `400px`,
+          width: `500px`,
+        }}
+        />
       </Row>
       <Row>
         {webcam ? (
