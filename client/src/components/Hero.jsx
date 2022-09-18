@@ -1,30 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import randomWebcam from "../utils/randomWebcam";
-import LoadingSpinner from "./LoadingSpinner";
-import axios from "axios";
 import window from "../assets/images/Window.gif";
 import blueNoise from "../assets/images/blue-noise.png";
 import windowTransparency from "../assets/images/WindowTransparentBlue.png";
-import coding from "../assets/images/coding2.gif";
+import coding from "../assets/images/coding.gif";
 
 function Hero() {
+  // choose random webcam image
   const [webcam, setWebcam] = useState();
 
-  // set webcam image height and width equal to window image
-  const [windowDimensions, setWindowDimensions] = useState({
-    height: "100",
-    width: "100",
-  });
-
-  const handleImageLoad = (event) => {
-    setWindowDimensions({
-      height: event.target.clientHeight,
-      width: event.target.clientWidth,
-    });
-  };
-
-  // choose random webcam image
   useEffect(() => {
     setWebcam(randomWebcam());
   }, []);
