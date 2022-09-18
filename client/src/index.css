@@ -36,21 +36,38 @@ nav a:hover {
   filter: brightness(200%);
 }
 
-/* WEBCAM & WINDOW */
+/* WINDOW */
 #window {
   position: absolute;
   z-index: 2;
-  width: 40%;
+  /* width: 50vw; */
+  height: 50vh;
+  bottom: 0;
 }
 
+#window::after {
+  position: relative;
+  content: "";
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  display: block;
+  background-image: url("./assets/images/WindowTransparentBlue.png");
+  background-repeat: repeat;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  z-index: 4;
+}
+
+/* WEBCAM */
 #webcam {
   padding: 0;
   filter: saturate(2);
-  width: 40%;
 }
 
 /* blue noise filter */
-#webcam::after {
+/* #webcam::after {
   position: relative;
   content: "";
   width: 100%;
@@ -64,7 +81,7 @@ nav a:hover {
   background-image: url("./assets/images/blue-noise.png");
   background-repeat: repeat;
   opacity: 0.35;
-}
+} */
 
 /* ICONS */
 i {

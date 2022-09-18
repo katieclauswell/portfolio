@@ -3,7 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import randomWebcam from "../utils/randomWebcam";
 import LoadingSpinner from "./LoadingSpinner";
 import axios from "axios";
-import windowUrl from "../assets/images/Window.gif";
+import window from "../assets/images/Window.gif";
+import blueNoise from "../assets/images/blue-noise.png";
+import windowTransparency from "../assets/images/WindowTransparentBlue.png";
 
 function Hero() {
   const [webcam, setWebcam] = useState();
@@ -34,18 +36,24 @@ function Hero() {
         </Col>
       </Row>
       <Row className="d-flex justify-content-center">
-      <img onLoad={handleImageLoad} src={windowUrl} id="window" />
         <div
+          role="img"
+          alt="Pixel art of a window sill with a hot cup of coffee and an open laptop overlooking mountains in Oregon"
           id="webcam"
           style={{
-            backgroundImage: webcam ? `url(${webcam.image})` : "none",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
+            backgroundImage: webcam
+              ? `url(${window}), url(${windowTransparency}), url(${blueNoise}), url(${webcam.image})`
+              : "none",
+            backgroundPosition:
+              "center center, center center, center 6px, center 6px",
+            backgroundSize: "100%, 100%, 100% 296px, 100% 296px",
             backgroundRepeat: "no-repeat",
-            height: `${windowDimensions.height}px`,
-            width: `${windowDimensions.width}px`,
+            height: `400px`,
+            width: `500px`,
           }}
-        />
+        >
+          {/* <img onLoad={handleImageLoad} src={windowUrl} id="window" /> */}
+        </div>
       </Row>
       <Row>
         {webcam ? (
