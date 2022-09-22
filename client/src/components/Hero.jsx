@@ -4,7 +4,7 @@ import randomWebcam from "../utils/randomWebcam";
 import window from "../assets/images/Window.gif";
 import blueNoise from "../assets/images/blue-noise.png";
 import windowTransparency from "../assets/images/WindowTransparentBlue.png";
-import coding from "../assets/images/coding.gif";
+import laptopUrl from "../assets/images/static.gif";
 
 function Hero() {
   // choose random webcam image
@@ -29,33 +29,22 @@ function Hero() {
             backgroundImage: webcam
               ? `url(${blueNoise}), url(${webcam.image})`
               : "none",
-            backgroundPosition: "center 6px, center 6px",
-            backgroundSize: "100% 296px, 100% 296px",
-            backgroundRepeat: "no-repeat",
           }}
         />
         <div
-          role="img"
-          id="laptop"
-          style={{
-            position: "absolute",
-            backgroundImage: `url(${coding})`,
-            backgroundPosition: "394px 210px",
-            backgroundSize: "20% 20%",
-            backgroundRepeat: "no-repeat",
-          }}
+        role="img"
+        id="laptop"
+        style={{
+          backgroundImage: `url(${laptopUrl})`
+        }}
         />
         <div
           role="img"
           id="window"
           style={{
-            position: "absolute",
             backgroundImage: webcam
               ? `url(${window}), url(${windowTransparency})`
               : "none",
-            backgroundPosition: "center center, center center",
-            backgroundSize: "100%, 100%",
-            backgroundRepeat: "no-repeat",
           }}
         />
       </Row>

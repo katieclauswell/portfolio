@@ -37,21 +37,35 @@ nav a:hover {
 }
 
 /* WEBCAM */
-#laptop,
 #webcam,
+#laptop,
 #window {
   height: 400px;
   width: 500px;
+  background-repeat: no-repeat;
+  padding: 0;
 }
 
 #webcam {
-  padding: 0;
+  position: absolute;
   filter: saturate(2);
   clip-path: polygon(16% 0%, 79% 0%, 85% 55%, 85% 52%, 73% 75%, 15% 90%);
+  background-position: center 6px, center 6px;
+  background-size: 100% 296px, 100% 296px;
+  z-index: -1;
 }
 
 #laptop {
-  transform: skew(-14deg, 10deg);
+  position: absolute;
+  transform: skew(-18deg, 9deg);
+  background-size: 96px 79px;
+  background-position: 405px 214px;
+  z-index: -1;
+}
+
+#window {
+  background-position: center center, center center;
+  background-size: 100%, 100%;
 }
 
 /* ICONS */
