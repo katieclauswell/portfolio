@@ -32,11 +32,11 @@ function Hero() {
           }}
         />
         <div
-        role="img"
-        id="laptop"
-        style={{
-          backgroundImage: `url(${laptopUrl})`
-        }}
+          role="img"
+          id="laptop"
+          style={{
+            backgroundImage: `url(${laptopUrl})`,
+          }}
         />
         <div
           role="img"
