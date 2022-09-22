@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d60bc4ec.css",
-    "main.js": "/static/js/main.e989ee5f.js",
+    "main.js": "/static/js/main.3620632a.js",
     "static/media/pantry.png": "/static/media/pantry.c959d2cf0443a12437d9.png",
     "static/media/nasteroids.png": "/static/media/nasteroids.76bf7020904d3fe30389.png",
     "static/media/static.gif": "/static/media/static.14ea5aef4a67b1d667ea.gif",
@@ -14,10 +14,10 @@
     "static/media/Resume-Churchwell.pdf": "/static/media/Resume-Churchwell.6852a27dba496a11af71.pdf",
     "index.html": "/index.html",
     "main.d60bc4ec.css.map": "/static/css/main.d60bc4ec.css.map",
-    "main.e989ee5f.js.map": "/static/js/main.e989ee5f.js.map"
+    "main.3620632a.js.map": "/static/js/main.3620632a.js.map"
   },
   "entrypoints": [
     "static/css/main.d60bc4ec.css",
-    "static/js/main.e989ee5f.js"
+    "static/js/main.3620632a.js"
   ]
 }
