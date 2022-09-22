@@ -81,7 +81,7 @@ app.get("/webcam", async (req, res) => {
     "x-windy-key": process.env.WINDY_API_KEY,
   };
   const webcam_url =
-    "https://api.windy.com/api/webcams/v2/list/category=mountain/region=US.OR/?show=webcams:image";
+    "https://api.windy.com/api/webcams/v2/list/category=mountain/region=US.WA/?show=webcams:image";
   const webcam_response = await axios.get(webcam_url, { headers: config });
   res.send(webcam_response.data.result.webcams);
 });
