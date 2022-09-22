@@ -51,7 +51,7 @@ function Hero() {
       <Row>
         {webcam ? (
           <p className="m-2">
-            Randomly generated live image of the mountains of Oregon -- this one
+            Randomly generated live image; this one
             happens to be in {webcam.title}.
           </p>
         ) : (
