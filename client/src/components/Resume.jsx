@@ -1,18 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import resume from "../assets/Resume-Churchwell.pdf";
 
 function Resume() {
   return (
     <Container className="p-3">
+      <Row className="m-3" id="resume-download">
+        <a href={resume} download="Resume - Churchwell.pdf">
+          <button type="button" class="btn btn-primary">
+            Download
+          </button>
+        </a>
+      </Row>
       <Row className="m-3">
         <h2>Katie Churchwell</h2>
-        <h5><em>Leavenworth, WA 98826</em></h5>
+        <h5>
+          <em>Leavenworth, WA 98826</em>
+        </h5>
       </Row>
       <Row className="m-3">
         <h3>Experience</h3>
         <h5>Executive Assistant, 2021</h5>
         <h5>
-        <em>Reynolds School District, Fairview, OR</em>
+          <em>Reynolds School District, Fairview, OR</em>
         </h5>
         <ul>
           <li>
