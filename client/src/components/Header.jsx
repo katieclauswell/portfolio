@@ -1,7 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Resume from "../assets/Resume-Churchwell.pdf";
 import DarkMode from "./DarkMode";
 import { Outlet, Link } from "react-router-dom";
 
@@ -25,7 +24,7 @@ function Header() {
               <Nav.Link as={Link} to="/work">
                 Work
               </Nav.Link>
-              <Nav.Link href={Resume} target="_blank">
+              <Nav.Link as={Link} to="/resume">
                 Resume
               </Nav.Link>
             </Nav>

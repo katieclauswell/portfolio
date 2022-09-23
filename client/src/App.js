@@ -7,6 +7,7 @@ import Techstack from "./components/Techstack";
 import Work from "./components/Work";
 import NotFound from "./components/NotFound";
 import MobileView from "./components/MobileView";
+import Resume from "./components/Resume";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -31,6 +32,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/tech-stack" element={<Techstack />} />
             <Route path="/work" element={<Work />} />
+            <Route path="/resume" element={<Resume />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </>
