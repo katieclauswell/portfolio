@@ -4,7 +4,7 @@ import randomWebcam from "../utils/randomWebcam";
 import window from "../assets/images/Window.gif";
 import blueNoise from "../assets/images/blue-noise.png";
 import windowTransparency from "../assets/images/WindowTransparentBlue.png";
-import laptopUrl from "../assets/images/static.gif";
+import laptopUrl from "../assets/images/sparkle.gif";
 
 function Hero() {
   // choose random webcam image
