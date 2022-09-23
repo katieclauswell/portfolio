@@ -21,9 +21,9 @@ function Resume() {
       <Row className="m-3">
         <h3>Experience</h3>
         <h5>Executive Assistant, 2021</h5>
-        <h5>
+        <p>
           <em>Reynolds School District, Fairview, OR</em>
-        </h5>
+        </p>
         <ul>
           <li>
             Supported the Chief Academic Officer, Executive Director of Schools
@@ -51,17 +51,17 @@ function Resume() {
       </Row>
       <Row className="m-3">
         <h5>Environmental Educator, 2019 - 2021</h5>
-        <h5>
+        <p className="m-0">
           <em>
             <a href="https://wenatcheeriverinstitute.org/">
               Wenatchee River Institute
             </a>
             , Leavenworth WA
           </em>
-        </h5>
-        <h5>
+        </p>
+        <p>
           <em>Washington Service Corps, Moran State Park, Olga, WA</em>
-        </h5>
+        </p>
         <ul>
           <li>Worked as part of a collaborative, agile team environment.</li>
           <li>
@@ -87,9 +87,9 @@ function Resume() {
       </Row>
       <Row className="m-3">
         <h5>Retail Coordinator, ​2016 - 2018</h5>
-        <h5>
+        <p>
           <em>Harsch Investment Properties, Portland, OR</em>
-        </h5>
+        </p>
         <ul>
           <li>
             Created and maintained internal asset databases and introduced
@@ -108,23 +108,27 @@ function Resume() {
       </Row>
       <Row className="m-3">
         <h3>Education</h3>
-      </Row>
-      <Row className="m-3">
         <Col>
           <h5>Full Stack Web Development Certificate, 2021 - 2022</h5>
-          <h5>University of Oregon Bootcamps </h5>
+          <p>
+            <em>University of Oregon Bootcamps</em>
+          </p>
         </Col>
         <Col>
           <h5>Bachelor of Arts in International Business, 2013 - 2016</h5>
-          <h5>University of South Florida</h5>
+          <p>
+            <em>University of South Florida</em>
+          </p>
         </Col>
       </Row>
       <Row className="m-3">
         <h3>Volunteer Work</h3>
         <h5>Open Source Contributor, 2022</h5>
-        <h5>
-          <a href="https://github.com/mozilla/protocol">Mozilla Protocol</a>
-        </h5>
+        <p>
+          <em>
+            <a href="https://github.com/mozilla/protocol">Mozilla Protocol</a>
+          </em>
+        </p>
         <p>
           Design system for Mozilla and Firefox websites. It establishes a
           common design language, provides reusable coded components and

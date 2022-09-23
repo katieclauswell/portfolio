@@ -17,9 +17,7 @@ function Hero() {
   return (
     <Container className="m-3">
       <Row>
-        <Col>
-          <h1>Katie Churchwell</h1>
-        </Col>
+        <h1>Katie Churchwell</h1>
       </Row>
       <Row className="d-flex justify-content-center">
         <div
@@ -51,8 +49,8 @@ function Hero() {
       <Row>
         {webcam ? (
           <p className="m-2">
-            Randomly generated live image; this one
-            happens to be in {webcam.title}.
+            Randomly generated live image; this one happens to be in{" "}
+            {webcam.title}.
           </p>
         ) : (
           <p>Hello!</p>
