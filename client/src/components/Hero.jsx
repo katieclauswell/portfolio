@@ -18,8 +18,10 @@ function Hero() {
     <Container className="m-3">
       <Row>
         <h1>Katie Churchwell</h1>
+        <h2>Full Stack Engineer</h2>
       </Row>
       <Row className="d-flex justify-content-center">
+        <div id="hero-container">
         <div
           role="img"
           id="webcam"
@@ -30,12 +32,20 @@ function Hero() {
           }}
         />
         <div
-          role="img"
           id="laptop"
           style={{
-            backgroundImage: `url(${laptopUrl})`,
+            background: `black`,
           }}
-        />
+        >
+          {webcam ? (
+            <p>
+              Live from{" "}
+              {webcam.title}.
+            </p>
+          ) : (
+            <p>Hello!</p>
+          )}
+        </div>
         <div
           role="img"
           id="window"
@@ -45,16 +55,7 @@ function Hero() {
               : "none",
           }}
         />
-      </Row>
-      <Row>
-        {webcam ? (
-          <p className="m-2">
-            Randomly generated live image; this one happens to be in{" "}
-            {webcam.title}.
-          </p>
-        ) : (
-          <p>Hello!</p>
-        )}
+        </div>
       </Row>
     </Container>
   );
