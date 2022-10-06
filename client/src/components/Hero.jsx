@@ -4,7 +4,7 @@ import randomWebcam from "../utils/randomWebcam";
 import window from "../assets/images/Window.gif";
 import blueNoise from "../assets/images/blue-noise.png";
 import windowTransparency from "../assets/images/WindowTransparentBlue.png";
-import laptopUrl from "../assets/images/sparkle.gif";
+import Laptop from "../components/Laptop";
 
 function Hero() {
   // choose random webcam image
@@ -22,39 +22,25 @@ function Hero() {
       </Row>
       <Row className="d-flex justify-content-center">
         <div id="hero-container">
-        <div
-          role="img"
-          id="webcam"
-          style={{
-            backgroundImage: webcam
-              ? `url(${blueNoise}), url(${webcam.image})`
-              : "none",
-          }}
-        />
-        <div
-          id="laptop"
-          style={{
-            background: `black`,
-          }}
-        >
-          {webcam ? (
-            <p>
-              Live from{" "}
-              {webcam.title}.
-            </p>
-          ) : (
-            <p>Hello!</p>
-          )}
-        </div>
-        <div
-          role="img"
-          id="window"
-          style={{
-            backgroundImage: webcam
-              ? `url(${window}), url(${windowTransparency})`
-              : "none",
-          }}
-        />
+          <div
+            role="img"
+            id="webcam"
+            style={{
+              backgroundImage: webcam
+                ? `url(${blueNoise}), url(${webcam.image})`
+                : "none",
+            }}
+          />
+          <Laptop webcam={webcam} />
+          <div
+            role="img"
+            id="window"
+            style={{
+              backgroundImage: webcam
+                ? `url(${window}), url(${windowTransparency})`
+                : "none",
+            }}
+          />
         </div>
       </Row>
     </Container>
