@@ -39,15 +39,11 @@ nav a:hover {
 /* WEBCAM */
 #webcam,
 #window,
-#hero-container {
+#laptop {
   height: 400px;
   width: 500px;
   background-repeat: no-repeat;
   padding: 0;
-}
-
-#hero-container {
-  position: relative;
 }
 
 #webcam {
@@ -59,16 +55,12 @@ nav a:hover {
   z-index: -1;
 }
 
-#laptop {
+ #laptop {
   position: absolute;
-  transform: skew(-20deg, 12deg);
-  width: 96px;
-  height: 77px;
-  bottom: 77px;
-  right: 17px;
+  transform: skew(-20deg, 10deg);
   z-index: 1;
-  background-size: 96px 79px;
-  background-position: 389px 223px;
+  background-size: 96px 74px;
+  background-position: 404px 212px;
 }
 
 #window {

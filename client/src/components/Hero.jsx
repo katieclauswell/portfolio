@@ -21,27 +21,26 @@ function Hero() {
         <h2>Full Stack Engineer</h2>
       </Row>
       <Row className="d-flex justify-content-center">
-        <div id="hero-container">
-          <div
-            role="img"
-            id="webcam"
-            style={{
-              backgroundImage: webcam
-                ? `url(${blueNoise}), url(${webcam.image})`
-                : "none",
-            }}
-          />
-          <Laptop webcam={webcam} />
-          <div
-            role="img"
-            id="window"
-            style={{
-              backgroundImage: webcam
-                ? `url(${window}), url(${windowTransparency})`
-                : "none",
-            }}
-          />
-        </div>
+        <div
+          role="img"
+          id="webcam"
+          style={{
+            backgroundImage: webcam
+              ? `url(${blueNoise}), url(${webcam.image})`
+              : "none",
+          }}
+        />
+
+        <Laptop webcam={webcam} />
+        <div
+          role="img"
+          id="window"
+          style={{
+            backgroundImage: webcam
+              ? `url(${window}), url(${windowTransparency})`
+              : "none",
+          }}
+        />
       </Row>
     </Container>
   );

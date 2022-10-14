@@ -6,39 +6,46 @@ import About from "./components/About";
 import Techstack from "./components/Techstack";
 import Work from "./components/Work";
 import NotFound from "./components/NotFound";
-import MobileView from "./components/MobileView";
 import Resume from "./components/Resume";
+
+import defaultStyle from "./assets/styles/default.css";
+import mediaStyle from "./assets/styles/media.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [matches, setMatches] = useState(
-    window.matchMedia("(min-width: 768px)").matches
+    window.matchMedia("(min-width: 400px)").matches
   );
 
   useEffect(() => {
     window
-      .matchMedia("(min-width: 768px)")
+      .matchMedia("(min-width: 400px)")
       .addEventListener("change", (e) => setMatches(e.matches));
   }, []);
 
+  if (matches == false) {
+    document.documentElement.setAttribute("data-view", "media");
+    console.log("testing for false");
+  } else {
+    document.documentElement.removeAttribute("data-view", "default");
+    console.log("testing for true")
+  }
+
   return (
-    <Router>
-      {matches && (
-        <>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Hero />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/tech-stack" element={<Techstack />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </>
-      )}
-      {!matches && <MobileView />}
-    </Router>
+    <>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/tech-stack" element={<Techstack />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
