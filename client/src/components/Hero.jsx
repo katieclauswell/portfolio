@@ -15,12 +15,16 @@ function Hero() {
   }, []);
 
   return (
-    <Container className="m-3">
-      <Row>
+    <>
+      <Row className="m-3">
         <h1>Katie Churchwell</h1>
         <h2>Full Stack Engineer</h2>
       </Row>
-      <Row className="d-flex justify-content-center">
+      <Container
+        style={{
+          width: "90vw",
+        }}
+      >
         <div
           role="img"
           id="webcam"
@@ -41,8 +45,8 @@ function Hero() {
               : "none",
           }}
         />
-      </Row>
-    </Container>
+      </Container>
+    </>
   );
 }
 

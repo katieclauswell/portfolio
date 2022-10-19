@@ -15,21 +15,21 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [matches, setMatches] = useState(
-    window.matchMedia("(min-width: 400px)").matches
+    window.matchMedia("(min-width: 500px)").matches
   );
 
   useEffect(() => {
     window
-      .matchMedia("(min-width: 400px)")
+      .matchMedia("(min-width: 500px)")
       .addEventListener("change", (e) => setMatches(e.matches));
   }, []);
 
   if (matches == false) {
     document.documentElement.setAttribute("data-view", "media");
-    console.log("testing for false");
+    console.log("smaller width than 500px");
   } else {
     document.documentElement.removeAttribute("data-view", "default");
-    console.log("testing for true")
+    console.log("bigger width than 500px")
   }
 
   return (

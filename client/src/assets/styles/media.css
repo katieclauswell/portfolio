@@ -1,3 +1,4 @@
+/* breaks at 497px width
 [data-view="media"] #window {
   height: 300px;
   width: 325px;
@@ -20,11 +21,9 @@
 }
 
 [data-view="media"] #laptop {
-  height: 300px;
-  width: 325px;
   position: absolute;
-  transform: skew(-20deg, 12deg);
-  background-position: 234px 157px;
-  background-size: 60px 50px;
+  transform: skew(-20deg, 10deg);
   z-index: 1;
-}
+  background-size: 16vw 7vh;
+  background-position: 65vw 25vh;
+} */
