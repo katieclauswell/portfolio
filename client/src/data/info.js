@@ -143,4 +143,224 @@ export const info = {
         "A recreation of the 1979 Atari game built in React. This application utilizes MUI components and an NES-style CSS frame work for UI, MongoDB and GraphQL for database models and API queries.",
     },
   ],
+  projects: [
+    {
+      name: "portfolio",
+      topics: [
+        "portfolio",
+        "personal-website",
+        "resume",
+        "graphql",
+        "javascript",
+        "react",
+        "rest-api",
+        "express",
+      ],
+    },
+    {
+      name: "run-buddy",
+      topics: ["css3", "html5"],
+    },
+    {
+      name: "horiseon",
+      topics: ["html5", "css3"],
+    },
+    {
+      name: "Robot-Gladiators",
+      topics: ["game", "javascript"],
+    },
+    {
+      name: "password-generator",
+      topics: ["password-generator", "javascript"],
+    },
+    {
+      name: "taskinator",
+      topics: ["localstorage", "javascript"],
+    },
+    {
+      name: "code-quiz",
+      topics: ["javascript", "css3", "game", "html5"],
+    },
+    {
+      name: "taskmaster-pro",
+      topics: ["jquery", "bootstrap", "momentjs"],
+    },
+    {
+      name: "work-day-scheduler",
+      topics: ["javascript", "jquery", "momentjs", "bootstrap"],
+    },
+    {
+      name: "p5.js-sandbox",
+      topics: [],
+    },
+    {
+      name: "weather-dashboard",
+      topics: ["rest-api"],
+    },
+    {
+      name: "git-it-done",
+      topics: ["rest-api", "javascript"],
+    },
+    {
+      name: "plant-timeline",
+      topics: [],
+    },
+    {
+      name: "team-1-dinner-movie",
+      topics: [],
+    },
+    {
+      name: "portfolio-generator",
+      topics: ["nodejs", "inquirerjs"],
+    },
+    {
+      name: "readme-generator",
+      topics: ["inquirerjs", "nodejs"],
+    },
+    {
+      name: "jest-another-RPG",
+      topics: ["jest", "nodejs", "game"],
+    },
+    {
+      name: "katiechurchwell",
+      topics: [],
+    },
+    {
+      name: "team-profile-generator",
+      topics: ["nodejs", "jest"],
+    },
+    {
+      name: "zookeepr",
+      topics: ["javascript", "express", "jest", "mysql", "nodejs", "heroku"],
+    },
+    {
+      name: "note-taker",
+      topics: ["express", "heroku"],
+    },
+    {
+      name: "employee-tracker",
+      topics: ["mysql"],
+    },
+    {
+      name: "u-develop-it",
+      topics: ["mysql", "express", "jest", "nodejs"],
+    },
+    {
+      name: "just-tech-news",
+      topics: ["express", "jest", "mysql", "heroku"],
+    },
+    {
+      name: "e-commerce-back-end",
+      topics: ["express", "sequelize", "mysql"],
+    },
+    {
+      name: "Chew-View",
+      topics: ["bootstrap", "jquery", "javascript", "css3", "html5", "heroku"],
+    },
+    {
+      name: "Pantry",
+      topics: ["database", "mysql"],
+    },
+    {
+      name: "tech-jargon",
+      topics: ["just-for-fun"],
+    },
+    {
+      name: "CMS-blog",
+      topics: [
+        "bootstrap",
+        "express",
+        "jest",
+        "mysql",
+        "rest-api",
+        "handlebars",
+        "heroku",
+      ],
+    },
+    {
+      name: "Pantry",
+      topics: [
+        "handlebars",
+        "javascript",
+        "rest-api",
+        "express",
+        "jest",
+        "mysql",
+        "heroku",
+      ],
+    },
+    {
+      name: "pizza-hunt",
+      topics: ["mongodb", "nosql", "express", "heroku"],
+    },
+    {
+      name: "social-network",
+      topics: ["nosql", "express", "mongodb", "rest-api"],
+    },
+    {
+      name: "food-festival",
+      topics: ["progressive-web-app", "webpack", "bootstrap", "jquery"],
+    },
+    {
+      name: "budget-tracker",
+      topics: ["express", "nodejs", "heroku"],
+    },
+    {
+      name: "Brett-Wine-Cheese",
+      topics: ["react"],
+    },
+    {
+      name: "photo-port",
+      topics: ["react"],
+    },
+    {
+      name: "deep-thoughts",
+      topics: ["graphql", "express", "mongodb", "nodejs", "react"],
+    },
+    {
+      name: "book-search",
+      topics: [
+        "mern-stack",
+        "graphql",
+        "apollographql",
+        "express",
+        "javascript",
+        "mongodb",
+        "nodejs",
+        "react",
+      ],
+    },
+    {
+      name: "shop-shop",
+      topics: [],
+    },
+    {
+      name: "NASAteroids",
+      topics: [
+        "graphql",
+        "javascript",
+        "mongoosejs",
+        "nodejs",
+        "reactjs",
+        "apollo",
+        "expressjs",
+      ],
+    },
+    {
+      name: "NASAteroids",
+      topics: ["react", "heroku", "mongodb"],
+    },
+    {
+      name: "history-timeline",
+      topics: [],
+    },
+    {
+      name: "protocol",
+      topics: [],
+    },
+    {
+      name: "data-structures",
+      topics: ["data-structures", "notes"],
+    },
+  ],
 };
