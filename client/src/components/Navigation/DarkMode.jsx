@@ -1,4 +1,4 @@
-import "../assets/styles/dark-mode.css";
+import "../../assets/styles/dark-mode.css";
 import React, { useState } from "react";
 
 const DarkMode = () => {

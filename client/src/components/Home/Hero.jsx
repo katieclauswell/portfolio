@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import randomWebcam from "../utils/randomWebcam";
-import window from "../assets/images/Window.gif";
-import blueNoise from "../assets/images/blue-noise.png";
-import windowTransparency from "../assets/images/WindowTransparentBlue.png";
-import Laptop from "../components/Laptop";
+import { Container, Row } from "react-bootstrap";
+import randomWebcam from "../../utils/randomWebcam";
+import Window from "./Window";
+import Laptop from "./Laptop";
+import blueNoise from "../../assets/images/blue-noise.png";
 
 function Hero() {
   // choose random webcam image
@@ -22,7 +21,8 @@ function Hero() {
       </Row>
       <Container
         style={{
-          width: "90vw",
+          margin: "auto",
+          width: "50%"
         }}
       >
         <div
@@ -34,17 +34,8 @@ function Hero() {
               : "none",
           }}
         />
-
         <Laptop webcam={webcam} />
-        <div
-          role="img"
-          id="window"
-          style={{
-            backgroundImage: webcam
-              ? `url(${window}), url(${windowTransparency})`
-              : "none",
-          }}
-        />
+        <Window webcam={webcam}/>
       </Container>
     </>
   );

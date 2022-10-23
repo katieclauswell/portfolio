@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
 import { Container, Row, Col, Popover, OverlayTrigger } from "react-bootstrap";
-import { info } from "../data/info";
-import LoadingSpinner from "./LoadingSpinner";
+import { info } from "../../data/info";
+import LoadingSpinner from "../Misc/LoadingSpinner";
 import PopoverDesc from "./PopoverDesc";
 
-function Techstack() {
+function TechStack() {
   // popover
   const [show, setShow] = useState(false);
   const target = useRef(null);
@@ -59,6 +59,6 @@ function Techstack() {
       </Row>
     </Container>
   );
-}
+} 
 
-export default Techstack;
+export default TechStack;

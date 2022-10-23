@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
-import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Header from "./components/Navigation/Header";
+import Hero from "./components/Home/Hero";
 import About from "./components/About";
-import Techstack from "./components/Techstack";
+import TechStack from "./components/TechStack/TechStack";
 import Work from "./components/Work";
-import NotFound from "./components/NotFound";
+import NotFound from "./components/Misc/NotFound";
 import Resume from "./components/Resume";
 
 import defaultStyle from "./assets/styles/default.css";
@@ -39,7 +39,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/about" element={<About />} />
-          <Route path="/tech-stack" element={<Techstack />} />
+          <Route path="/tech-stack" element={<TechStack />} />
           <Route path="/work" element={<Work />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<NotFound />} />
