@@ -6,6 +6,7 @@
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=flat&logo=express&logoColor=%2361DAFB)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=flat&logo=node.js&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript_ES6-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=flat&logo=bootstrap&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white)
 
@@ -18,15 +19,20 @@ In the terminal, run the following:
 - To build production: `npm run build`
 
 ## Design
-*Currently looking for recommendantions for a server hosting solution (due to Heroku eliminating free plans)!*
+Originally there were a couple API calls but those have since been hard-coded; I need to figure out a free way to host a backend. 
 
+The window is composed of several stacked images:
+- Webcam background and blue noise filter.
+  - The webcam images come from the [Windy Webcams API](https://api.windy.com/webcams) (narrowed down by Oregon, Washington and mountain regions). One of the results is randomly chosen and a blue noise filter is overlayed on top to try and counteract some of the jpeggyness.
+- Laptop background (snoopy).
+- Window sill with transparency for window pane.
+  - Beautifully illustrated by <a href="https://twitter.com/PixelArtJourney">Scilex</a>!
+- Invisible tool tip trigger for laptop.
 
-The landing page graphic is generated through the [Windy Webcams API](https://api.windy.com/webcams). A fetch is made for the webcam image that is narrowed down by mountain category and the OR, US region. One of the results is randomly chosen and a blue noise filter is overlayed on top to try and counteract some of the jpeggyness.
-
-The tech stack page utilizes the [GitHub Graphql API](https://docs.github.com/en/graphql) to filter my GitHub repositories by topic. 
+The tech stack page utilized the [GitHub Graphql API](https://docs.github.com/en/graphql) to filter my GitHub repositories by topic. That information has since been copied and pasted into ``data/info.js``
 
 ## Aspirational Features
-Before refactoring in React, I had used two other JavaScript tools called [Color Thief](https://lokeshdhakar.com/projects/color-thief/) and [Name That Color](https://chir.ag/projects/name-that-color/#6195ED) to take the average color from the webcam image and define the name. When I am less lazy I'll add that feature back in because it was pretty cool.
+Before refactoring in React, I had used two other JavaScript tools called [Color Thief](https://lokeshdhakar.com/projects/color-thief/) and [Name That Color](https://chir.ag/projects/name-that-color/#6195ED) to take the average color from the webcam image and define the name. When I am less lazy I'll add that feature back in.
 
 Thanks for stopping by! :v:
 
