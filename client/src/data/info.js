@@ -361,6 +361,6 @@ export const info = {
     {
       name: "data-structures",
       topics: ["data-structures", "notes"],
-    },
+    }
   ],
 };

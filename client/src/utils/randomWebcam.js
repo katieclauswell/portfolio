@@ -18,37 +18,37 @@ export default function randomWebcamImage() {
         "https://images-webcams.windy.com/07/1637286107/current/preview/1637286107.jpg",
     },
     {
-      title: "Fish Lake, Leavenworth, Washington",
+      title: "Fish Lake at Leavenworth, Washington",
       image:
         "https://images-webcams.windy.com/48/1268964748/current/preview/1268964748.jpg",
     },
     {
-      title: "Paradise, Mt Rainier, Washington",
+      title: "Paradise at Mt Rainier, Washington",
       image:
         "https://images-webcams.windy.com/91/1319663191/current/preview/1319663191.jpg",
     },
     {
-      title: "Bob's Beach, Stevenson, Washington",
+      title: "Bob's Beach at Stevenson, Washington",
       image:
         "https://images-webcams.windy.com/01/1357582501/current/preview/1357582501.jpg",
     },
     {
-      title: "Skamania, Mount Adams, Washington",
+      title: "Skamania at Mount Adams, Washington",
       image:
         "https://images-webcams.windy.com/30/1359923130/current/preview/1359923130.jpg",
     },
     {
-      title: "Tatoosh Range, Paradise, Washington",
+      title: "Tatoosh Range at Paradise, Washington",
       image:
         "https://images-webcams.windy.com/07/1384985407/current/preview/1384985407.jpg",
     },
     {
-      title: "Deer Park, East Mount Spokane, Washington",
+      title: "Deer Park at East Mount Spokane, Washington",
       image:
         "https://images-webcams.windy.com/51/1486503051/current/preview/1486503051.jpg",
     },
     {
-      title: "Clallam, South-West Mount Olympus, Washington",
+      title: "Clallam at South-West Mount Olympus, Washington",
       image:
         "https://images-webcams.windy.com/39/1523123339/current/preview/1523123339.jpg",
     },
