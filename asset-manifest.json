@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/katiechurchwell.com/static/css/main.a8026eb0.css",
-    "main.js": "/katiechurchwell.com/static/js/main.413fa2dd.js",
-    "static/media/pantry.png": "/katiechurchwell.com/static/media/pantry.c959d2cf0443a12437d9.png",
-    "static/media/nasteroids.png": "/katiechurchwell.com/static/media/nasteroids.76bf7020904d3fe30389.png",
-    "static/media/chewview.png": "/katiechurchwell.com/static/media/chewview.cdde4cb91174cc7e543c.png",
-    "static/media/blue-noise.png": "/katiechurchwell.com/static/media/blue-noise.0045a7f06bb8bd8e7f54.png",
-    "static/media/snoopy.gif": "/katiechurchwell.com/static/media/snoopy.b06764b44a54dee52998.gif",
-    "static/media/Window.gif": "/katiechurchwell.com/static/media/Window.19e8034ea8587c292f32.gif",
-    "static/media/headshot-transparent.png": "/katiechurchwell.com/static/media/headshot-transparent.d8f9ff24a551a15b93ea.png",
-    "static/media/bootstrap-icons.woff?": "/katiechurchwell.com/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
-    "static/media/bootstrap-icons.woff2?": "/katiechurchwell.com/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
-    "static/media/Resume-Churchwell.pdf": "/katiechurchwell.com/static/media/Resume-Churchwell.6852a27dba496a11af71.pdf",
-    "index.html": "/katiechurchwell.com/index.html",
-    "main.a8026eb0.css.map": "/katiechurchwell.com/static/css/main.a8026eb0.css.map",
-    "main.413fa2dd.js.map": "/katiechurchwell.com/static/js/main.413fa2dd.js.map"
+    "main.css": "/static/css/main.f8df1953.css",
+    "main.js": "/static/js/main.cf4e3836.js",
+    "static/media/pantry.png": "/static/media/pantry.c959d2cf0443a12437d9.png",
+    "static/media/nasteroids.png": "/static/media/nasteroids.76bf7020904d3fe30389.png",
+    "static/media/chewview.png": "/static/media/chewview.cdde4cb91174cc7e543c.png",
+    "static/media/blue-noise.png": "/static/media/blue-noise.0045a7f06bb8bd8e7f54.png",
+    "static/media/Window.gif": "/static/media/Window.19e8034ea8587c292f32.gif",
+    "static/media/headshot-transparent.png": "/static/media/headshot-transparent.d8f9ff24a551a15b93ea.png",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
+    "static/media/bliss-wallpaper.jpg": "/static/media/bliss-wallpaper.a0498724577aa4ab4900.jpg",
+    "static/media/Resume-Churchwell.pdf": "/static/media/Resume-Churchwell.6852a27dba496a11af71.pdf",
+    "index.html": "/index.html",
+    "main.f8df1953.css.map": "/static/css/main.f8df1953.css.map",
+    "main.cf4e3836.js.map": "/static/js/main.cf4e3836.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8026eb0.css",
-    "static/js/main.413fa2dd.js"
+    "static/css/main.f8df1953.css",
+    "static/js/main.cf4e3836.js"
   ]
 }
