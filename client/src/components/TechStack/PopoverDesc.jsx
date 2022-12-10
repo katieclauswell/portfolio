@@ -4,7 +4,7 @@ function PopoverDesc(props) {
 
   return (
     <ul>
-      {filter ? (
+      {filter.length ? (
         filter.map((item, index) => (
           <li key={index}>
             <a href={`https://www.github.com/katiechurchwell/${item.name}`}>

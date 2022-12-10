@@ -46,7 +46,7 @@ function TechStack() {
               >
                 <div
                   ref={target}
-                  className="tech-icon"
+                  className="tech-icon m-2"
                   onClick={() => setShow(!show)}
                 >
                   <i className={item.icon}></i>
