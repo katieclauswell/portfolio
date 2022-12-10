@@ -33,14 +33,7 @@ function About() {
               and am a graduate of the Full Stack Web Development bootcamp at
               the University of Oregon.
             </p>
-            <p>
-              Currently living on the ancestral homelands of the šnp̍əšqʷáw̉šəxʷ
-              (p'squosa or Wenatchi) people in Leavenworth, WA.
-            </p>
-            <p>
-              The window frame on the front page was kindly illustrated by <a href="https://twitter.com/PixelArtJourney">Scilex</a>.
-            </p>
-            <p>Please feel free to connect with me!</p>
+            <p>Let's connect!</p>
           </Row>
           <Row className="justify-content-center" xs={2} md={4} lg={6}>
             <a href="mailto:churchwellcatherine@gmail.com">

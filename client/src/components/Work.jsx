@@ -23,7 +23,7 @@ function Work() {
                     <Button variant="light m-2">Live</Button>
                   </a>
                   <a href={project.source}>
-                    <Button variant="light m-2">Repo</Button>
+                    <Button variant="light m-2">Source Code</Button>
                   </a>
                 </Card.Body>
               </Card>
