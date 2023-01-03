@@ -64,6 +64,7 @@ nav a:hover {
   z-index: 1;
   background-size: 96px 74px;
   background-position: 404px 212px;
+  filter: saturate(0.6);
 }
 
 #laptop-tool-tip {
