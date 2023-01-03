@@ -37,7 +37,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route exact path="/" element={<Hero />} />
           <Route path="/about" element={<About />} />
           <Route path="/tech-stack" element={<TechStack />} />
           <Route path="/work" element={<Work />} />
