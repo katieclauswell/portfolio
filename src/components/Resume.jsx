@@ -24,7 +24,7 @@ function Resume() {
           <>
             <Row key={`role-${index}`}>
               {role.position}, {role.dates}
-              <a href={role.company.website}>{role.company.name}</a>
+              <a href={role.company.website} target="_blank">{role.company.name}</a>
             </Row>
             <ul>
               {role.responsibilities.map((responsibility, index) => (
@@ -49,7 +49,7 @@ function Resume() {
       </Row>
       <Row className="m-3">
         Open Source Contributor, 2022
-        <a href="https://github.com/mozilla/protocol">Mozilla Protocol</a>
+        <a href="https://github.com/mozilla/protocol" target="_blank">Mozilla Protocol</a>
         <ul>
           <li>
             Design system for Mozilla and Firefox websites. It establishes a
