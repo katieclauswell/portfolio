@@ -2,7 +2,7 @@ import "../../assets/styles/dark-mode.css";
 import React, { useState } from "react";
 
 const DarkMode = () => {
-  const [theme, setTheme] = useState();
+  const [theme, setTheme] = useState("light");
 
   const setDark = () => {
     setTheme("dark");
