@@ -1,29 +1,4 @@
-/* breaks at 497px width
-[data-view="media"] #window {
-  height: 300px;
-  width: 325px;
-  position: absolute;
-  left: 10px;
-  background-position: center center, center center;
-  background-size: 100%, 100%;
-  z-index: 1;
+[data-view="media"] #window, [data-view="media"] #webcam, [data-view="media"] #laptop, [data-view="media"] #theme-toggle {
+display: none;
 }
 
-[data-view="media"] #webcam {
-  height: 300px;
-  width: 325px;
-  position: absolute;
-  filter: saturate(2);
-  clip-path: polygon(5% 11%, 78% 12%, 77% 39%, 73% 56%, 76% 69%, 5% 81%);
-  background-position: center 6px, center 6px;
-  background-size: 100% 296px, 100% 296px;
-  z-index: -1;
-}
-
-[data-view="media"] #laptop {
-  position: absolute;
-  transform: skew(-20deg, 10deg);
-  z-index: 1;
-  background-size: 16vw 7vh;
-  background-position: 65vw 25vh;
-} */
