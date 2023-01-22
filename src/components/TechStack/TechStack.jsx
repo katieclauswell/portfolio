@@ -1,5 +1,11 @@
 import React, { useState, useRef } from "react";
-import { Container, Row, Col, Popover, OverlayTrigger } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Popover,
+  OverlayTrigger
+} from "react-bootstrap";
 import { info } from "../../data/info";
 import LoadingSpinner from "../Misc/LoadingSpinner";
 import PopoverDesc from "./PopoverDesc";
@@ -11,6 +17,12 @@ function TechStack() {
 
   // loading
   const [isLoading, setIsLoading] = useState();
+
+  // filtering
+  function filter(name) {
+    const repos = info.projects;
+    return repos.filter((repo) => repo.topics.includes(name));
+  }
 
   return (
     <Container>
@@ -35,10 +47,7 @@ function TechStack() {
                       {isLoading === true ? (
                         <LoadingSpinner />
                       ) : (
-                        <PopoverDesc
-                          language={item.name}
-                          info={info.projects}
-                        />
+                        <PopoverDesc name={item.name} filter={filter} />
                       )}
                     </Popover.Body>
                   </Popover>
@@ -49,8 +58,17 @@ function TechStack() {
                   className="tech-icon m-2"
                   onClick={() => setShow(!show)}
                 >
-                  <i className={item.icon}></i>
-                  <div>{item.name}</div>
+                  {filter(item.name).length ? (
+                    <>
+                      <i className={item.icon} />
+                      <div>{item.name}</div>
+                    </>
+                  ) : (
+                    <>
+                      <i className={`${item.icon} inactive`} />
+                      <div className="inactive">{item.name}</div>
+                    </>
+                  )}
                 </div>
               </OverlayTrigger>
             </Col>
@@ -59,6 +77,6 @@ function TechStack() {
       </Row>
     </Container>
   );
-} 
+}
 
 export default TechStack;

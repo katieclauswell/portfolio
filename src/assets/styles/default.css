@@ -97,6 +97,10 @@ i:hover {
   color: var(--first) !important;
 }
 
+.inactive {
+opacity: 0.35
+}
+
 #resume-download {
   position: absolute;
   right: 0;
