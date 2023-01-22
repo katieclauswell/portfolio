@@ -8,23 +8,23 @@ function Resume() {
     <Container>
       <Row className="m-3" id="resume-download">
         <a href={resume} download="Resume - Churchwell.pdf">
-          <button type="button" className="btn btn-primary">
+          <button type="button" className="btn btn-dark">
             Download
           </button>
         </a>
       </Row>
-      <Row>
-        <h1>Katie Churchwell</h1>
+      <Row className="m-3">
+        <h2>Katie Churchwell</h2>
       </Row>
-      <Row>
-        <h2>Experience</h2>
+      <Row className="m-3">
+        <h3>Experience</h3>
       </Row>
-      <Row>
+      <Row className="m-3">
         {info.resume.map((role, index) => (
           <>
             <Row key={`role-${index}`}>
               {role.position}, {role.dates}
-              <a href={role.company.website}>{role.company.name}</a>
+              <a href={role.company.website} target="_blank">{role.company.name}</a>
             </Row>
             <ul>
               {role.responsibilities.map((responsibility, index) => (
@@ -35,21 +35,21 @@ function Resume() {
         ))}
       </Row>
 
-      <Row>
-        <h2>Education</h2>
+      <Row className="m-3">
+        <h3>Education</h3>
       </Row>
-      <Row>
+      <Row className="m-3">
         Full Stack Web Development Certificate, 2021 - 2022
         <p>University of Oregon Bootcamps</p>
         Bachelor of Arts in International Business, 2013 - 2016
         <p>University of South Florida</p>
       </Row>
-      <Row>
-        <h2>Volunteer Work</h2>
+      <Row className="m-3">
+        <h3>Volunteer Work</h3>
       </Row>
-      <Row>
+      <Row className="m-3">
         Open Source Contributor, 2022
-        <a href="https://github.com/mozilla/protocol">Mozilla Protocol</a>
+        <a href="https://github.com/mozilla/protocol" target="_blank">Mozilla Protocol</a>
         <ul>
           <li>
             Design system for Mozilla and Firefox websites. It establishes a

@@ -151,7 +151,7 @@ export const info = {
     },
     {
       title: "NASATEROIDS",
-      live: "asteroids.onrender.com/",
+      live: "https://asteroids.onrender.com/",
       source: "https://github.com/katiechurchwell/NASAteroids",
       image: nasteroids,
       description:

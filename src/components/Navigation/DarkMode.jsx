@@ -1,24 +1,29 @@
 import "../../assets/styles/dark-mode.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const DarkMode = () => {
-  const [theme, setTheme] = useState();
+  const localTheme = localStorage.getItem("theme");
+  const [theme, setTheme] = useState(localTheme);
 
-  const setDark = () => {
-    setTheme("dark");
-    document.documentElement.setAttribute("data-theme", "dark");
-  };
-
-  const setLight = () => {
-    setTheme("light");
-    document.documentElement.setAttribute("data-theme", "light");
-  };
-
-  const toggleTheme = (e) => {
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    // error handling
+    if (localTheme == undefined) {
+      setTheme("light");
+    }
+    // apply styling
     if (theme === "light") {
-      setDark();
+      document.documentElement.setAttribute("data-theme", "light");
     } else {
-      setLight();
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
     }
   };
 

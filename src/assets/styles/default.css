@@ -5,8 +5,6 @@
   --accent-bg: white;
   /* content text, buttons, nav hover */
   --first: #4a4ccc;
-  /* icons */
-  --second: black;
   /* fonts */
   --main-font: "Open Sans", sans-serif;
   --header-font: "Outfit", sans-serif;
@@ -20,7 +18,7 @@ body {
   padding: 0;
 }
 
-/* NAVIGATION */
+/* Navigation */
 nav {
   font-family: var(--nav-font);
   text-transform: uppercase;
@@ -37,7 +35,7 @@ nav a:hover {
   filter: brightness(200%);
 }
 
-/* WEBCAM */
+/* Homepage */
 #window,
 #laptop,
 #laptop-tool-tip,
@@ -64,6 +62,7 @@ nav a:hover {
   z-index: 1;
   background-size: 96px 74px;
   background-position: 404px 212px;
+  filter: saturate(0.6);
 }
 
 #laptop-tool-tip {
@@ -79,7 +78,13 @@ nav a:hover {
   z-index: 1;
 }
 
-/* ICONS */
+/* Icons */
+a,
+.nav-link,
+a:active {
+  color: black;
+}
+
 i {
   font-size: 50px;
   align-items: center;
@@ -92,8 +97,22 @@ i {
   justify-content: center;
 }
 
-i:hover {
+i:hover,
+a:hover {
   color: var(--first) !important;
+}
+
+.inactive {
+  opacity: 0.35;
+}
+
+/* Work & Resume Sections */
+button {
+  border: none !important;
+}
+
+button:hover {
+  background-color: var(--first) !important;
 }
 
 #resume-download {
@@ -101,7 +120,7 @@ i:hover {
   right: 0;
 }
 
-/* Popover edits */
+/* Popover Edits */
 #popover-contained {
   bottom: 28px !important;
 }
@@ -109,4 +128,8 @@ i:hover {
 .popover .popover-arrow::after,
 .popover .popover-arrow::before {
   bottom: -6px;
+}
+
+.popover-header {
+  color: black;
 }

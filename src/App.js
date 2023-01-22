@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 import Header from "./components/Navigation/Header";
 import Hero from "./components/Home/Hero";
@@ -10,8 +12,6 @@ import Resume from "./components/Resume";
 
 import defaultStyle from "./assets/styles/default.css";
 import mediaStyle from "./assets/styles/media.css";
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [matches, setMatches] = useState(
@@ -29,7 +29,7 @@ function App() {
     console.log("smaller width than 500px");
   } else {
     document.documentElement.removeAttribute("data-view", "default");
-    console.log("bigger width than 500px")
+    console.log("bigger width than 500px");
   }
 
   return (
@@ -37,7 +37,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route exact path="/" element={<Hero />} />
           <Route path="/about" element={<About />} />
           <Route path="/tech-stack" element={<TechStack />} />
           <Route path="/work" element={<Work />} />
