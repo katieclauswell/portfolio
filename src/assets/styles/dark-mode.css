@@ -1,15 +1,7 @@
-/* default */
-:root {
-  --font-color: #333;
-  --background-color: #eee;
-  --i-color: black;
-}
-
-/* dark mode */
 [data-theme="dark"] {
   --font-color: #eee;
   --background-color: #333;
-  --i-color: #eee;
+  --link-color: black;
 }
 
 body,
@@ -18,18 +10,16 @@ body,
   color: var(--font-color) !important;
 }
 
-i,
+i {
+  color: var(--font-color) !important;
+}
+
 a,
 .nav-link,
 a:active,
 a:hover {
-  color: var(--i-color) !important;
+  color: var(--link-color);
 }
-
 .card {
-  border-color: var(--i-color);
-}
-
-.popover-header {
-  color: black;
+  border-color: var(--font-color);
 }

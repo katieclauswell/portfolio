@@ -5,8 +5,6 @@
   --accent-bg: white;
   /* content text, buttons, nav hover */
   --first: #4a4ccc;
-  /* icons */
-  --second: black;
   /* fonts */
   --main-font: "Open Sans", sans-serif;
   --header-font: "Outfit", sans-serif;
@@ -81,6 +79,13 @@ nav a:hover {
 }
 
 /* ICONS */
+a,
+.nav-link,
+a:active,
+a:hover {
+  color: black;
+}
+
 i {
   font-size: 50px;
   align-items: center;
@@ -98,7 +103,7 @@ i:hover {
 }
 
 .inactive {
-opacity: 0.35
+  opacity: 0.35;
 }
 
 #resume-download {
@@ -114,4 +119,8 @@ opacity: 0.35
 .popover .popover-arrow::after,
 .popover .popover-arrow::before {
   bottom: -6px;
+}
+
+.popover-header {
+  color: black;
 }
