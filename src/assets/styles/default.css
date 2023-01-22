@@ -18,7 +18,7 @@ body {
   padding: 0;
 }
 
-/* NAVIGATION */
+/* Navigation */
 nav {
   font-family: var(--nav-font);
   text-transform: uppercase;
@@ -35,7 +35,7 @@ nav a:hover {
   filter: brightness(200%);
 }
 
-/* WEBCAM */
+/* Homepage */
 #window,
 #laptop,
 #laptop-tool-tip,
@@ -78,11 +78,10 @@ nav a:hover {
   z-index: 1;
 }
 
-/* ICONS */
+/* Icons */
 a,
 .nav-link,
-a:active,
-a:hover {
+a:active {
   color: black;
 }
 
@@ -98,7 +97,8 @@ i {
   justify-content: center;
 }
 
-i:hover {
+i:hover,
+a:hover {
   color: var(--first) !important;
 }
 
@@ -106,12 +106,21 @@ i:hover {
   opacity: 0.35;
 }
 
+/* Work & Resume Sections */
+button {
+  border: none !important;
+}
+
+button:hover {
+  background-color: var(--first) !important;
+}
+
 #resume-download {
   position: absolute;
   right: 0;
 }
 
-/* Popover edits */
+/* Popover Edits */
 #popover-contained {
   bottom: 28px !important;
 }

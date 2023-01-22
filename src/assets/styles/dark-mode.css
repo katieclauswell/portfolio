@@ -1,26 +1,26 @@
 [data-theme="dark"] {
   --font-color: #eee;
   --background-color: #333;
-  --link-color: black;
 }
 
 body,
-.card,
-.nav-link {
+.card {
   background-color: var(--background-color) !important;
   color: var(--font-color) !important;
 }
 
+.nav-link,
+a,
+a:active,
+a:hover,
 i {
   color: var(--font-color) !important;
 }
 
-a,
-.nav-link,
-a:active,
-a:hover {
-  color: var(--link-color);
+.tech-link {
+  color: black !important;
 }
+
 .card {
   border-color: var(--font-color);
 }

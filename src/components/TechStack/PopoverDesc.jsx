@@ -9,6 +9,7 @@ function PopoverDesc({ filter, name }) {
             <a
               href={`https://www.github.com/katiechurchwell/${item.name}`}
               target="_blank"
+              className="tech-link"
             >
               {item.name}
             </a>

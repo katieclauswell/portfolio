@@ -20,10 +20,10 @@ function Work() {
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text>{project.description}</Card.Text>
                   <a href={project.live} target="_blank">
-                    <Button variant="light m-2">Live</Button>
+                    <Button variant="dark m-2">Live</Button>
                   </a>
                   <a href={project.source} target="_blank">
-                    <Button variant="light m-2">Source Code</Button>
+                    <Button variant="dark m-2">Source Code</Button>
                   </a>
                 </Card.Body>
               </Card>

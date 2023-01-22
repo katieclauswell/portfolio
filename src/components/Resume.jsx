@@ -8,7 +8,7 @@ function Resume() {
     <Container>
       <Row className="m-3" id="resume-download">
         <a href={resume} download="Resume - Churchwell.pdf">
-          <button type="button" className="btn btn-primary">
+          <button type="button" className="btn btn-dark">
             Download
           </button>
         </a>
