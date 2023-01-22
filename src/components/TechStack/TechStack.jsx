@@ -29,7 +29,7 @@ function TechStack() {
                 key={index}
                 placement="left"
                 overlay={
-                  <Popover id={`popover-positioned-right`}>
+                  <Popover id={`popover-positioned-left`}>
                     <Popover.Header as="h3">{`${item.name}`}</Popover.Header>
                     <Popover.Body>
                       {isLoading === true ? (
