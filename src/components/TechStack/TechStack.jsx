@@ -27,7 +27,7 @@ function TechStack() {
               <OverlayTrigger
                 trigger="click"
                 key={index}
-                placement="right"
+                placement="left"
                 overlay={
                   <Popover id={`popover-positioned-right`}>
                     <Popover.Header as="h3">{`${item.name}`}</Popover.Header>
