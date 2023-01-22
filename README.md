@@ -24,7 +24,7 @@ Originally there were a couple API calls but those have since been hard-coded; I
 The window is composed of the following stack:
 - Webcam background and blue noise filter.
   - The webcam images come from the [Windy Webcams API](https://api.windy.com/webcams) (narrowed down by Oregon, Washington and mountain regions). One of the results is randomly chosen and a blue noise filter is overlayed on top to try and counteract some of the jpeggyness.
-- Laptop background (currently the photograph Bliss by by Charles O'Rear).
+- Laptop background (currently the photograph Bliss by Charles O'Rear).
 - Window sill with transparency for window pane.
   - Beautifully illustrated by <a href="https://twitter.com/PixelArtJourney">Scilex</a>!
 - Invisible tool tip trigger for laptop.
