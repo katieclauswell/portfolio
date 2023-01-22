@@ -5,7 +5,8 @@
 }
 
 body,
-.card {
+.card,
+.nav-link {
   background-color: var(--background-color) !important;
   color: var(--font-color) !important;
 }
