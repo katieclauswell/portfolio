@@ -71,6 +71,10 @@ nav a:hover {
   clip-path: polygon(94% 83%, 76% 77%, 80% 60%, 99% 64%);
 }
 
+#laptop-popover {
+  background-image: url('../images/mac-os/134.png')
+  }
+
 #window {
   position: relative;
   background-position: center center, center center;
@@ -133,3 +137,5 @@ button:hover {
 .popover-header {
   color: black;
 }
+
+

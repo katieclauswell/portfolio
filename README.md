@@ -15,7 +15,7 @@ Welcome! This is a page to showcase some of my web development projects.
 ## How to Use
 In the terminal, run the following:
 - To install dependencies: `npm run install`
-- To run in development: `npm run develop`
+- To run in development: `npm run start`
 - To build production: `npm run build`
 
 ## Design

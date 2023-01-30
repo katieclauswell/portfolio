@@ -34,11 +34,17 @@ function Laptop(props) {
         container={ref}
         containerPadding={20}
       >
-        <Popover id="popover-contained">
-          <Popover.Body>
+        <Popover
+          id="popover-contained"
+          html="true"
+        >
+          <Popover.Body
+          id="laptop-popover"
+          >
             {props.webcam ? (
               <p>
-                Randomly generated live image! This one happens to be in {props.webcam.title}.
+                Randomly generated live image! This one happens to be in{" "}
+                {props.webcam.title}.
               </p>
             ) : (
               <p>Hello World!</p>
