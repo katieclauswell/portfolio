@@ -18,6 +18,11 @@ body {
   padding: 0;
 }
 
+hr {
+  border-top: 3px double black;
+  width: 100%;
+}
+
 /* Navigation */
 nav {
   font-family: var(--nav-font);
@@ -70,10 +75,6 @@ nav a:hover {
   z-index: 3;
   clip-path: polygon(94% 83%, 76% 77%, 80% 60%, 99% 64%);
 }
-
-#laptop-popover {
-  background-image: url('../images/mac-os/134.png')
-  }
 
 #window {
   position: relative;
@@ -137,5 +138,3 @@ button:hover {
 .popover-header {
   color: black;
 }
-
-

@@ -4,6 +4,7 @@ import laptopUrl from "../../assets/images/bliss-wallpaper.jpg";
 // import Tooltip from "react-bootstrap/Tooltip";
 import Overlay from "react-bootstrap/Overlay";
 import Popover from "react-bootstrap/Popover";
+import OS from "./components/OS";
 
 function Laptop(props) {
   const [show, setShow] = useState(false);
@@ -34,18 +35,10 @@ function Laptop(props) {
         container={ref}
         containerPadding={20}
       >
-        <Popover
-          id="popover-contained"
-          html="true"
-        >
-          <Popover.Body
-          id="laptop-popover"
-          >
+        <Popover id="popover-contained" html="true">
+          <Popover.Body id="laptop-popover">
             {props.webcam ? (
-              <p>
-                Randomly generated live image! This one happens to be in{" "}
-                {props.webcam.title}.
-              </p>
+              <OS background={laptopUrl} webcam={props.webcam} />
             ) : (
               <p>Hello World!</p>
             )}
