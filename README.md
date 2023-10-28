@@ -12,11 +12,11 @@
 
 Welcome! This is a page to showcase some of my web development projects.
 
-## How to Use
+## Running Locally
 In the terminal, run the following:
-- To install dependencies: `npm run install`
-- To run in development: `npm run develop`
-- To build production: `npm run build`
+- Install dependencies: `npm install`
+- Build: `npm run build`
+- Run locally: `serve -s build`
 
 ## Design
 Originally there were a couple API calls but those have since been hard-coded; I need to figure out a free way to host a backend. 
