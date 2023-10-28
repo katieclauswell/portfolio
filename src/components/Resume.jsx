@@ -1,18 +1,18 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import resume from "../assets/Resume-Churchwell.pdf";
+import { Container, Row } from "react-bootstrap";
+// import resume from "../assets/Resume-Churchwell.pdf";
 import { info } from "../data/info";
 
 function Resume() {
   return (
     <Container>
-      <Row className="m-3" id="resume-download">
+      {/* <Row className="m-3" id="resume-download">
         <a href={resume} download="Resume - Churchwell.pdf">
           <button type="button" className="btn btn-dark">
             Download
           </button>
         </a>
-      </Row>
+      </Row> */}
       <Row className="m-3">
         <h2>Katie Churchwell</h2>
       </Row>
@@ -24,7 +24,13 @@ function Resume() {
           <>
             <Row key={`role-${index}`}>
               {role.position}, {role.dates}
-              <a href={role.company.website} target="_blank">{role.company.name}</a>
+              <a
+                href={role.company.website}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {role.company.name}
+              </a>
             </Row>
             <ul>
               {role.responsibilities.map((responsibility, index) => (
@@ -49,7 +55,13 @@ function Resume() {
       </Row>
       <Row className="m-3">
         Open Source Contributor, 2022
-        <a href="https://github.com/mozilla/protocol" target="_blank">Mozilla Protocol</a>
+        <a
+          href="https://github.com/mozilla/protocol"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Mozilla Protocol
+        </a>
         <ul>
           <li>
             Design system for Mozilla and Firefox websites. It establishes a

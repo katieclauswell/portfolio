@@ -7,18 +7,12 @@ import {
   OverlayTrigger
 } from "react-bootstrap";
 import { info } from "../../data/info";
-import LoadingSpinner from "../Misc/LoadingSpinner";
 import PopoverDesc from "./PopoverDesc";
 
 function TechStack() {
-  // popover
   const [show, setShow] = useState(false);
   const target = useRef(null);
 
-  // loading
-  const [isLoading, setIsLoading] = useState();
-
-  // filtering
   function filter(name) {
     const repos = info.projects;
     return repos.filter((repo) => repo.topics.includes(name));
@@ -44,11 +38,7 @@ function TechStack() {
                   <Popover id={`popover-positioned-left`}>
                     <Popover.Header as="h3">{`${item.name}`}</Popover.Header>
                     <Popover.Body>
-                      {isLoading === true ? (
-                        <LoadingSpinner />
-                      ) : (
                         <PopoverDesc name={item.name} filter={filter} />
-                      )}
                     </Popover.Body>
                   </Popover>
                 }

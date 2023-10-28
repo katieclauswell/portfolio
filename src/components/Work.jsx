@@ -1,3 +1,4 @@
+import React from "react";
 import { Container, Row, Card, Button, Col } from "react-bootstrap";
 import { info } from "../data/info";
 
@@ -19,10 +20,18 @@ function Work() {
                 <Card.Body>
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text>{project.description}</Card.Text>
-                  <a href={project.live} target="_blank">
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Button variant="dark m-2">Live</Button>
                   </a>
-                  <a href={project.source} target="_blank">
+                  <a
+                    href={project.source}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Button variant="dark m-2">Source Code</Button>
                   </a>
                 </Card.Body>

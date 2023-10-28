@@ -5,13 +5,11 @@ export default function randomWebcamImage() {
       image:
         "https://images-webcams.windy.com/74/1582164074/current/preview/1582164074.jpg",
     },
-
     {
       title: "North-East Klamath, Oregon",
       image:
         "https://images-webcams.windy.com/65/1605569565/current/preview/1605569565.jpg",
     },
-
     {
       title: "North-West Culver, Oregon",
       image:
@@ -26,11 +24,6 @@ export default function randomWebcamImage() {
       title: "Paradise at Mt Rainier, Washington",
       image:
         "https://images-webcams.windy.com/91/1319663191/current/preview/1319663191.jpg",
-    },
-    {
-      title: "Bob's Beach at Stevenson, Washington",
-      image:
-        "https://images-webcams.windy.com/01/1357582501/current/preview/1357582501.jpg",
     },
     {
       title: "Skamania at Mount Adams, Washington",

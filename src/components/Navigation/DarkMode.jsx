@@ -1,17 +1,18 @@
 import "../../assets/styles/dark-mode.css";
+
 import React, { useState, useEffect } from "react";
 
 const DarkMode = () => {
   const localTheme = localStorage.getItem("theme");
   const [theme, setTheme] = useState(localTheme);
 
+  // TODO: animate icon
+
   useEffect(() => {
     localStorage.setItem("theme", theme);
-    // error handling
-    if (localTheme == undefined) {
+    if (localTheme === undefined) {
       setTheme("light");
     }
-    // apply styling
     if (theme === "light") {
       document.documentElement.setAttribute("data-theme", "light");
     } else {
@@ -31,7 +32,11 @@ const DarkMode = () => {
     <>
       <i
         id="theme-toggle"
-        className={theme === "dark" ? "bi bi-cloud-moon" : "bi bi-sun"}
+        className={
+          theme === "dark"
+            ? "bi bi-cloud-moon spin-animated"
+            : "bi bi-sun spin-animated"
+        }
         onClick={toggleTheme}
         aria-label="Dark mode toggle"
       />

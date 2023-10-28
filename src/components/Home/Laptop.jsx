@@ -1,7 +1,5 @@
 import React, { useState, useRef } from "react";
 import laptopUrl from "../../assets/images/bliss-wallpaper.jpg";
-// import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-// import Tooltip from "react-bootstrap/Tooltip";
 import Overlay from "react-bootstrap/Overlay";
 import Popover from "react-bootstrap/Popover";
 

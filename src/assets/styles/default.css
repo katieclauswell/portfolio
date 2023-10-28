@@ -1,5 +1,5 @@
 :root {
-  /*content background */
+  /* content background */
   --main-bg: #f1eeec;
   /* about me bg */
   --accent-bg: white;
@@ -18,7 +18,7 @@ body {
   padding: 0;
 }
 
-/* Navigation */
+/* navigation */
 nav {
   font-family: var(--nav-font);
   text-transform: uppercase;
@@ -35,7 +35,7 @@ nav a:hover {
   filter: brightness(200%);
 }
 
-/* Homepage */
+/* homepage */
 #window,
 #laptop,
 #laptop-tool-tip,
@@ -78,7 +78,7 @@ nav a:hover {
   z-index: 1;
 }
 
-/* Icons */
+/* icons */
 a,
 .nav-link,
 a:active {
@@ -106,7 +106,21 @@ a:hover {
   opacity: 0.35;
 }
 
-/* Work & Resume Sections */
+/* icon animation */
+.spin-animated {
+  animation: spin 2s infinite cubic-bezier(0.85, 0.01, 0.25, 1);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(-20deg) rotateY(20deg);
+  }
+  100% {
+    transform: rotateX(-20deg) rotateY(740deg);
+  }
+}
+
+/* work and resume sections */
 button {
   border: none !important;
 }
@@ -120,7 +134,7 @@ button:hover {
   right: 0;
 }
 
-/* Popover Edits */
+/* laptop popover edits */
 #popover-contained {
   bottom: 28px !important;
 }
