@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import "./assets/styles/default.css";
+import "./assets/styles/dark-mode.css";
 
 import Header from "./components/Navigation/Header";
 import Hero from "./components/Home/Hero";
