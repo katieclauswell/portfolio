@@ -380,11 +380,11 @@ export const info = {
   ],
   resume: [
     {
-      position: "Junior Full Stack Engineer",
+      position: "Software Engineer",
       dates: "2022 - Present",
       company: {
-        name: "LearnPlatform",
-        website: "https://learnplatform.com/",
+        name: "LearnPlatform by Instructure",
+        website: "https://www.instructure.com/k12/products/learnplatform",
       },
       responsibilities: [
         "An Edtech Management Platform committed to expanding equitable access for all students to the teaching and technology that works best for them. Our tech stack includes rails, elixir and react.",
