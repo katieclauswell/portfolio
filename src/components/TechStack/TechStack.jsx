@@ -1,12 +1,6 @@
 import React, { useState, useRef } from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Popover,
-  OverlayTrigger
-} from "react-bootstrap";
-import { info } from "../../data/info";
+import { Container, Row, Col, Popover, OverlayTrigger } from "react-bootstrap";
+import { info } from "./data/info";
 import PopoverDesc from "./PopoverDesc";
 
 function TechStack() {
@@ -33,12 +27,12 @@ function TechStack() {
               <OverlayTrigger
                 trigger="click"
                 key={index}
-                placement="left"
+                placement="right"
                 overlay={
                   <Popover id={`popover-positioned-left`}>
                     <Popover.Header as="h3">{`${item.name}`}</Popover.Header>
                     <Popover.Body>
-                        <PopoverDesc name={item.name} filter={filter} />
+                      <PopoverDesc name={item.name} filter={filter} />
                     </Popover.Body>
                   </Popover>
                 }

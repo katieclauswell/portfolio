@@ -1,7 +1,3 @@
-import pantry from "../assets/images/project-mockups/pantry.png";
-import chewview from "../assets/images/project-mockups/chewview.png";
-import nasteroids from "../assets/images/project-mockups/nasteroids.png";
-
 export const info = {
   technologies: [
     {
@@ -113,49 +109,6 @@ export const info = {
       icon: "devicon-jest-plain",
       name: "jest",
       category: "other",
-    },
-  ],
-  socials: [
-    {
-      link: "https://github.com/katiechurchwell/",
-      icon: "bi bi-github",
-      label: "github",
-    },
-    {
-      link: "https://www.linkedin.com/in/katiechurchwell/",
-      icon: "bi bi-linkedin",
-      label: "linkedin",
-    },
-    {
-      link: "mailto:churchwellcatherine@gmail.com",
-      icon: "bi bi-envelope",
-      label: "email",
-    },
-  ],
-  portfolio: [
-    {
-      title: "Pantry",
-      live: "https://whispering-reef-71968.herokuapp.com/",
-      source: "https://github.com/katiechurchwell/Pantry",
-      image: pantry,
-      description:
-        "Utilizes a back end with servers, databases, advanced APIs and user authentication. Allows the user to search for recipes by ingredient.",
-    },
-    {
-      title: "Chew View",
-      live: "https://katiechurchwell.github.io/Chew-View/",
-      source: "https://github.com/katiechurchwell/Chew-View",
-      image: chewview,
-      description:
-        "Allows the user to search for local restaurants and movies to watch. Built using the Travel Advisor and TMDB Movie Database APIs, Bootstrap and JavaScript.",
-    },
-    {
-      title: "NASATEROIDS",
-      live: "https://asteroids.onrender.com/",
-      source: "https://github.com/katiechurchwell/NASAteroids",
-      image: nasteroids,
-      description:
-        "A recreation of the 1979 Atari game built in React. This application utilizes MUI components and an NES-style CSS frame work for UI, MongoDB and GraphQL for database models and API queries.",
     },
   ],
   projects: [
@@ -376,63 +329,6 @@ export const info = {
     {
       name: "data-structures",
       topics: ["data-structures", "notes"],
-    },
-  ],
-  resume: [
-    {
-      position: "Software Engineer",
-      dates: "2022 - Present",
-      company: {
-        name: "LearnPlatform by Instructure",
-        website: "https://www.instructure.com/k12/products/learnplatform",
-      },
-      responsibilities: [
-        "An Edtech Management Platform committed to expanding equitable access for all students to the teaching and technology that works best for them. Our tech stack includes rails, elixir and react.",
-      ],
-    },
-    {
-      position: "Executive Assistant",
-      dates: "2021",
-      company: {
-        name: "Reynolds School District",
-        website: "https://www.reynolds.k12.or.us/",
-      },
-      responsibilities: [
-        "Supported the Chief Academic Officer, Executive Director of Schools and Assistant Superintendent of Student and Family Services.",
-        "Partnered with leadership to build both long and short-term project roadmaps.",
-        "Operated proactively to organize, prioritize, and coordinate multiple work streams to meet deadlines.",
-        "Conducted complex studies, research, and evaluations pertaining to administrative problems, projects, and assigned areas of responsibility.",
-        "Coordinated an organization-wide diversity and inclusion training with Dr. Robin DiAngelo, an author working in the fields of critical discourse analysis and whiteness studies.",
-      ],
-    },
-    {
-      position: "Environmental Educator",
-      dates: "2019 - 2021",
-      company: {
-        name: "Wenatchee River Institute",
-        website: "https://wenatcheeriverinstitute.org/",
-      },
-      responsibilities: [
-        "Worked as part of a collaborative, agile team environment.",
-        "Designed and implemented evaluation of impact of Field Education Programs.",
-        "Lead and coordinated volunteer projects with several local youth conservation groups.",
-        "Designed onboarding process; led training and provided mentorship.",
-        "Used CRM tools (Firespring and Bloomerang) to support donor database management and communications including emails and mailings.",
-        "Led community outreach efforts, developing new partnerships and programming.",
-      ],
-    },
-    {
-      position: "Retail Coordinator",
-      dates: "​2016 - 2018",
-      company: {
-        name: "Schnitzer Properties",
-        website: "https://www.schnitzerproperties.com/",
-      },
-      responsibilities: [
-        "Created and maintained internal asset databases and introduced additional time-saving measures.",
-        " Domain-specific understanding of contribution to collateral and documentation.",
-        "Reviewed technical architectural drawings and creation of property site plans for legal, marketing, and operations for over 2.2M square feet of property.",
-      ],
     },
   ],
 };
