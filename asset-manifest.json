@@ -1,23 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.ddc343a6.css",
-    "main.js": "/static/js/main.df157718.js",
-    "static/media/pantry.png": "/static/media/pantry.c959d2cf0443a12437d9.png",
-    "static/media/nasteroids.png": "/static/media/nasteroids.76bf7020904d3fe30389.png",
-    "static/media/chewview.png": "/static/media/chewview.cdde4cb91174cc7e543c.png",
-    "static/media/blue-noise.png": "/static/media/blue-noise.0045a7f06bb8bd8e7f54.png",
-    "static/media/Window.gif": "/static/media/Window.19e8034ea8587c292f32.gif",
-    "static/media/headshot-transparent.png": "/static/media/headshot-transparent.d8f9ff24a551a15b93ea.png",
-    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
-    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
-    "static/media/bliss-wallpaper.jpg": "/static/media/bliss-wallpaper.a0498724577aa4ab4900.jpg",
-    "static/media/Resume-Churchwell.pdf": "/static/media/Resume-Churchwell.6852a27dba496a11af71.pdf",
+    "main.css": "/static/css/main.23a1d7e2.chunk.css",
+    "main.js": "/static/js/main.f33a09b6.chunk.js",
+    "main.js.map": "/static/js/main.f33a09b6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9581f308.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9581f308.js.map",
+    "static/css/2.4f03da6b.chunk.css": "/static/css/2.4f03da6b.chunk.css",
+    "static/js/2.9874f4c3.chunk.js": "/static/js/2.9874f4c3.chunk.js",
+    "static/js/2.9874f4c3.chunk.js.map": "/static/js/2.9874f4c3.chunk.js.map",
     "index.html": "/index.html",
-    "main.ddc343a6.css.map": "/static/css/main.ddc343a6.css.map",
-    "main.df157718.js.map": "/static/js/main.df157718.js.map"
+    "precache-manifest.574ded6aa8e5d03a882bfc2cfe582c26.js": "/precache-manifest.574ded6aa8e5d03a882bfc2cfe582c26.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.4f03da6b.chunk.css.map": "/static/css/2.4f03da6b.chunk.css.map",
+    "static/css/main.23a1d7e2.chunk.css.map": "/static/css/main.23a1d7e2.chunk.css.map",
+    "static/js/2.9874f4c3.chunk.js.LICENSE.txt": "/static/js/2.9874f4c3.chunk.js.LICENSE.txt",
+    "static/media/Window.gif": "/static/media/Window.9915d6eb.gif",
+    "static/media/bliss-wallpaper.jpg": "/static/media/bliss-wallpaper.28dcaa66.jpg",
+    "static/media/blue-noise.png": "/static/media/blue-noise.a8c9ff70.png",
+    "static/media/bootstrap-icons.css": "/static/media/bootstrap-icons.ed62b9f1.woff2",
+    "static/media/chewview.png": "/static/media/chewview.a92a7664.png",
+    "static/media/headshot-transparent.png": "/static/media/headshot-transparent.6fda456d.png",
+    "static/media/nasteroids.png": "/static/media/nasteroids.1a1abac3.png",
+    "static/media/pantry.png": "/static/media/pantry.534ddf64.png"
   },
   "entrypoints": [
-    "static/css/main.ddc343a6.css",
-    "static/js/main.df157718.js"
+    "static/js/runtime-main.9581f308.js",
+    "static/css/2.4f03da6b.chunk.css",
+    "static/js/2.9874f4c3.chunk.js",
+    "static/css/main.23a1d7e2.chunk.css",
+    "static/js/main.f33a09b6.chunk.js"
   ]
 }
