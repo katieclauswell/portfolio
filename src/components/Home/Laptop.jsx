@@ -5,8 +5,16 @@ import Popover from "react-bootstrap/Popover";
 
 function Laptop(props) {
   const [show, setShow] = useState(false);
+  const [number, setNumber] = useState(1);
   const [target, setTarget] = useState(null);
+  const [isAnimated, setIsAnimated] = useState(false);
   const ref = useRef(null);
+
+  const getRandomNumber = () => {
+    const newNumber = Math.floor(Math.random() * 6) + 1;
+    setNumber(newNumber);
+    setIsAnimated(true);
+  };
 
   const handleClick = (event) => {
     setShow(!show);
@@ -35,9 +43,20 @@ function Laptop(props) {
         <Popover id="popover-contained">
           <Popover.Body>
             {props.webcam ? (
-              <p>
-                Randomly generated live image! This one happens to be in {props.webcam.title}.
-              </p>
+              <>
+                <p>
+                  Randomly generated live image! This one happens to be in{" "}
+                  {props.webcam.title}.
+                </p>
+                <p>
+                  <i
+                    className={`bi bi-dice-${number} ${
+                      isAnimated ? "spin-animated" : ""
+                    }`}
+                    onClick={getRandomNumber}
+                  />
+                </p>
+              </>
             ) : (
               <p>Hello World!</p>
             )}

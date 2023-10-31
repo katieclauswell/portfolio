@@ -50,9 +50,7 @@ nav a:hover {
   position: absolute;
   filter: saturate(2);
   clip-path: polygon(16% 0%, 79% 0%, 85% 55%, 83% 55%, 73% 75%, 15% 90%);
-  background-position:
-    center 6px,
-    center 6px;
+  background-position: center 6px, center 6px;
   background-size: 75% 75%;
   z-index: -1;
   resize: none;
@@ -75,9 +73,7 @@ nav a:hover {
 
 #window {
   position: relative;
-  background-position:
-    center center,
-    center center;
+  background-position: center center, center center;
   background-size: 100%, 100%;
   z-index: 1;
 }
@@ -110,7 +106,7 @@ a:hover {
   opacity: 0.35;
 }
 
-/* icon animation */
+/* icon animations */
 .spin-animated {
   animation: spin 1s 1 cubic-bezier(0.85, 0.01, 0.25, 1);
 }
@@ -121,6 +117,47 @@ a:hover {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.shake-animated {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 
