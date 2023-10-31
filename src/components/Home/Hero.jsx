@@ -6,7 +6,6 @@ import Laptop from "./Laptop";
 import blueNoise from "../../assets/images/blue-noise.png";
 
 function Hero() {
-  // choose random webcam image
   const [webcam, setWebcam] = useState();
 
   useEffect(() => {
@@ -22,7 +21,7 @@ function Hero() {
       <Container
         style={{
           margin: "auto",
-          width: "50%"
+          width: "50%",
         }}
       >
         <div
@@ -35,7 +34,7 @@ function Hero() {
           }}
         />
         <Laptop webcam={webcam} />
-        <Window webcam={webcam}/>
+        <Window webcam={webcam} />
       </Container>
     </>
   );

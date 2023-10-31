@@ -10,7 +10,7 @@ const DarkMode = () => {
     document.documentElement.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
   }, [theme]);
-  
+
   const toggleTheme = () => {
     setIsAnimated(true);
     setTheme(theme === "light" ? "dark" : "light");
@@ -20,12 +20,14 @@ const DarkMode = () => {
     <>
       <i
         id="theme-toggle"
-        className={`${
-          theme === "dark" ? "bi bi-cloud-moon" : "bi bi-sun"
-        } ${isAnimated ? "spin-animated" : ""}`}
+        className={`${theme === "dark" ? "bi bi-cloud-moon" : "bi bi-sun"} ${
+          isAnimated ? "spin-animated" : ""
+        }`}
         onClick={toggleTheme}
         aria-label="Dark mode toggle"
-        onAnimationEnd={() => {setIsAnimated(false)}}
+        onAnimationEnd={() => {
+          setIsAnimated(false);
+        }}
       />
     </>
   );
