@@ -18,12 +18,7 @@ function Hero() {
         <h1>Katie Churchwell</h1>
         <h2>Full Stack Engineer</h2>
       </Row>
-      <Container
-        style={{
-          margin: "auto",
-          width: "50%",
-        }}
-      >
+      <Container id="container">
         <div
           role="img"
           id="webcam"

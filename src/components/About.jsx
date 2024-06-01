@@ -13,12 +13,9 @@ function About() {
           <Image
             roundedCircle
             fluid
+            id="headshot"
             src={me}
             alt="Image of a woman with brown hair smiling at the camera."
-            style={{
-              background: `linear-gradient(to right, rgb(181, 221, 255), rgb(217, 152, 255))`,
-              width: `300px`,
-            }}
           />
         </Col>
         <Col xs={7}>
