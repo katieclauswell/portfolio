@@ -1,3 +1,5 @@
+import React from "react";
+
 function PopoverDesc({ filter, name }) {
   const repos = filter(name);
 
@@ -9,6 +11,7 @@ function PopoverDesc({ filter, name }) {
             <a
               href={`https://www.github.com/katiechurchwell/${item.name}`}
               target="_blank"
+              rel="noopener noreferrer"
               className="tech-link"
             >
               {item.name}

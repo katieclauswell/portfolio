@@ -1,5 +1,5 @@
 :root {
-  /*content background */
+  /* content background */
   --main-bg: #f1eeec;
   /* about me bg */
   --accent-bg: white;
@@ -23,7 +23,7 @@ hr {
   width: 100%;
 }
 
-/* Navigation */
+/* navigation */
 nav {
   font-family: var(--nav-font);
   text-transform: uppercase;
@@ -40,7 +40,12 @@ nav a:hover {
   filter: brightness(200%);
 }
 
-/* Homepage */
+/* homepage */
+#container {
+  margin: auto;
+  width: 50%;
+}
+
 #window,
 #laptop,
 #laptop-tool-tip,
@@ -67,7 +72,7 @@ nav a:hover {
   z-index: 1;
   background-size: 96px 74px;
   background-position: 404px 212px;
-  filter: saturate(0.6);
+  filter: saturate(0.3);
 }
 
 #laptop-tool-tip {
@@ -83,7 +88,7 @@ nav a:hover {
   z-index: 1;
 }
 
-/* Icons */
+/* icons */
 a,
 .nav-link,
 a:active {
@@ -111,7 +116,21 @@ a:hover {
   opacity: 0.35;
 }
 
-/* Work & Resume Sections */
+/* icon animation */
+.spin-animated {
+  animation: spin 0.5s 1 cubic-bezier(0.85, 0.01, 0.25, 1);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* work and resume sections */
 button {
   border: none !important;
 }
@@ -125,7 +144,12 @@ button:hover {
   right: 0;
 }
 
-/* Popover Edits */
+#headshot {
+  background: linear-gradient(to right, rgb(181, 221, 255), rgb(217, 152, 255));
+  width: 300px;
+}
+
+/* laptop popover edits */
 #popover-contained {
   bottom: 28px !important;
 }
