@@ -25,9 +25,7 @@ In the terminal, run the following:
 
 ## Design
 
-Originally there were a couple API calls but those have since been hard-coded; I need to figure out a free way to host a backend.
-
-The window is composed of the following stack:
+The homepage window is composed of the following stack:
 
 - Webcam background and blue noise filter.
   - The webcam images come from the [Windy Webcams API](https://api.windy.com/webcams) (narrowed down by Oregon, Washington and mountain regions). One of the results is randomly chosen and a blue noise filter is overlayed on top to try and counteract some of the jpeggyness.
@@ -35,8 +33,6 @@ The window is composed of the following stack:
 - Window sill with transparency for window pane.
   - Beautifully illustrated by <a href="https://twitter.com/PixelArtJourney">Scilex</a>!
 - Invisible tool tip trigger for laptop.
-
-The tech stack page utilized the [GitHub Graphql API](https://docs.github.com/en/graphql) to filter my GitHub repositories by topic. That information has since been copied and pasted into `data/info.js`
 
 ## Aspirational Features
 

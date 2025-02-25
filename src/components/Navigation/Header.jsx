@@ -19,12 +19,6 @@ function Header() {
               <Nav.Link as={Link} to="/about">
                 About
               </Nav.Link>
-              <Nav.Link as={Link} to="/tech-stack">
-                Tech Stack
-              </Nav.Link>
-              <Nav.Link as={Link} to="/work">
-                Work
-              </Nav.Link>
               <Nav.Link as={Link} to="/resume">
                 Resume
               </Nav.Link>

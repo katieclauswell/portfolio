@@ -2,10 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import me from "../assets/images/headshot-transparent.png";
 import pictureframe from "../assets/images/picture-frame.png";
+import blueNoise from "../assets/images/blue-noise.png";
 
 function About() {
   return (
-    <Container id="about">
+    <>
       <Row className="m-3">
         <h2>About</h2>
       </Row>
@@ -15,14 +16,7 @@ function About() {
             role="img"
             id="headshot"
             style={{
-              backgroundImage: `url(${me})`,
-            }}
-          />
-          <div
-            role="img"
-            id="picture-frame"
-            style={{
-              backgroundImage: `url(${pictureframe})`,
+              backgroundImage: `url(${pictureframe}), url(${blueNoise}), url(${me})`,
             }}
           />
         </Col>
@@ -52,7 +46,7 @@ function About() {
           </Row>
         </Col>
       </Row>
-    </Container>
+    </>
   );
 }
 

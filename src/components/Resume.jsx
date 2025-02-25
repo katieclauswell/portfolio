@@ -64,7 +64,7 @@ const info = {
 
 function Resume() {
   return (
-    <Container>
+    <>
       {/* <Row className="m-3" id="resume-download">
         <a href={resume} download="Resume - Churchwell.pdf">
           <button type="button" className="btn btn-dark">
@@ -75,6 +75,7 @@ function Resume() {
       <Row className="m-3">
         <h2>Katie Churchwell</h2>
       </Row>
+      <Container>
       <Row className="m-3">
         <h3>Experience</h3>
       </Row>
@@ -129,7 +130,8 @@ function Resume() {
           </li>
         </ul>
       </Row>
-    </Container>
+      </Container>
+    </>
   );
 }
 

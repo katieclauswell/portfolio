@@ -46,11 +46,6 @@ export default function randomWebcamImage() {
         "https://images-webcams.windy.com/39/1523123339/current/preview/1523123339.jpg",
     },
     {
-      title: "West Puyallup River Junction, Washington",
-      image:
-        "https://images-webcams.windy.com/95/1578985195/current/preview/1578985195.jpg",
-    },
-    {
       title: "Puyallup River Junction, Washington",
       image:
         "https://images-webcams.windy.com/97/1579121997/current/preview/1579121997.jpg",

@@ -148,21 +148,11 @@ a:hover {
 #headshot {
   width: 100%;
   height: 100%;
-  background-size: 13%;
-  position: absolute;
+  background-size: contain, 226px, 226px;
   background-repeat: no-repeat;
-  background-position: top 34px left 112px;
+  background-position: top center, top 60px right 157px, top 60px right 157px;
 }
 
-#picture-frame {
-  position: relative;
-  background-position: top;
-  z-index: 1;
-  background-repeat: no-repeat;
-  width: 400px;
-  height: 100%;
-  background-size: 100%;
-}
 
 /* work and resume pages */
 button {
