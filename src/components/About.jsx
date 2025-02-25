@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import me from "../assets/images/headshot-transparent.png";
+import pictureframe from "../assets/images/picture-frame.png";
 
 function About() {
   return (
@@ -9,13 +10,20 @@ function About() {
         <h2>About</h2>
       </Row>
       <Row>
-        <Col>
-          <Image
-            roundedCircle
-            fluid
+        <Col id="headshot-container">
+          <div
+            role="img"
             id="headshot"
-            src={me}
-            alt="Image of a woman with brown hair smiling at the camera."
+            style={{
+              backgroundImage: `url(${me})`,
+            }}
+          />
+          <div
+            role="img"
+            id="picture-frame"
+            style={{
+              backgroundImage: `url(${pictureframe})`,
+            }}
           />
         </Col>
         <Col xs={7}>
@@ -27,8 +35,8 @@ function About() {
             <p>
               I earned a Bachelors in International Business with a
               concentration in Marketing from the University of South Florida
-              and am a graduate of a Full Stack Web Development bootcamp at
-              the University of Oregon.
+              and am a graduate of a Full Stack Web Development bootcamp at the
+              University of Oregon.
             </p>
           </Row>
           <Row className="justify-content-center" xs={2} md={4} lg={6}>

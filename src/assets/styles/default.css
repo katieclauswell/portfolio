@@ -83,6 +83,20 @@ nav a:hover {
   z-index: 1;
 }
 
+/* laptop popover edits */
+#popover-contained {
+  bottom: 28px !important;
+}
+
+.popover .popover-arrow::after,
+.popover .popover-arrow::before {
+  bottom: -6px;
+}
+
+.popover-header {
+  color: black;
+}
+
 /* icons */
 a,
 .nav-link,
@@ -125,7 +139,32 @@ a:hover {
   }
 }
 
-/* work and resume sections */
+/* about me page */
+
+#headshot-container {
+  height: 100vh;
+}
+
+#headshot {
+  width: 100%;
+  height: 100%;
+  background-size: 13%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: top 34px left 112px;
+}
+
+#picture-frame {
+  position: relative;
+  background-position: top;
+  z-index: 1;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 100%;
+  background-size: 100%;
+}
+
+/* work and resume pages */
 button {
   border: none !important;
 }
@@ -137,23 +176,4 @@ button:hover {
 #resume-download {
   position: absolute;
   right: 0;
-}
-
-#headshot {
-  background: linear-gradient(to right, rgb(181, 221, 255), rgb(217, 152, 255));
-  width: 300px;
-}
-
-/* laptop popover edits */
-#popover-contained {
-  bottom: 28px !important;
-}
-
-.popover .popover-arrow::after,
-.popover .popover-arrow::before {
-  bottom: -6px;
-}
-
-.popover-header {
-  color: black;
 }
