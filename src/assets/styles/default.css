@@ -143,14 +143,16 @@ a:hover {
 
 #headshot-container {
   height: 100vh;
+  width: 360px;
+  flex: 0 0 auto;
 }
 
 #headshot {
   width: 100%;
   height: 100%;
-  background-size: contain, 226px, 226px;
+  background-size: 100%, 136px, 159px;
   background-repeat: no-repeat;
-  background-position: top center, top 60px right 157px, top 60px right 157px;
+  background-position: top center, top 38px right 109px, top 30px right 91px
 }
 
 

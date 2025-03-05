@@ -10,20 +10,11 @@ function About() {
       <Row className="m-3">
         <h2>About</h2>
       </Row>
-      <Row>
-        <Col id="headshot-container">
-          <div
-            role="img"
-            id="headshot"
-            style={{
-              backgroundImage: `url(${pictureframe}), url(${blueNoise}), url(${me})`,
-            }}
-          />
-        </Col>
+      <Row className="m-3">
         <Col xs={7}>
           <Row>
             <p>
-              Hello, my name is Katie Churchwell and I'm a Full Stack Developer
+              Hi, I'm Katie Churchwell, a Full Stack Developer
               with a background in education.
             </p>
             <p>
@@ -31,6 +22,9 @@ function About() {
               concentration in Marketing from the University of South Florida
               and am a graduate of a Full Stack Web Development bootcamp at the
               University of Oregon.
+            </p>
+            <p>
+            Currently working with LearnPlatform by Instructure, an EdTech management platform focused on expanding equitable access to education through innovative technology. Our tech stack includes React, Elixir, and Rails.
             </p>
           </Row>
           <Row className="justify-content-center" xs={2} md={4} lg={6}>
@@ -44,6 +38,15 @@ function About() {
               <i className="bi bi-linkedin"></i>
             </a>
           </Row>
+        </Col>
+        <Col id="headshot-container">
+          <div
+            role="img"
+            id="headshot"
+            style={{
+              backgroundImage: `url(${pictureframe}), url(${blueNoise}), url(${me})`,
+            }}
+          />
         </Col>
       </Row>
     </>
