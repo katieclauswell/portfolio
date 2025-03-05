@@ -1,8 +1,7 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import me from "../assets/images/headshot-transparent.png";
 import pictureframe from "../assets/images/picture-frame.png";
-import blueNoise from "../assets/images/blue-noise.png";
 
 function About() {
   return (
@@ -14,8 +13,8 @@ function About() {
         <Col xs={7}>
           <Row>
             <p>
-              Hi, I'm Katie Churchwell, a Full Stack Developer
-              with a background in education.
+              Hi, I'm Katie Churchwell, a Full Stack Developer with a background
+              in education.
             </p>
             <p>
               I earned a Bachelors in International Business with a
@@ -24,7 +23,10 @@ function About() {
               University of Oregon.
             </p>
             <p>
-            Currently working with LearnPlatform by Instructure, an EdTech management platform focused on expanding equitable access to education through innovative technology. Our tech stack includes React, Elixir, and Rails.
+              Currently working with LearnPlatform by Instructure, an EdTech
+              management platform focused on expanding equitable access to
+              education through innovative technology. Our tech stack includes
+              React, Elixir, and Rails.
             </p>
           </Row>
           <Row className="justify-content-center" xs={2} md={4} lg={6}>
@@ -44,7 +46,7 @@ function About() {
             role="img"
             id="headshot"
             style={{
-              backgroundImage: `url(${pictureframe}), url(${blueNoise}), url(${me})`,
+              backgroundImage: `url(${pictureframe}), url(${me})`,
             }}
           />
         </Col>

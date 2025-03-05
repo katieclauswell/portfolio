@@ -28,7 +28,7 @@ function Hero() {
               : "none",
           }}
         />
-        <Laptop webcam={webcam} />
+        <Laptop webcam={webcam} setWebcam={setWebcam} />
         <Window webcam={webcam} />
       </Container>
     </>

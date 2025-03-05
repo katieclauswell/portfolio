@@ -4,7 +4,7 @@
   /* about me bg */
   --accent-bg: white;
   /* content text, buttons, nav hover */
-  --first: #4a4ccc;
+  --first: #5f3d4b;
   /* fonts */
   --main-font: "Open Sans", sans-serif;
   --header-font: "Outfit", sans-serif;
@@ -150,11 +150,10 @@ a:hover {
 #headshot {
   width: 100%;
   height: 100%;
-  background-size: 100%, 136px, 159px;
+  background-size: 100%, 159px;
   background-repeat: no-repeat;
-  background-position: top center, top 38px right 109px, top 30px right 91px
+  background-position: top center, top 30px right 91px;
 }
-
 
 /* work and resume pages */
 button {

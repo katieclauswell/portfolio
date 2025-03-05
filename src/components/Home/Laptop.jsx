@@ -2,8 +2,10 @@ import React, { useState, useRef } from "react";
 import laptopUrl from "../../assets/images/bliss-wallpaper.jpg";
 import Overlay from "react-bootstrap/Overlay";
 import Popover from "react-bootstrap/Popover";
+import { Button } from "react-bootstrap";
+import randomWebcam from "../../utils/randomWebcam";
 
-function Laptop(props) {
+function Laptop({ webcam, setWebcam }) {
   const [show, setShow] = useState(false);
   const [target, setTarget] = useState(null);
   const ref = useRef(null);
@@ -11,6 +13,11 @@ function Laptop(props) {
   const handleClick = (event) => {
     setShow(!show);
     setTarget(event.target);
+  };
+
+  const handleGenerateWebcam = () => {
+    const newWebcam = randomWebcam();
+    setWebcam(newWebcam);
   };
 
   return (
@@ -34,10 +41,22 @@ function Laptop(props) {
       >
         <Popover id="popover-contained">
           <Popover.Body>
-            {props.webcam ? (
-              <p>
-                Randomly generated live image! This one happens to be in {props.webcam.title}.
-              </p>
+            {webcam ? (
+              <>
+                <p>
+                  Randomly generated live image! This one happens to be in{" "}
+                  {webcam.title}.
+                </p>
+                <p>
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    onClick={handleGenerateWebcam}
+                  >
+                    Generate New Webcam
+                  </Button>
+                </p>
+              </>
             ) : (
               <p>Hello World!</p>
             )}
