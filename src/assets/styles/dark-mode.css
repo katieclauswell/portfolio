@@ -3,24 +3,20 @@
   --background-color: #333;
 }
 
-body,
+[data-theme="dark"] body,
 .card {
-  background-color: var(--background-color) !important;
-  color: var(--font-color) !important;
+  background-color: var(--background-color);
+  color: var(--font-color);
 }
 
-.nav-link,
-a,
-a:active,
-a:hover,
-i {
-  color: var(--font-color) !important;
+[data-theme="dark"] .tech-link {
+  color: black;
 }
 
-.tech-link {
-  color: black !important;
-}
-
-.card {
+[data-theme="dark"] .card {
   border-color: var(--font-color);
+}
+
+[data-theme="dark"] #headshot {
+background-image: url("/images/picture-frame-dark.png"), url("/images/headshot-transparent.png");
 }

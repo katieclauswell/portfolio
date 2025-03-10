@@ -1,6 +1,4 @@
 import React from "react";
-import window from "../../assets/images/Window.gif";
-import windowTransparency from "../../assets/images/WindowTransparentBlue.png";
 
 function Window(props) {
   return (
@@ -9,7 +7,7 @@ function Window(props) {
       id="window"
       style={{
         backgroundImage: props.webcam
-          ? `url(${window}), url(${windowTransparency})`
+          ? `url("/images/Window.gif"), url("/images/WindowTransparentBlue.png")`
           : "none",
       }}
     />

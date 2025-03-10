@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import laptopUrl from "../../assets/images/bliss-wallpaper.jpg";
 import Overlay from "react-bootstrap/Overlay";
 import Popover from "react-bootstrap/Popover";
 import { Button } from "react-bootstrap";
@@ -26,7 +25,7 @@ function Laptop({ webcam, setWebcam }) {
         id="laptop"
         role="img"
         style={{
-          backgroundImage: `url(${laptopUrl})`,
+          backgroundImage: `url("/images/bliss-wallpaper.jpg")`,
         }}
       />
 
@@ -53,7 +52,7 @@ function Laptop({ webcam, setWebcam }) {
                     size="sm"
                     onClick={handleGenerateWebcam}
                   >
-                    Generate New Webcam
+                    Teleport!
                   </Button>
                 </p>
               </>

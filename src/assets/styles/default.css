@@ -3,12 +3,15 @@
   --main-bg: #f1eeec;
   /* about me bg */
   --accent-bg: white;
-  /* content text, buttons, nav hover */
+  /* content text, buttons, nav hover color bar*/
   --first: #5f3d4b;
   /* fonts */
   --main-font: "Open Sans", sans-serif;
   --header-font: "Outfit", sans-serif;
   --nav-font: "Montserrat", sans-serif;
+
+  /* nav hover text */
+  --font-color: black;
 }
 
 body {
@@ -33,6 +36,15 @@ nav a:hover {
   background-repeat: no-repeat;
   display: inline-block;
   filter: brightness(200%);
+  color: var(--font-color)
+}
+
+.nav-link,
+a,
+a:active,
+a:hover,
+i {
+  color: var(--font-color) !important;
 }
 
 /* homepage */
@@ -116,11 +128,6 @@ i {
   justify-content: center;
 }
 
-i:hover,
-a:hover {
-  color: var(--first) !important;
-}
-
 .inactive {
   opacity: 0.35;
 }
@@ -153,6 +160,10 @@ a:hover {
   background-size: 100%, 159px;
   background-repeat: no-repeat;
   background-position: top center, top 30px right 91px;
+}
+
+[data-theme="light"] #headshot {
+  background-image: url("/images/picture-frame-light.png"), url("/images/headshot-transparent.png");
 }
 
 /* work and resume pages */

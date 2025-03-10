@@ -3,7 +3,6 @@ import { Container, Row } from "react-bootstrap";
 import randomWebcam from "../../utils/randomWebcam";
 import Window from "./Window";
 import Laptop from "./Laptop";
-import blueNoise from "../../assets/images/blue-noise.png";
 
 function Hero() {
   const [webcam, setWebcam] = useState();
@@ -24,7 +23,7 @@ function Hero() {
           id="webcam"
           style={{
             backgroundImage: webcam
-              ? `url(${blueNoise}), url(${webcam.image})`
+              ? `url("/images/blue-noise.png"), url(${webcam.image})`
               : "none",
           }}
         />

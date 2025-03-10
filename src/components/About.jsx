@@ -1,7 +1,5 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import me from "../assets/images/headshot-transparent.png";
-import pictureframe from "../assets/images/picture-frame.png";
 
 function About() {
   return (
@@ -13,7 +11,7 @@ function About() {
         <Col xs={7}>
           <Row>
             <p>
-              Hi, I'm Katie Churchwell, a Full Stack Developer with a background
+              Hi, I'm Katie Churchwell, a full stack engineer with a background
               in education.
             </p>
             <p>
@@ -23,7 +21,7 @@ function About() {
               University of Oregon.
             </p>
             <p>
-              Currently working with LearnPlatform by Instructure, an EdTech
+              Currently working on LearnPlatform at Instructure, an EdTech
               management platform focused on expanding equitable access to
               education through innovative technology. Our tech stack includes
               React, Elixir, and Rails.
@@ -45,9 +43,6 @@ function About() {
           <div
             role="img"
             id="headshot"
-            style={{
-              backgroundImage: `url(${pictureframe}), url(${me})`,
-            }}
           />
         </Col>
       </Row>
