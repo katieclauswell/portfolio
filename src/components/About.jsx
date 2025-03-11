@@ -1,13 +1,32 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, OverlayTrigger, Tooltip } from "react-bootstrap";
 
 function About() {
+  const renderTooltip = (props) => (
+    <Tooltip id="button-tooltip" {...props}>
+      A Daruma (達磨) is a Japanese traditional doll modeled after Bodhidharma,
+      the founder of the Zen tradition of Buddhism. When purchased, the figure's
+      eyes are both blank white. The owner selects a goal or wish and paints in
+      the left eye. Once the goal is achieved, the right eye is filled in.
+    </Tooltip>
+  );
+
   return (
     <>
       <Row className="m-3">
         <h2>About</h2>
       </Row>
       <Row className="m-3">
+        <Col id="headshot-container">
+          <div role="img" id="headshot" />
+          <OverlayTrigger
+            placement="right"
+            delay={{ show: 250, hide: 400 }}
+            overlay={renderTooltip}
+          >
+            <div id="headshot-tool-tip" />
+          </OverlayTrigger>
+        </Col>
         <Col xs={7}>
           <Row>
             <p>
@@ -38,12 +57,6 @@ function About() {
               <i className="bi bi-linkedin"></i>
             </a>
           </Row>
-        </Col>
-        <Col id="headshot-container">
-          <div
-            role="img"
-            id="headshot"
-          />
         </Col>
       </Row>
     </>

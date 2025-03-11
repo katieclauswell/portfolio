@@ -36,7 +36,7 @@ nav a:hover {
   background-repeat: no-repeat;
   display: inline-block;
   filter: brightness(200%);
-  color: var(--font-color)
+  color: var(--font-color);
 }
 
 .nav-link,
@@ -149,7 +149,7 @@ i {
 /* about me page */
 
 #headshot-container {
-  height: 100vh;
+  height: 44vh;
   width: 360px;
   flex: 0 0 auto;
 }
@@ -163,7 +163,17 @@ i {
 }
 
 [data-theme="light"] #headshot {
-  background-image: url("/images/picture-frame-light.png"), url("/images/headshot-transparent.png");
+  background-image: url("/images/picture-frame-light.png"),
+    url("/images/headshot-transparent.png");
+}
+
+#headshot-tool-tip {
+  position: fixed;
+  z-index: 3;
+  height: 130px;
+  width: 70px;
+  top: 283px;
+  left: 83px;
 }
 
 /* work and resume pages */
