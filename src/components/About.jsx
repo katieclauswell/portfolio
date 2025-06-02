@@ -30,7 +30,7 @@ function About() {
         <Col xs={7}>
           <Row>
             <p>
-              Hi, I'm Katie Churchwell, a full stack engineer with a background
+              Hi, I'm Katie Clauswell, a full stack engineer with a background
               in education.
             </p>
             <p>
