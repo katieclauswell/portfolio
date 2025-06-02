@@ -163,8 +163,8 @@ i {
 }
 
 [data-theme="light"] #headshot {
-  background-image: url("/images/picture-frame-light.png"),
-    url("/images/headshot-transparent.png");
+  background-image: url("../images/headshot/picture-frame-light.png"),
+    url("../images/headshot/headshot-transparent.png");
 }
 
 #headshot-tool-tip {

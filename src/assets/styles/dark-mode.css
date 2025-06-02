@@ -18,5 +18,5 @@
 }
 
 [data-theme="dark"] #headshot {
-background-image: url("/images/picture-frame-dark.png"), url("/images/headshot-transparent.png");
+background-image: url("../images/headshot/picture-frame-dark.png"), url("../images/headshot/headshot-transparent.png");
 }
