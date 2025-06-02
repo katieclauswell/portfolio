@@ -14,7 +14,7 @@ function Work() {
       },
       {
         title: "Chew View",
-        live: "https://katiechurchwell.github.io/Chew-View/",
+        live: "https://katieclauswell.github.io/Chew-View/",
         source: "https://github.com/katieclauswell/Chew-View",
         image: "/images/project-mockups/chewview.png",
         description:

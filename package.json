@@ -2,7 +2,7 @@
   "name": "portfolio-client",
   "version": "1.0.0",
   "proxy": "http://localhost:3000/",
-  "homepage": "https://katiechurchwell.com/",
+  "homepage": "https://katieclauswell.com/",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "bootstrap-icons": "^1.9.1",

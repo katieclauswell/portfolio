@@ -9,7 +9,7 @@ function PopoverDesc({ filter, name }) {
         repos.map((item, index) => (
           <li key={index}>
             <a
-              href={`https://www.github.com/katiechurchwell/${item.name}`}
+              href={`https://www.github.com/katieclauswell/${item.name}`}
               target="_blank"
               rel="noopener noreferrer"
               className="tech-link"

@@ -190,7 +190,7 @@ export const info = {
       topics: ["jest", "nodejs", "game"],
     },
     {
-      name: "katiechurchwell",
+      name: "katieclauswell",
       topics: [],
     },
     {

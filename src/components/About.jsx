@@ -47,13 +47,13 @@ function About() {
             </p>
           </Row>
           <Row className="justify-content-center" xs={2} md={4} lg={6}>
-            <a href="mailto:churchwellcatherine@gmail.com">
+            <a href="mailto:katie.clauswell@gmail.com">
               <i className="bi bi-envelope"></i>
             </a>
-            <a href="https://github.com/katiechurchwell">
+            <a href="https://github.com/katieclauswell">
               <i className="bi bi-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/katiechurchwell/">
+            <a href="https://www.linkedin.com/in/katieclauswell/">
               <i className="bi bi-linkedin"></i>
             </a>
           </Row>
