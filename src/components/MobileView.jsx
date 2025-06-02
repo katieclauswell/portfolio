@@ -5,7 +5,7 @@ function MobileView() {
   return (
     <Container>
       <Row className="m-3">
-        <h1>Katie Churchwell</h1>
+        <h1>Katie Clauswell</h1>
       </Row>
       <Row>
         <Col xs={{ span: 8, offset: 1 }}>
@@ -22,13 +22,13 @@ function MobileView() {
           </Row>
         </Col>
         <Col xs={2}>
-          <a href="https://www.linkedin.com/in/katiechurchwell/">
+          <a href="https://www.linkedin.com/in/katieclauswell/">
             <i className="bi bi-linkedin"></i>
           </a>
-          <a href="mailto:churchwellcatherine@gmail.com">
+          <a href="mailto:katie.clauswell@gmail.com">
             <i className="bi bi-envelope"></i>
           </a>
-          <a href="https://github.com/katiechurchwell">
+          <a href="https://github.com/katieclauswell">
             <i className="bi bi-github"></i>
           </a>
         </Col>
