@@ -14,7 +14,7 @@ function Hero() {
   return (
     <>
       <Row className="m-3">
-        <h1>Katie Churchwell</h1>
+        <h1>Katie Clauswell</h1>
         <h2>Full Stack Engineer</h2>
       </Row>
       <Container id="container">
