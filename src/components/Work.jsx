@@ -7,7 +7,7 @@ function Work() {
       {
         title: "Pantry",
         live: "https://pantry-app.herokuapp.com/",
-        source: "https://github.com/katiechurchwell/Pantry",
+        source: "https://github.com/katieclauswell/Pantry",
         image: "/images/project-mockups/pantry.png",
         description:
           "Full stack web application that allows the user to search for recipes by ingredient. Includes user authentication, templating with Handlebars.js, mySQL database.",
@@ -15,7 +15,7 @@ function Work() {
       {
         title: "Chew View",
         live: "https://katiechurchwell.github.io/Chew-View/",
-        source: "https://github.com/katiechurchwell/Chew-View",
+        source: "https://github.com/katieclauswell/Chew-View",
         image: "/images/project-mockups/chewview.png",
         description:
           "Allows the user to search for local restaurants and movies to watch. Built using the Travel Advisor and TMDB Movie Database APIs, Bootstrap and JavaScript.",
@@ -23,7 +23,7 @@ function Work() {
       {
         title: "NASATEROIDS",
         live: "https://asteroids.onrender.com/",
-        source: "https://github.com/katiechurchwell/NASAteroids",
+        source: "https://github.com/katieclauswell/NASAteroids",
         image: "/images/project-mockups-chewview.png",
         description:
           "A recreation of the 1979 Atari game built in React. This application utilizes MUI components and an NES-style CSS frame work for UI, MongoDB and GraphQL for database models.",
