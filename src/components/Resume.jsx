@@ -32,7 +32,7 @@ const resume = {
       responsibilities: [
         "Contributed to Mozilla’s design system, creating reusable, accessible UI components for Mozilla and Firefox websites.",
         "Ensured compliance with accessibility best practices (WCAG) and responsive design standards.",
-        "Optimized performance of design system components, reducing load times and improving rendering eﬃciency for high-traﬃc Mozilla websites.",
+        "Optimized performance of design system components, reducing load times and improving rendering efficiency for high-traffic Mozilla websites.",
         "Collaborated with distributed, open-source community contributors, following peer review processes and CI/CD pipelines to maintain high-quality, production-ready code."
       ]
     },
