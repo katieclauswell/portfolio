@@ -1,64 +1,54 @@
-import React from "react";
 import { Row, Col } from "react-bootstrap";
 
-const info = {
-  resume: [
+const resume = {
+  experience: [
     {
       position: "Software Engineer",
       dates: "2022 - Present",
       company: {
         name: "LearnPlatform by Instructure",
+        description: "Our mission is to create the most valuable solution for institutions to manage, monitor, and maximize ROI and outcomes for their ed tech technologies.",
         website: "https://www.instructure.com/k12/products/learnplatform",
       },
       responsibilities: [
-        "An Edtech Management Platform committed to expanding equitable access for all students to the teaching and technology that works best for them. Our tech stack includes rails, elixir and react.",
+        "Engineered scalable product library features adopted across thousands of institutions in a distributed Agile team environment.",
+        "Architected and deployed a federated Product Details module using Webpack Module Federation, achieving measurable improvements in Core Web Vitals — notably Largest Contentful Paint (LCP) and Cumulative Layout Shift (CLS).",
+        "Designed retired product feature enabling partners to manage unsupported listings; reduced library clutter by retiring 200+ products, 570+ duplicates, and 100+ custom entries.",
+        "Optimized product discovery and engagement features, driving adoption across 80+ enterprise accounts and 1,100+ custom listings.",
+        "Implemented AI-powered search and accessibility enhancements, improving retention by making content discoverable and usable across diverse global user groups.",
+        "Collaborated cross-functionally with product, design, and QA teams to deliver high-quality, scalable features on time.",
+        "Mentored junior engineers through code reviews and knowledge-sharing sessions, raising team proficiency in React/TypeScript best practices.",
+        "Integrated monitoring and performance optimization into product features, ensuring reliability and visibility in production environments."
       ],
     },
     {
-      position: "Executive Assistant",
-      dates: "2021",
+      position: "Open Source Contributer",
+      dates: "2022",
       company: {
-        name: "Reynolds School District",
-        website: "https://www.reynolds.k12.or.us/",
+        name: "Mozilla, Protocol Design System",
+        description: "Node.js-based web design system published to NPM.",
+        website: "https://github.com/mozilla/protocol"
       },
       responsibilities: [
-        "Supported the Chief Academic Officer, Executive Director of Schools and Assistant Superintendent of Student and Family Services.",
-        "Partnered with leadership to build both long and short-term project roadmaps.",
-        "Operated proactively to organize, prioritize, and coordinate multiple work streams to meet deadlines.",
-        "Conducted complex studies, research, and evaluations pertaining to administrative problems, projects, and assigned areas of responsibility.",
-        "Coordinated an organization-wide diversity and inclusion training with Dr. Robin DiAngelo, an author working in the fields of critical discourse analysis and whiteness studies.",
-      ],
-    },
-    {
-      position: "Environmental Educator",
-      dates: "2019 - 2021",
-      company: {
-        name: "Wenatchee River Institute",
-        website: "https://wenatcheeriverinstitute.org/",
-      },
-      responsibilities: [
-        "Worked as part of a collaborative, agile team environment.",
-        "Designed and implemented evaluation of impact of Field Education Programs.",
-        "Lead and coordinated volunteer projects with several local youth conservation groups.",
-        "Designed onboarding process; led training and provided mentorship.",
-        "Used CRM tools (Firespring and Bloomerang) to support donor database management and communications including emails and mailings.",
-        "Led community outreach efforts, developing new partnerships and programming.",
-      ],
-    },
-    {
-      position: "Retail Coordinator",
-      dates: "​2016 - 2018",
-      company: {
-        name: "Schnitzer Properties",
-        website: "https://www.schnitzerproperties.com/",
-      },
-      responsibilities: [
-        "Created and maintained internal asset databases and introduced additional time-saving measures.",
-        " Domain-specific understanding of contribution to collateral and documentation.",
-        "Reviewed technical architectural drawings and creation of property site plans for legal, marketing, and operations for over 2.2M square feet of property.",
-      ],
+        "Contributed to Mozilla’s design system, creating reusable, accessible UI components for Mozilla and Firefox websites.",
+        "Ensured compliance with accessibility best practices (WCAG) and responsive design standards.",
+        "Optimized performance of design system components, reducing load times and improving rendering eﬃciency for high-traﬃc Mozilla websites.",
+        "Collaborated with distributed, open-source community contributors, following peer review processes and CI/CD pipelines to maintain high-quality, production-ready code."
+      ]
     },
   ],
+  education: [
+    {
+      degree: "Full Stack Web Development Certificate",
+      dates: "2021 - 2022",
+      institution: "University of Oregon Bootcamps",
+    },
+    {
+      degree: "Bachelor of Arts in International Business",
+      dates: "2013 - 2016",
+      institution: "University of South Florida",
+    },
+  ]
 };
 
 function Resume() {
@@ -69,18 +59,17 @@ function Resume() {
       </Row>
       <Row className="m-3">
         <Row className="m-3">
-          {info.resume.map((role, index) => (
+          {resume.experience.map((role, index) => (
             <>
-              <Row key={`role-${index}`}>
-                {role.position}, {role.dates}
-                <a
-                  href={role.company.website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {role.company.name}
-                </a>
-              </Row>
+              {role.position}, {role.dates}
+              <a
+                href={role.company.website}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {role.company.name}
+              </a>
+              <p><em>{role.company.description}</em></p>
               <ul>
                 {role.responsibilities.map((responsibility, index) => (
                   <li key={`responsibility-${index}`}>{responsibility}</li>
@@ -93,30 +82,12 @@ function Resume() {
           <h3>Education</h3>
         </Row>
         <Row className="m-3">
-          Full Stack Web Development Certificate, 2021 - 2022
-          <p>University of Oregon Bootcamps</p>
-          Bachelor of Arts in International Business, 2013 - 2016
-          <p>University of South Florida</p>
-        </Row>
-        <Row>
-          <h3>Volunteer Work</h3>
-        </Row>
-        <Row className="m-3">
-          Open Source Contributor, 2022
-          <a
-            href="https://github.com/mozilla/protocol"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Mozilla Protocol
-          </a>
-          <ul>
-            <li>
-              Design system for Mozilla and Firefox websites. It establishes a
-              common design language, provides reusable coded components and
-              outlines high level guidelines for content and accessibility.
-            </li>
-          </ul>
+          {resume.education.map((education) => (
+            <>
+              {education.degree}, {education.dates}
+              <p>{education.institution}</p>
+            </>
+          ))}
         </Row>
       </Row>
     </Col>

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { Container, Row, Col, Popover, OverlayTrigger } from "react-bootstrap";
 import { info } from "./data/info";
 import PopoverDesc from "./PopoverDesc";
@@ -22,42 +22,40 @@ function TechStack() {
       </Row>
       <Row xs={2} md={4} lg={6} className="m-1">
         {info.technologies.map((item, index) => (
-          <>
-            <Col className="d-flex justify-content-center" key={index}>
-              <OverlayTrigger
-                trigger="click"
-                key={index}
-                placement="right"
-                overlay={
-                  <Popover id={`popover-positioned-left`}>
-                    <Popover.Header as="h3">{`${item.name}`}</Popover.Header>
-                    <Popover.Body>
-                      <PopoverDesc name={item.name} filter={filter} />
-                    </Popover.Body>
-                  </Popover>
-                }
+          <Col className="d-flex justify-content-center" key={index}>
+            <OverlayTrigger
+              trigger="click"
+              placement="right"
+              overlay={
+                <Popover id={`popover-${index}`} data-node="tech-popover">
+                  <Popover.Header as="h3">{item.name}</Popover.Header>
+                  <Popover.Body>
+                    <PopoverDesc  name={item.name} filter={filter} />
+                  </Popover.Body>
+                </Popover>
+              }
+            >
+              <div
+                ref={target}
+                className="tech-icon m-2"
+                onClick={() => setShow(!show)}
               >
-                <div
-                  ref={target}
-                  className="tech-icon m-2"
-                  onClick={() => setShow(!show)}
-                >
-                  {filter(item.name).length ? (
-                    <>
-                      <i className={item.icon} />
-                      <div>{item.name}</div>
-                    </>
-                  ) : (
-                    <>
-                      <i className={`${item.icon} inactive`} />
-                      <div className="inactive">{item.name}</div>
-                    </>
-                  )}
-                </div>
-              </OverlayTrigger>
-            </Col>
-          </>
+                {filter(item.name).length ? (
+                  <>
+                    <i className={item.icon} />
+                    <div>{item.name}</div>
+                  </>
+                ) : (
+                  <>
+                    <i className={`${item.icon} inactive`} />
+                    <div className="inactive">{item.name}</div>
+                  </>
+                )}
+              </div>
+            </OverlayTrigger>
+          </Col>
         ))}
+
       </Row>
     </Container>
   );

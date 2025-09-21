@@ -1,5 +1,3 @@
-import React from "react";
-
 function PopoverDesc({ filter, name }) {
   const repos = filter(name);
 
@@ -19,7 +17,7 @@ function PopoverDesc({ filter, name }) {
           </li>
         ))
       ) : (
-        <>No examples, sorry!</>
+        <>No examples</>
       )}
     </>
   );

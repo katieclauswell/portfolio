@@ -146,7 +146,7 @@ i {
   }
 }
 
-/* about me page */
+/* about me*/
 
 #headshot-container {
   height: 44vh;
@@ -176,7 +176,12 @@ i {
   left: 83px;
 }
 
-/* work and resume pages */
+/* tech stack */
+[data-node="tech-popover"] > * {
+  padding-left: 25px;
+}
+
+/* work and resume */
 button {
   border: none !important;
 }
